@@ -1,0 +1,33 @@
+permissionset 50101 GenPermissionS365
+{
+    Assignable = true;
+    Permissions = tabledata "Charge Item MappingS365" = RIMD,
+        tabledata PackageTypeS365 = RIMD,
+        tabledata "Quote Type S365" = RIMD,
+        tabledata ServiceItemMatrixS365 = RIMD,
+        table "Charge Item MappingS365" = X,
+        table PackageTypeS365 = X,
+        table "Quote Type S365" = X,
+        table ServiceItemMatrixS365 = X,
+        report "Air ImportExport Quot S365" = X,
+        codeunit "EventSubscriber S365" = X,
+        codeunit S365Functions = X,
+        codeunit "SQmodFunction S365" = X,
+        page "Charge Item Mapping S365" = X,
+        page "Item Combination S365" = X,
+        page PackageTypeListS365 = X,
+    // page "Quote Type" = X,
+        tabledata "Ports Code S365" = RIMD,
+        table "Ports Code S365" = X,
+    // page "Ports Code List" = X,
+        page "Resource Alloc MatrixS365" = X,
+        page "Ports Code List S365" = X,
+        page "Quote Type S365" = X,
+        tabledata ResourceJobMatrixS365 = RIMD,
+        table ResourceJobMatrixS365 = X,
+        report "Air Freight Arrival Receipt" = X,
+        report "Air ImportExports Quot S365" = X,
+        page ProjectTemplateS365 = X,
+        page "Resource Job MatrixS365" = X,
+        page "Transport MatrixS365" = X;
+}
