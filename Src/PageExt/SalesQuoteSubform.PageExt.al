@@ -1,4 +1,4 @@
-pageextension 50122 "Sales Quote SubformS365" extends "Sales Quote Subform"
+pageextension 50122 "Sales Quote Subform EXT" extends "Sales Quote Subform"
 {
     layout
     {

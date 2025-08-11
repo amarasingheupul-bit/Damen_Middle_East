@@ -17,6 +17,15 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 ApplicationArea = All;
             }
         }
+        addafter(Quantity)
+        {
+            field("Currency Code"; Rec."Currency Code")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the currency that is used on the entry.';
+
+            }
+        }
     }
     actions
     {
@@ -97,9 +106,8 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
             else begin
                 UpdateExisitingPurchaseLine(PurchaseHeader);
             end;
+            Message('Purchase Order Created Successfuly %1', PurchaseHeader."No.");
         end;
-        Message('Purchase Order Created Successfuly %1', PurchaseHeader."No.");
-
     end;
 
     local procedure UpdateExisitingPurchaseLine(var PurchaseHeader: Record "Purchase Header")
@@ -127,7 +135,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
         PurchaeLine.LockTable();
         JobPlanningLine.Reset();
         JobPlanningLine.CopyFilters(Rec);
-        // CurrPage.SetSelectionFilter(JobPlanningLine);
+        CurrPage.SetSelectionFilter(JobPlanningLine);
         LineNo := LineNumber;
         if JobPlanningLine.FindSet() then
             repeat
@@ -147,6 +155,8 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 PurchaeLine.Validate("No.", JobPlanningLine."No.");
                 PurchaeLine.Validate(Quantity, JobPlanningLine.Quantity);
                 PurchaeLine.Validate("Unit Price (LCY)", JobPlanningLine."Unit Cost");
+                PurchaeLine.Validate("Job No.", JobPlanningLine."Job No.");
+                PurchaeLine.Validate("Job Task No.", JobPlanningLine."Job Task No.");
                 PurchaeLine.Insert();
             until JobPlanningLine.Next() = 0;
     end;
