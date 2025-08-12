@@ -25,5 +25,21 @@ pageextension 50120 "4HC JobTaskLinesSubform" extends "Job Task Lines Subform"
                 ToolTip = 'Specifies the value of the Invoiced (Total Price) field.';
             }
         }
+        modify("Schedule (Total Cost)")
+        {
+            Caption = 'Budget (Total Cost)(LCY)';
+        }
+        modify("Usage (Total Cost)")
+        {
+            Caption = 'Actual (Total Cost)(LCY)';
+        }
+        modify("Contract (Total Price)")
+        {
+            Caption = 'Billable (Total Price)(LCY)';
+        }
+        modify("Contract (Invoiced Price)")
+        {
+            Caption = 'Invoiced (Total Price)(LCY)';
+        }
     }
 }
