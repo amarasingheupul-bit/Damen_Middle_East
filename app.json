@@ -1,29 +1,28 @@
 {
   "id": "51500d42-c0ac-47de-a66c-5dc2baac4262",
-  "name": "SQmod",
-  "publisher": "solution365",
-  "version": "1.0.0.10",
-  "url": "https://solution365.io",
-  "runtime": "14.0",
+  "name": "Damen Middle East SSL",
+  "publisher": "DragonFly",
+  "version": "1.0.0.12",
+  "url": "",
+  "runtime": "15.0",
   "target": "Cloud",
   "platform": "1.0.0.0",
   "application": "26.0.0.0",
+
   "resourceExposurePolicy": {
     "allowDebugging": true,
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true,
     "applyToDevExtension": false
   },
+
   "features": [
-    "TRANSLATIONFILE"
+    "TranslationFile"
   ],
   "idRanges": [
     {
       "from": 50100,
       "to": 50149
     }
-  ],
-  "build": {
-    "by": "AL Language Extension,14.1.1180850"
-  }
+  ]
 }

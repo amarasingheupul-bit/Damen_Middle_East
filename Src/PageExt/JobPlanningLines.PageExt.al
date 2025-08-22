@@ -65,7 +65,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 ToolTip = 'Create a new purchase order based on the job planning line details.';
                 trigger OnAction()
                 begin
-                    CreatePurchaseOrder();
+                    this.CreatePurchaseOrder();
                 end;
             }
         }
@@ -82,12 +82,12 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
 
     local procedure CreatePurchaseOrder()
     var
-        PurchaseHeader: Record "Purchase Header";
-        LocalizedText: Label 'Purchase Order created successfully.', Locked = true;
-        ConfimDialog: Page "Vendor Confirmation Dialog";
-        JObTask: Record "Job Task";
         PurchPaybleSetup: Record "Purchases & Payables Setup";
+        PurchaseHeader: Record "Purchase Header";
+        Project: Record Job;
         Noseries: Codeunit "No. Series";
+        ConfimDialog: Page "Vendor Confirmation Dialog";
+        POSucessMsg: Label 'Purchase Order created successfully.  %1', Locked = true;
     begin
         PurchPaybleSetup.Get();
         ConfimDialog.LookupMode(true);
@@ -101,18 +101,22 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 PurchaseHeader."No." := PurchaseOrderNo;
                 PurchaseHeader.Validate("Buy-from Vendor No.", ConfimDialog.GetVendorCode());
                 PurchaseHeader.Insert(true);
-                CreatePurchaseLine(PurchaseHeader."No.", 0);
+                if Project.Get(Rec."Job No.") then begin
+                    PurchaseHeader.Validate("Shortcut Dimension 1 Code", Project."Global Dimension 1 Code");
+                    PurchaseHeader.Validate("Shortcut Dimension 2 Code", Project."Global Dimension 2 Code");
+                end;
+                this.CreatePurchaseLine(PurchaseHeader."No.", 0);
             end
             else begin
                 UpdateExisitingPurchaseLine(PurchaseHeader);
             end;
-            Message('Purchase Order Created Successfuly %1', PurchaseHeader."No.");
+            Message(POSucessMsg, PurchaseHeader."No.");
         end;
     end;
 
     local procedure UpdateExisitingPurchaseLine(var PurchaseHeader: Record "Purchase Header")
     begin
-        CreatePurchaseLine(PurchaseHeader."No.", GetLastLineNo(PurchaseHeader."No."));
+        this.CreatePurchaseLine(PurchaseHeader."No.", GetLastLineNo(PurchaseHeader."No."));
     end;
 
     local procedure GetLastLineNo(DocumentNumber: Code[20]): Integer

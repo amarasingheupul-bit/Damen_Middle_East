@@ -168,43 +168,21 @@ report 50103 "4HC Purchase Order"
             }
             trigger OnAfterGetRecord()
             begin
-                if Contact.Get("Buy-from Contact No.") then;
-                Address := CompanyInformation.Address + ' ' + CompanyInformation."Address 2" + ' ' + CompanyInformation.City + ' ' + CompanyInformation.County;
+                if this.Contact.Get("Buy-from Contact No.") then;
+                this.Address := this.CompanyInformation.Address + ' ' + this.CompanyInformation."Address 2" + ' ' + this.CompanyInformation.City + ' ' + this.CompanyInformation.County;
 
                 if "Gen. Bus. Posting Group" = 'UAE' then
-                    TRNLeft := "VAT Registration No."
+                    this.TRNLeft := "VAT Registration No."
                 else
-                    TRNLeft := '';
+                    this.TRNLeft := '';
 
-                if BankAccount.Get("Bank Details") then;
+                if this.BankAccount.Get("Bank Details") then;
             end;
         }
     }
 
     requestpage
     {
-        AboutTitle = 'Teaching tip title';
-        AboutText = 'Teaching tip content';
-        layout
-        {
-            area(Content)
-            {
-                group(GroupName)
-                {
-                }
-            }
-        }
-
-        actions
-        {
-            area(processing)
-            {
-                action(LayoutName)
-                {
-
-                }
-            }
-        }
     }
 
     rendering
@@ -218,9 +196,9 @@ report 50103 "4HC Purchase Order"
 
     trigger OnPreReport()
     begin
-        CompanyInformation.Get();
-        CompanyInformation.CalcFields(Picture);
-        CompanyInformation.CalcFields("Report Footer");
+        this.CompanyInformation.Get();
+        this.CompanyInformation.CalcFields(Picture);
+        this.CompanyInformation.CalcFields("Report Footer");
     end;
 
     var

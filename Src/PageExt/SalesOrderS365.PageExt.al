@@ -160,7 +160,8 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
             {
                 Caption = 'Tax Invoice';
                 Image = TaxPayment;
-                ToolTip = 'Create Job';
+                ToolTip = 'Generates the Tax Invoice for the selected sales order.';
+
                 ApplicationArea = Suite;
 
                 trigger OnAction()

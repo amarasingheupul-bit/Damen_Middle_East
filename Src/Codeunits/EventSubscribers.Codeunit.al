@@ -3,18 +3,19 @@ codeunit 50103 "4HC Event Subscribers"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post + Print", OnBeforeGetReport, '', false, false)]
     local procedure "Purch.-Post + Print_OnBeforeGetReport"(var PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
     begin
-        if PurchaseHeader.Status <> PurchaseHeader.Status::Released then begin
+        if PurchaseHeader.Status <> PurchaseHeader.Status::Released then
             Error('The purchase order must be released before printing.');
-        end;
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]
     local procedure OnSubstituteReport(ReportId: Integer; var NewReportId: Integer)
-    var
-        UserSetup: Record "User Setup";
     begin
-        if ReportId = Report::Order then
-            NewReportId := Report::"4HC Purchase Order";
+        Case ReportId of
+            Report::Order:
+                NewReportId := Report::"4HC Purchase Order";
+            Report::"Purchase - Credit Memo":
+                NewReportId := Report::"4HC Purchase Credit Note";
+        End;
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnBeforeConfirmPost, '', false, false)]
@@ -38,7 +39,7 @@ codeunit 50103 "4HC Event Subscribers"
     begin
         if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
             if PurchaseHeader.Invoice then
-                Error(PostingOnlyReceiveErr);
+                Error(this.PostingOnlyReceiveErr);
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnAfterConfirmPost, '', false, false)]
@@ -46,7 +47,7 @@ codeunit 50103 "4HC Event Subscribers"
     begin
         if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
             if PurchaseHeader.Invoice then
-                Error(PostingOnlyReceiveErr);
+                Error(this.PostingOnlyReceiveErr);
     end;
 
     [EventSubscriber(ObjectType::Table, Database::"Job Planning Line", OnBeforeUpdateUnitCost, '', false, false)]
