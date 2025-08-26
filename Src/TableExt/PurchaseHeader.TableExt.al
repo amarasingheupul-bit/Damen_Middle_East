@@ -95,5 +95,21 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
             DataClassification = ToBeClassified;
             TableRelation = "Bank Account";
         }
+        field(50109; "Email Approval Status"; Enum "4HC PAutoApprovalStatus")
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Email Approval Status';
+        }
+        field(50110; "SalesPerson Email"; Text[80])
+        {
+            Caption = 'SalesPerson Email';
+            FieldClass = FlowField;
+            CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("Purchaser Code")));
+        }
+        field(50111; "Approval Rejection Reason"; Text[250])
+        {
+            Caption = 'Approval Rejection Reason';
+            DataClassification = CustomerContent;
+        }
     }
 }

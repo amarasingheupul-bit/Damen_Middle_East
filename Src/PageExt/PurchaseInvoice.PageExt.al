@@ -86,5 +86,23 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                 }
             }
         }
+        addlast(General)
+        {
+            field("Email Approval Status"; Rec."Email Approval Status")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Email Approval Status field.';
+            }
+            field("SalesPerson Email"; Rec."SalesPerson Email")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the SalesPerson Email field.';
+            }
+            field("Approval Rejection Reason"; Rec."Approval Rejection Reason")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Approval Rejection Reason field.';
+            }
+        }
     }
 }
