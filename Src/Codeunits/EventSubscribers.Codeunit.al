@@ -56,6 +56,68 @@ codeunit 50103 "4HC Event Subscribers"
         IsHandled := true;
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Workflow Response Handling", 'OnReleaseDocument', '', true, true)]
+    local procedure OnReleaseDocument(RecRef: RecordRef; var Handled: Boolean)
+    var
+        PurchaseHeader: Record "Purchase Header";
+    begin
+        case RecRef.Number of
+            database::"Purchase Header":
+                begin
+                    RecRef.SetTable(PurchaseHeader);
+                    Message(PurchaseHeader."Approval Rejection Reason");
+                    if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
+                        Error('You can not approve without sales person approval.');
+                end;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnBeforeSetStatusToPendingApproval, '', false, false)]
+    local procedure "Approvals Mgmt._OnBeforeSetStatusToPendingApproval"(var Variant: Variant)
+    var
+        PurchaseHeader: Record "Purchase Header";
+        ApprovalEntry: Record "Approval Entry";
+        RecRef: RecordRef;
+    begin
+        RecRef.GetTable(Variant);
+        case RecRef.Number of
+            database::"Purchase Header":
+                begin
+                    RecRef.SetTable(PurchaseHeader);
+                    if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Invoice then
+                        if PurchaseHeader.Status = PurchaseHeader.Status::Open then begin
+                            ApprovalEntry.SetRange("Record ID to Approve", PurchaseHeader.RecordId);
+                            ApprovalEntry.SetRange(Status, ApprovalEntry.Status::Approved);
+                            ApprovalEntry.SetRange("Sequence No.", 1);
+                            if not ApprovalEntry.IsEmpty() then
+                                PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
+                            RecRef.GetTable(PurchaseHeader);
+                            RecRef.SetTable(Variant);
+                        end;
+                end;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Purchase Document", OnReopenOnBeforePurchaseHeaderModify, '', false, false)]
+    local procedure "Release Purchase Document_OnReopenOnBeforePurchaseHeaderModify"(var PurchaseHeader: Record "Purchase Header")
+    begin
+        PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Open;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnApproveApprovalRequest, '', false, false)]
+    local procedure "Approvals Mgmt._OnApproveApprovalRequest"(var ApprovalEntry: Record "Approval Entry")
+    var
+        PurchaseHeader: Record "Purchase Header";
+    begin
+        if ApprovalEntry."Document Type" = ApprovalEntry."Document Type"::Invoice then
+            if (ApprovalEntry."Sequence No." = 1) and (ApprovalEntry.Status = ApprovalEntry.Status::Approved) then
+                if PurchaseHeader.Get(ApprovalEntry."Document Type", ApprovalEntry."Document No.") then begin
+                    PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
+                    PurchaseHeader.Modify();
+                end;
+    end;
+
+
     var
         PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';
 }

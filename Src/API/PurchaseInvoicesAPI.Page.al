@@ -505,6 +505,22 @@ page 50109 "4HC Purchase Invoices API"
                     Caption = 'Status';
                     Editable = false;
                 }
+                field(yardNumber; Rec."Yard No.")
+                {
+                    Caption = 'Yard No.';
+                }
+                field(milestonesDatesAndAmounts; Rec."Milestones Dates and Amounts")
+                {
+                    Caption = 'Milestones with Dates and Amounts';
+                }
+                field(opcoComProjectNo; Rec."OPCO Com Project No.")
+                {
+                    Caption = 'OPCO Com Project No.';
+                }
+                field(vesselType; Rec."Vessel Type")
+                {
+                    Caption = 'Vessel Type';
+                }
                 field(lastModifiedDateTime; Rec.SystemModifiedAt)
                 {
                     Caption = 'Last Modified Date';
