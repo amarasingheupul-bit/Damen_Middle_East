@@ -133,6 +133,321 @@
           <note from="Developer" annotates="general" priority="2">%1 = Document No.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SQmodFunction S365 - Method ShowMessageAfterSQuoteAmendArchive - NamedType Text002Msg</note>
         </trans-unit>
+        <trans-unit id="Page 203621994 - Property 3446740159" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Property EntityCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Property 631549417" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Property EntitySetCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 3395634949" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A "vendorNumber" or a "vendorID" must be provided.</source>
+          <note from="Developer" annotates="general" priority="2">vendorNumber and vendorID are field names and should not be translated.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType BuyFromVendorNotProvidedErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 3210053793" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The "id" cannot be changed.</source>
+          <note from="Developer" annotates="general" priority="2">id is a field name and should not be translated.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CannotChangeIDErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 3399721204" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The invoice cannot be found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CannotFindInvoiceErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 259424556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The vendor cannot be found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CouldNotFindBuyFromVendorErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 2178917581" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The pay-to vendor cannot be found.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CouldNotFindPayToVendorErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 1805429782" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The "currencyCode" does not match to a Currency.</source>
+          <note from="Developer" annotates="general" priority="2">currencyCode is a field name and should not be translated.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CurrencyCodeDoesNotMatchACurrencyErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 3939449910" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The "currencyId" does not match to a Currency.</source>
+          <note from="Developer" annotates="general" priority="2">currencyId is a field name and should not be translated.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CurrencyIdDoesNotMatchACurrencyErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 2624287652" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The currency values do not match to a specific Currency.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType CurrencyValuesDontMatchErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 4291081697" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The action can be applied to a draft invoice only.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType DraftInvoiceActionErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - NamedType 2196097617" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You do not have permissions to read Purchase Invoices.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - NamedType PurchaseInvoicePermissionsErr</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3698554008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approval Rejection Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control approvalRejectReason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 509812749 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approval Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control approvalStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 883773547 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy-from Address Line 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control buyFromAddressLine1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2796863398 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy-from Address Line 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control buyFromAddressLine2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 477206273 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy-from City</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control buyFromCity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1323057276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy-from Country/Region Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control buyFromCountry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 426882759 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy-from Post Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control buyFromPostCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2163249473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy-from State</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control buyFromState - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1808640270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control currencyCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 416025006 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control currencyId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2286581531 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control discountAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1312831416 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount Applied Before Tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control discountAppliedBeforeTax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2763176388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control dueDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 304051935 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control invoiceDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2245436958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Modified Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control lastModifiedDateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2757394829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1719523317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control orderId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3577402367 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control orderNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2839400550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay To Address Line 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToAddressLine1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 926310699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay To Address Line 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToAddressLine2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1075512840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay To City</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToCity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2895419933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay-To Contact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToContact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2898359933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay To Country/Region Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToCountry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2297462936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay-To Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2482427330 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay To Post Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToPostCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3313580032 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay To State</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToState - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 4128959070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay-To Vendor Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToVendorId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 424924552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pay-To Vendor No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control payToVendorNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1260828904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control postingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3690097785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices Include Tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control pricesIncludeTax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1313438251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchaser</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control purchaser - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3515767835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SalesPerson Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control salespersonEmail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 354324300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address Line 1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToAddressLine1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 992020917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address Line 2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToAddressLine2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1336190306 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to City</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToCity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1979445219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-To Contact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToContact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3828400819 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Country/Region Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToCountry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1889388274 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-To Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2895959832 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Post Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToPostCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2719673386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to State</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shipToState - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 667097208 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shortcut Dimension 1 Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shortcutDimension1Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3389845713 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shortcut Dimension 2 Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control shortcutDimension2Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 998393528 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 3762354732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount Excluding Tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control totalAmountExcludingTax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 1842111270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount Including Tax</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control totalAmountIncludingTax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 4101803605 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Tax Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control totalTaxAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 149332515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control vendorId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2713072690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Invoice No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control vendorInvoiceNumber - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 2483398189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control vendorName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 203621994 - Control 712552689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page 4HC Purchase Invoices API - Control vendorNumber - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 4202026260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Charge Item Mapping</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -642,6 +957,101 @@
           <source>Print</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Credit Memo - Action CreditNote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2630264501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Additional Order Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control VendDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 3915737215 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Shows the date of the last amendment to this purchase.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Amendment Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2438345936 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Bank Details field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Bank Details - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 4030203231 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Budget field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Budget - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 4082300179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the commission value for this purchase order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Commission Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 864848052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Cost Center field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Cost Center - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 3478379716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Cost Reference field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Cost Reference - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 1444093971 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the customer code from One Stream associated with this purchase.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Group Customer with One Stream - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2573883171 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Automatically shows the customer name retrieved from One Stream on validation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Group Customr Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2178783130 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Details key milestones, dates, and financial amounts linked to this purchase.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Milestones Dates and Amounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2594444948 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Indicates the OPCO commercial project number associated with the order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control OPCO Com Project No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2977698494 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Quote Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Quote Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 1481805809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Sales/ Area Director Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Sales/ Area Director Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 4100480978 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Defines the date of the signed purchase agreement.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control SPA Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 196544910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Vessel Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Vessel Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2984497355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the yard reference for this order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Yard No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 310842904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Approval Rejection Reason field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Approval Rejection Reason - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 2561250641 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the Email Approval Status field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control Email Approval Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 3535627003 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the SalesPerson Email field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control SalesPerson Email - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 958370998 - Control 2630264501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
           <source>Additional Order Details</source>
@@ -1188,6 +1598,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Amendment Date - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 427401629 - Field 310842904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>Approval Rejection Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Approval Rejection Reason - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 427401629 - Field 2438345936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Bank Details</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1212,6 +1627,11 @@
           <source>Cost Reference</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Cost Reference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 427401629 - Field 2561250641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>Email Approval Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Email Approval Status - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 427401629 - Field 1444093971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Group Customer with One Stream Code</source>
@@ -1253,6 +1673,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Sales/ Area Director Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 427401629 - Field 3535627003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>SalesPerson Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field SalesPerson Email - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 427401629 - Field 4100480978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>SPA Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1267,6 +1692,41 @@
           <source>Yard No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Yard No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 310842904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>Approval Rejection Reason</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field Approval Rejection Reason - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 2561250641 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>Email Approval Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field Email Approval Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 2178783130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>Milestones with Dates and Amounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field Milestones Dates and Amounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 2594444948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>OPCO Com Project No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field OPCO Com Project No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 3535627003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>SalesPerson Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field SalesPerson Email - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 196544910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>Vessel Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field Vessel Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 485761676 - Field 2984497355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1208986161">
+          <source>Yard No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC PurchInvEntityAggregate - Field Yard No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3318482693 - Field 1407200743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
           <source>Creation Date</source>
