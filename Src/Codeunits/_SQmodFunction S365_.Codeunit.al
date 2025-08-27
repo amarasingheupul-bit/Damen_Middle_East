@@ -28,7 +28,6 @@ codeunit 50101 "SQmodFunction S365"
         ExactCostReversingMandatory := SalesSetup."Exact Cost Reversing Mandatory";
         CopyDocumentMgt.SetProperties(true, false, false, false, false, ExactCostReversingMandatory, false);
         CopyDocumentMgt.CopySalesDoc(Rec."Document Type", Rec."No.", SalesHeader);
-        SalesHeader."Printed or Email S365" := false;
         if Rec."Original Quote No. S365" <> '' then
             SalesHeader."Original Quote No. S365" := Rec."Original Quote No. S365"
         else
@@ -155,12 +154,6 @@ codeunit 50101 "SQmodFunction S365"
                 Rec.Modify();
                 Message(JobCreateMsg);
             end;
-    end;
-
-    procedure MyProcedure()
-    var
-        myInt: Integer;
-    begin
     end;
 
     procedure CreateWarehouseReceipt(JobNo: Code[20])

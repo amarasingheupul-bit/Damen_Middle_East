@@ -84,6 +84,11 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Cost Center field.';
                 }
+                field("Sales Secretary No."; Rec."Sales Secretary No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Secretary No. field.', Comment = '%';
+                }
             }
         }
         addlast(General)
@@ -93,16 +98,25 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Email Approval Status field.';
             }
-            field("SalesPerson Email"; Rec."SalesPerson Email")
+            field("SalesDirecotor Email"; Rec."SalesDirecotor Email")
             {
                 ApplicationArea = All;
-                ToolTip = 'Specifies the value of the SalesPerson Email field.';
+                ToolTip = 'Specifies the value of the Sales Director Email field.', Comment = '%';
+            }
+            field("Sales Secretary Email"; Rec."Sales Secretary Email")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Sales Secretary Email field.', Comment = '%';
             }
             field("Approval Rejection Reason"; Rec."Approval Rejection Reason")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Approval Rejection Reason field.';
             }
+        }
+        modify("Purchaser Code")
+        {
+            Caption = 'Sales Director Code';
         }
     }
 }

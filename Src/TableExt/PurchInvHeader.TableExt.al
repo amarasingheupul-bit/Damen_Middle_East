@@ -1,4 +1,4 @@
-tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
+tableextension 50116 "4HC Purch. Inv. Header" extends "Purch. Inv. Header"
 {
     fields
     {

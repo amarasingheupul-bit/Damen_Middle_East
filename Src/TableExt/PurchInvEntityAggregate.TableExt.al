@@ -32,10 +32,21 @@ tableextension 50114 "4HC PurchInvEntityAggregate" extends "Purch. Inv. Entity A
             FieldClass = FlowField;
             CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("Purchaser Code")));
         }
+        field(50112; "Sales Secretary Email"; Text[80])
+        {
+            Caption = 'Sales Secretary Email';
+            FieldClass = FlowField;
+            CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("Sales Secretary No.")));
+        }
         field(50111; "Approval Rejection Reason"; Text[250])
         {
             Caption = 'Approval Rejection Reason';
             DataClassification = CustomerContent;
+        }
+        field(50133; "Sales Secretary No."; Code[20])
+        {
+            Caption = 'Sales Secretary No.';
+            TableRelation = "Salesperson/Purchaser".Code;
         }
     }
 }

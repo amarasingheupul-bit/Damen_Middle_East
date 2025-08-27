@@ -10,12 +10,14 @@ codeunit 50103 "4HC Event Subscribers"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]
     local procedure OnSubstituteReport(ReportId: Integer; var NewReportId: Integer)
     begin
-        Case ReportId of
+        case ReportId of
             Report::Order:
                 NewReportId := Report::"4HC Purchase Order";
             Report::"Purchase - Credit Memo":
                 NewReportId := Report::"4HC Purchase Credit Note";
-        End;
+            Report::"Standard Sales - Invoice":
+                NewReportId := Report::"4HC Posted Sales Tax Invoice";
+        end;
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnBeforeConfirmPost, '', false, false)]
