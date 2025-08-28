@@ -171,7 +171,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
             trigger OnAfterGetRecord()
             begin
                 this.Customer.Get("Sell-to Customer No.");
-                if this.BankAccont.Get("Bank Details") then;
+                if this.BankAccont.Get("Company Bank Account Code") then;
 
                 this.Address := "Sell-to Address" + ' ' + "Sell-to Address 2" + ' ' + "Sell-to City" + ' ' + "Sell-to County" + ' ' + "Sell-to Post Code" + ' ' + "Sell-to Country/Region Code";
             end;

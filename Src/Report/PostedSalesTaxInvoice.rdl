@@ -11,6 +11,187 @@
       <rd:DataSourceID>55f630da-85af-49c3-b07e-841bb85957f3</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="No_SalesHeader">
+          <DataField>No_SalesHeader</DataField>
+        </Field>
+        <Field Name="OrderDate_SalesHeader">
+          <DataField>OrderDate_SalesHeader</DataField>
+        </Field>
+        <Field Name="YourReference_SalesHeader">
+          <DataField>YourReference_SalesHeader</DataField>
+        </Field>
+        <Field Name="PaymentTermsCode_SalesHeader">
+          <DataField>PaymentTermsCode_SalesHeader</DataField>
+        </Field>
+        <Field Name="ReportTitleLbl">
+          <DataField>ReportTitleLbl</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyInfReportFooter">
+          <DataField>CompanyInfReportFooter</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyCounty">
+          <DataField>CompanyCounty</DataField>
+        </Field>
+        <Field Name="CompanyPhoneNo">
+          <DataField>CompanyPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyFaxNo">
+          <DataField>CompanyFaxNo</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyVatRegistration">
+          <DataField>CompanyVatRegistration</DataField>
+        </Field>
+        <Field Name="CurrencyCode_SalesHeader">
+          <DataField>CurrencyCode_SalesHeader</DataField>
+        </Field>
+        <Field Name="YardNo_SalesHeader">
+          <DataField>YardNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="Cost_Center">
+          <DataField>Cost_Center</DataField>
+        </Field>
+        <Field Name="Sales_Manager">
+          <DataField>Sales_Manager</DataField>
+        </Field>
+        <Field Name="CustomerVATRegNo">
+          <DataField>CustomerVATRegNo</DataField>
+        </Field>
+        <Field Name="Sell_to_Contact">
+          <DataField>Sell_to_Contact</DataField>
+        </Field>
+        <Field Name="Job_No__S365">
+          <DataField>Job_No__S365</DataField>
+        </Field>
+        <Field Name="Quote_Type_S365">
+          <DataField>Quote_Type_S365</DataField>
+        </Field>
+        <Field Name="Type_SalesHeader">
+          <DataField>Type_SalesHeader</DataField>
+        </Field>
+        <Field Name="OPCOCustomer_SalesHeader">
+          <DataField>OPCOCustomer_SalesHeader</DataField>
+        </Field>
+        <Field Name="COSTReference_SalesHeader">
+          <DataField>COSTReference_SalesHeader</DataField>
+        </Field>
+        <Field Name="GLAccount_SalesHeader">
+          <DataField>GLAccount_SalesHeader</DataField>
+        </Field>
+        <Field Name="Budget_SalesHeader">
+          <DataField>Budget_SalesHeader</DataField>
+        </Field>
+        <Field Name="Budget_SalesHeaderFormat">
+          <DataField>Budget_SalesHeaderFormat</DataField>
+        </Field>
+        <Field Name="IncomingPO_SalesHeader">
+          <DataField>IncomingPO_SalesHeader</DataField>
+        </Field>
+        <Field Name="ServiceProviderNo_SalesHeader">
+          <DataField>ServiceProviderNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="SalesAreaDirectorName_SalesHeader">
+          <DataField>SalesAreaDirectorName_SalesHeader</DataField>
+        </Field>
+        <Field Name="SalesDirectorAreaDirector_SalesHeader">
+          <DataField>SalesDirectorAreaDirector_SalesHeader</DataField>
+        </Field>
+        <Field Name="BankDetails_SalesHeader">
+          <DataField>BankDetails_SalesHeader</DataField>
+        </Field>
+        <Field Name="BankAccontName">
+          <DataField>BankAccontName</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+        <Field Name="SWIFTCode">
+          <DataField>SWIFTCode</DataField>
+        </Field>
+        <Field Name="BankAccountCurrency">
+          <DataField>BankAccountCurrency</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_Name">
+          <DataField>Sell_to_Customer_Name</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="No_SalesLine">
+          <DataField>No_SalesLine</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLine">
+          <DataField>Quantity_SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLineFormat">
+          <DataField>Quantity_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="UnitofMeasureCode_SalesLine">
+          <DataField>UnitofMeasureCode_SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_SalesLine">
+          <DataField>UnitPriceLCY_SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_SalesLineFormat">
+          <DataField>UnitPriceLCY_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT">
+          <DataField>AmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="AmountIncludingVATFormat">
+          <DataField>AmountIncludingVATFormat</DataField>
+        </Field>
+        <Field Name="VATAmount">
+          <DataField>VATAmount</DataField>
+        </Field>
+        <Field Name="VATAmountFormat">
+          <DataField>VATAmountFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Currency_Code">
+          <DataField>Currency_Code</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -566,7 +747,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Servise Provider No.</Value>
+                                  <Value>Service Provider No.</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -905,7 +1086,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.13084in</Width>
+                  <Width>1.54774in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.7226in</Width>
@@ -1220,7 +1401,7 @@
             <Top>0.16542in</Top>
             <Left>0.03916in</Left>
             <Height>1.05208in</Height>
-            <Width>3.85344in</Width>
+            <Width>4.27034in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1284,7 +1465,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1330,7 +1511,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1367,7 +1548,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Qty</Value>
+                                  <Value>QTY</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1422,7 +1603,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1560,7 +1741,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                             <Paragraph>
@@ -1575,7 +1756,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1621,7 +1802,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1667,7 +1848,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1713,7 +1894,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                             <Paragraph>
@@ -1728,7 +1909,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1909,7 +2090,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -1942,7 +2125,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -2008,7 +2193,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox17</rd:DefaultName>
@@ -2041,7 +2228,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox18</rd:DefaultName>
@@ -2074,7 +2263,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox22</rd:DefaultName>
@@ -2179,7 +2370,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Quantity_SalesLine</rd:DefaultName>
@@ -2194,6 +2387,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -2248,7 +2442,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>UnitofMeasureCode_SalesLine</rd:DefaultName>
@@ -2281,7 +2477,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Currency_Code</rd:DefaultName>
@@ -2983,9 +3181,7 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox128</rd:DefaultName>
@@ -2993,6 +3189,11 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -3055,7 +3256,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.6301in</Width>
+                  <Width>1.54773in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.22333in</Width>
@@ -3691,7 +3892,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Budget_SalesHeader</rd:DefaultName>
@@ -3735,7 +3938,7 @@
             <Top>1.35186in</Top>
             <Left>0.03917in</Left>
             <Height>2.1811in</Height>
-            <Width>3.85343in</Width>
+            <Width>3.77106in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -4155,9 +4358,9 @@
           <Rectangle Name="Rectangle1">
             <KeepTogether>true</KeepTogether>
             <Top>0.41133cm</Top>
-            <Left>10.76537cm</Left>
+            <Left>11.24199cm</Left>
             <Height>4.8924cm</Height>
-            <Width>0.50308cm</Width>
+            <Width>0.02646cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -4357,6 +4560,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -4396,185 +4605,4 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="No_SalesHeader">
-          <DataField>No_SalesHeader</DataField>
-        </Field>
-        <Field Name="OrderDate_SalesHeader">
-          <DataField>OrderDate_SalesHeader</DataField>
-        </Field>
-        <Field Name="YourReference_SalesHeader">
-          <DataField>YourReference_SalesHeader</DataField>
-        </Field>
-        <Field Name="PaymentTermsCode_SalesHeader">
-          <DataField>PaymentTermsCode_SalesHeader</DataField>
-        </Field>
-        <Field Name="ReportTitleLbl">
-          <DataField>ReportTitleLbl</DataField>
-        </Field>
-        <Field Name="CompanyPicture">
-          <DataField>CompanyPicture</DataField>
-        </Field>
-        <Field Name="CompanyInfReportFooter">
-          <DataField>CompanyInfReportFooter</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="CompanyAddress">
-          <DataField>CompanyAddress</DataField>
-        </Field>
-        <Field Name="CompanyAddress2">
-          <DataField>CompanyAddress2</DataField>
-        </Field>
-        <Field Name="CompanyCity">
-          <DataField>CompanyCity</DataField>
-        </Field>
-        <Field Name="CompanyCounty">
-          <DataField>CompanyCounty</DataField>
-        </Field>
-        <Field Name="CompanyPhoneNo">
-          <DataField>CompanyPhoneNo</DataField>
-        </Field>
-        <Field Name="CompanyFaxNo">
-          <DataField>CompanyFaxNo</DataField>
-        </Field>
-        <Field Name="CompanyEmail">
-          <DataField>CompanyEmail</DataField>
-        </Field>
-        <Field Name="CompanyVatRegistration">
-          <DataField>CompanyVatRegistration</DataField>
-        </Field>
-        <Field Name="CurrencyCode_SalesHeader">
-          <DataField>CurrencyCode_SalesHeader</DataField>
-        </Field>
-        <Field Name="YardNo_SalesHeader">
-          <DataField>YardNo_SalesHeader</DataField>
-        </Field>
-        <Field Name="Cost_Center">
-          <DataField>Cost_Center</DataField>
-        </Field>
-        <Field Name="Sales_Manager">
-          <DataField>Sales_Manager</DataField>
-        </Field>
-        <Field Name="CustomerVATRegNo">
-          <DataField>CustomerVATRegNo</DataField>
-        </Field>
-        <Field Name="Sell_to_Contact">
-          <DataField>Sell_to_Contact</DataField>
-        </Field>
-        <Field Name="Job_No__S365">
-          <DataField>Job_No__S365</DataField>
-        </Field>
-        <Field Name="Quote_Type_S365">
-          <DataField>Quote_Type_S365</DataField>
-        </Field>
-        <Field Name="Type_SalesHeader">
-          <DataField>Type_SalesHeader</DataField>
-        </Field>
-        <Field Name="OPCOCustomer_SalesHeader">
-          <DataField>OPCOCustomer_SalesHeader</DataField>
-        </Field>
-        <Field Name="COSTReference_SalesHeader">
-          <DataField>COSTReference_SalesHeader</DataField>
-        </Field>
-        <Field Name="GLAccount_SalesHeader">
-          <DataField>GLAccount_SalesHeader</DataField>
-        </Field>
-        <Field Name="Budget_SalesHeader">
-          <DataField>Budget_SalesHeader</DataField>
-        </Field>
-        <Field Name="Budget_SalesHeaderFormat">
-          <DataField>Budget_SalesHeaderFormat</DataField>
-        </Field>
-        <Field Name="IncomingPO_SalesHeader">
-          <DataField>IncomingPO_SalesHeader</DataField>
-        </Field>
-        <Field Name="ServiceProviderNo_SalesHeader">
-          <DataField>ServiceProviderNo_SalesHeader</DataField>
-        </Field>
-        <Field Name="SalesAreaDirectorName_SalesHeader">
-          <DataField>SalesAreaDirectorName_SalesHeader</DataField>
-        </Field>
-        <Field Name="SalesDirectorAreaDirector_SalesHeader">
-          <DataField>SalesDirectorAreaDirector_SalesHeader</DataField>
-        </Field>
-        <Field Name="BankDetails_SalesHeader">
-          <DataField>BankDetails_SalesHeader</DataField>
-        </Field>
-        <Field Name="BankAccontName">
-          <DataField>BankAccontName</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-        <Field Name="SWIFTCode">
-          <DataField>SWIFTCode</DataField>
-        </Field>
-        <Field Name="BankAccountCurrency">
-          <DataField>BankAccountCurrency</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_Name">
-          <DataField>Sell_to_Customer_Name</DataField>
-        </Field>
-        <Field Name="Address">
-          <DataField>Address</DataField>
-        </Field>
-        <Field Name="No_SalesLine">
-          <DataField>No_SalesLine</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Quantity_SalesLine">
-          <DataField>Quantity_SalesLine</DataField>
-        </Field>
-        <Field Name="Quantity_SalesLineFormat">
-          <DataField>Quantity_SalesLineFormat</DataField>
-        </Field>
-        <Field Name="UnitofMeasureCode_SalesLine">
-          <DataField>UnitofMeasureCode_SalesLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_SalesLine">
-          <DataField>UnitPriceLCY_SalesLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_SalesLineFormat">
-          <DataField>UnitPriceLCY_SalesLineFormat</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="AmountIncludingVAT">
-          <DataField>AmountIncludingVAT</DataField>
-        </Field>
-        <Field Name="AmountIncludingVATFormat">
-          <DataField>AmountIncludingVATFormat</DataField>
-        </Field>
-        <Field Name="VATAmount">
-          <DataField>VATAmount</DataField>
-        </Field>
-        <Field Name="VATAmountFormat">
-          <DataField>VATAmountFormat</DataField>
-        </Field>
-        <Field Name="VAT__">
-          <DataField>VAT__</DataField>
-        </Field>
-        <Field Name="VAT__Format">
-          <DataField>VAT__Format</DataField>
-        </Field>
-        <Field Name="Currency_Code">
-          <DataField>Currency_Code</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
