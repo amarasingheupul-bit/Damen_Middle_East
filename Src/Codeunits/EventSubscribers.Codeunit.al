@@ -119,6 +119,18 @@ codeunit 50103 "4HC Event Subscribers"
                 end;
     end;
 
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnBeforeUpdateUnitCost, '', false, false)]
+    local procedure "Purchase Line_OnBeforeUpdateUnitCost"(var PurchaseLine: Record "Purchase Line"; xPurchaseLine: Record "Purchase Line"; CurrentFieldNo: Integer; var IsHandled: Boolean)
+    begin
+        IsHandled := true;
+    end;
+
+    [EventSubscriber(ObjectType::Page, Page::"Purchase Invoice", OnBeforePostDocument, '', false, false)]
+    local procedure "Purchase Invoice_OnBeforePostDocument"(var Sender: Page "Purchase Invoice"; var PurchaseHeader: Record "Purchase Header"; xPurchaseHeader: Record "Purchase Header"; PostingCodeunitID: Integer; var IsHandled: Boolean)
+    begin
+        if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
+            Error('You can not post without sales director approval.');
+    end;
 
     var
         PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';

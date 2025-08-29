@@ -97,6 +97,7 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Email Approval Status field.';
+                Editable = false;
             }
             field("SalesDirecotor Email"; Rec."SalesDirecotor Email")
             {
@@ -117,6 +118,25 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
         modify("Purchaser Code")
         {
             Caption = 'Sales Director Code';
+        }
+    }
+    actions
+    {
+        addafter(Approval)
+        {
+            action(ReopenEmailApprovalStatus)
+            {
+                ApplicationArea = All;
+                Caption = 'Reopen Email Approval';
+                ToolTip = 'Reopen the email approval process for this purchase invoice.';
+                Image = ReopenCancelled;
+                trigger OnAction()
+                begin
+                    Rec."Email Approval Status" := Rec."Email Approval Status"::Open;
+                    Rec.Modify();
+                    Message('Email approval process has been reopened for this purchase invoice.');
+                end;
+            }
         }
     }
 }

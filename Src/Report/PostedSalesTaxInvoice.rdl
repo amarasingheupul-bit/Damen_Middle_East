@@ -11,187 +11,6 @@
       <rd:DataSourceID>55f630da-85af-49c3-b07e-841bb85957f3</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="No_SalesHeader">
-          <DataField>No_SalesHeader</DataField>
-        </Field>
-        <Field Name="OrderDate_SalesHeader">
-          <DataField>OrderDate_SalesHeader</DataField>
-        </Field>
-        <Field Name="YourReference_SalesHeader">
-          <DataField>YourReference_SalesHeader</DataField>
-        </Field>
-        <Field Name="PaymentTermsCode_SalesHeader">
-          <DataField>PaymentTermsCode_SalesHeader</DataField>
-        </Field>
-        <Field Name="ReportTitleLbl">
-          <DataField>ReportTitleLbl</DataField>
-        </Field>
-        <Field Name="CompanyPicture">
-          <DataField>CompanyPicture</DataField>
-        </Field>
-        <Field Name="CompanyInfReportFooter">
-          <DataField>CompanyInfReportFooter</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="CompanyAddress">
-          <DataField>CompanyAddress</DataField>
-        </Field>
-        <Field Name="CompanyAddress2">
-          <DataField>CompanyAddress2</DataField>
-        </Field>
-        <Field Name="CompanyCity">
-          <DataField>CompanyCity</DataField>
-        </Field>
-        <Field Name="CompanyCounty">
-          <DataField>CompanyCounty</DataField>
-        </Field>
-        <Field Name="CompanyPhoneNo">
-          <DataField>CompanyPhoneNo</DataField>
-        </Field>
-        <Field Name="CompanyFaxNo">
-          <DataField>CompanyFaxNo</DataField>
-        </Field>
-        <Field Name="CompanyEmail">
-          <DataField>CompanyEmail</DataField>
-        </Field>
-        <Field Name="CompanyVatRegistration">
-          <DataField>CompanyVatRegistration</DataField>
-        </Field>
-        <Field Name="CurrencyCode_SalesHeader">
-          <DataField>CurrencyCode_SalesHeader</DataField>
-        </Field>
-        <Field Name="YardNo_SalesHeader">
-          <DataField>YardNo_SalesHeader</DataField>
-        </Field>
-        <Field Name="Cost_Center">
-          <DataField>Cost_Center</DataField>
-        </Field>
-        <Field Name="Sales_Manager">
-          <DataField>Sales_Manager</DataField>
-        </Field>
-        <Field Name="CustomerVATRegNo">
-          <DataField>CustomerVATRegNo</DataField>
-        </Field>
-        <Field Name="Sell_to_Contact">
-          <DataField>Sell_to_Contact</DataField>
-        </Field>
-        <Field Name="Job_No__S365">
-          <DataField>Job_No__S365</DataField>
-        </Field>
-        <Field Name="Quote_Type_S365">
-          <DataField>Quote_Type_S365</DataField>
-        </Field>
-        <Field Name="Type_SalesHeader">
-          <DataField>Type_SalesHeader</DataField>
-        </Field>
-        <Field Name="OPCOCustomer_SalesHeader">
-          <DataField>OPCOCustomer_SalesHeader</DataField>
-        </Field>
-        <Field Name="COSTReference_SalesHeader">
-          <DataField>COSTReference_SalesHeader</DataField>
-        </Field>
-        <Field Name="GLAccount_SalesHeader">
-          <DataField>GLAccount_SalesHeader</DataField>
-        </Field>
-        <Field Name="Budget_SalesHeader">
-          <DataField>Budget_SalesHeader</DataField>
-        </Field>
-        <Field Name="Budget_SalesHeaderFormat">
-          <DataField>Budget_SalesHeaderFormat</DataField>
-        </Field>
-        <Field Name="IncomingPO_SalesHeader">
-          <DataField>IncomingPO_SalesHeader</DataField>
-        </Field>
-        <Field Name="ServiceProviderNo_SalesHeader">
-          <DataField>ServiceProviderNo_SalesHeader</DataField>
-        </Field>
-        <Field Name="SalesAreaDirectorName_SalesHeader">
-          <DataField>SalesAreaDirectorName_SalesHeader</DataField>
-        </Field>
-        <Field Name="SalesDirectorAreaDirector_SalesHeader">
-          <DataField>SalesDirectorAreaDirector_SalesHeader</DataField>
-        </Field>
-        <Field Name="BankDetails_SalesHeader">
-          <DataField>BankDetails_SalesHeader</DataField>
-        </Field>
-        <Field Name="BankAccontName">
-          <DataField>BankAccontName</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-        <Field Name="SWIFTCode">
-          <DataField>SWIFTCode</DataField>
-        </Field>
-        <Field Name="BankAccountCurrency">
-          <DataField>BankAccountCurrency</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_Name">
-          <DataField>Sell_to_Customer_Name</DataField>
-        </Field>
-        <Field Name="Address">
-          <DataField>Address</DataField>
-        </Field>
-        <Field Name="No_SalesLine">
-          <DataField>No_SalesLine</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Quantity_SalesLine">
-          <DataField>Quantity_SalesLine</DataField>
-        </Field>
-        <Field Name="Quantity_SalesLineFormat">
-          <DataField>Quantity_SalesLineFormat</DataField>
-        </Field>
-        <Field Name="UnitofMeasureCode_SalesLine">
-          <DataField>UnitofMeasureCode_SalesLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_SalesLine">
-          <DataField>UnitPriceLCY_SalesLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_SalesLineFormat">
-          <DataField>UnitPriceLCY_SalesLineFormat</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="AmountIncludingVAT">
-          <DataField>AmountIncludingVAT</DataField>
-        </Field>
-        <Field Name="AmountIncludingVATFormat">
-          <DataField>AmountIncludingVATFormat</DataField>
-        </Field>
-        <Field Name="VATAmount">
-          <DataField>VATAmount</DataField>
-        </Field>
-        <Field Name="VATAmountFormat">
-          <DataField>VATAmountFormat</DataField>
-        </Field>
-        <Field Name="VAT__">
-          <DataField>VAT__</DataField>
-        </Field>
-        <Field Name="VAT__Format">
-          <DataField>VAT__Format</DataField>
-        </Field>
-        <Field Name="Currency_Code">
-          <DataField>Currency_Code</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -4560,12 +4379,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -4605,4 +4418,185 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_SalesHeader">
+          <DataField>No_SalesHeader</DataField>
+        </Field>
+        <Field Name="OrderDate_SalesHeader">
+          <DataField>OrderDate_SalesHeader</DataField>
+        </Field>
+        <Field Name="YourReference_SalesHeader">
+          <DataField>YourReference_SalesHeader</DataField>
+        </Field>
+        <Field Name="PaymentTermsCode_SalesHeader">
+          <DataField>PaymentTermsCode_SalesHeader</DataField>
+        </Field>
+        <Field Name="ReportTitleLbl">
+          <DataField>ReportTitleLbl</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyInfReportFooter">
+          <DataField>CompanyInfReportFooter</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyCounty">
+          <DataField>CompanyCounty</DataField>
+        </Field>
+        <Field Name="CompanyPhoneNo">
+          <DataField>CompanyPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyFaxNo">
+          <DataField>CompanyFaxNo</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyVatRegistration">
+          <DataField>CompanyVatRegistration</DataField>
+        </Field>
+        <Field Name="CurrencyCode_SalesHeader">
+          <DataField>CurrencyCode_SalesHeader</DataField>
+        </Field>
+        <Field Name="YardNo_SalesHeader">
+          <DataField>YardNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="Cost_Center">
+          <DataField>Cost_Center</DataField>
+        </Field>
+        <Field Name="Sales_Manager">
+          <DataField>Sales_Manager</DataField>
+        </Field>
+        <Field Name="CustomerVATRegNo">
+          <DataField>CustomerVATRegNo</DataField>
+        </Field>
+        <Field Name="Sell_to_Contact">
+          <DataField>Sell_to_Contact</DataField>
+        </Field>
+        <Field Name="Job_No__S365">
+          <DataField>Job_No__S365</DataField>
+        </Field>
+        <Field Name="Quote_Type_S365">
+          <DataField>Quote_Type_S365</DataField>
+        </Field>
+        <Field Name="Type_SalesHeader">
+          <DataField>Type_SalesHeader</DataField>
+        </Field>
+        <Field Name="OPCOCustomer_SalesHeader">
+          <DataField>OPCOCustomer_SalesHeader</DataField>
+        </Field>
+        <Field Name="COSTReference_SalesHeader">
+          <DataField>COSTReference_SalesHeader</DataField>
+        </Field>
+        <Field Name="GLAccount_SalesHeader">
+          <DataField>GLAccount_SalesHeader</DataField>
+        </Field>
+        <Field Name="Budget_SalesHeader">
+          <DataField>Budget_SalesHeader</DataField>
+        </Field>
+        <Field Name="Budget_SalesHeaderFormat">
+          <DataField>Budget_SalesHeaderFormat</DataField>
+        </Field>
+        <Field Name="IncomingPO_SalesHeader">
+          <DataField>IncomingPO_SalesHeader</DataField>
+        </Field>
+        <Field Name="ServiceProviderNo_SalesHeader">
+          <DataField>ServiceProviderNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="SalesAreaDirectorName_SalesHeader">
+          <DataField>SalesAreaDirectorName_SalesHeader</DataField>
+        </Field>
+        <Field Name="SalesDirectorAreaDirector_SalesHeader">
+          <DataField>SalesDirectorAreaDirector_SalesHeader</DataField>
+        </Field>
+        <Field Name="BankDetails_SalesHeader">
+          <DataField>BankDetails_SalesHeader</DataField>
+        </Field>
+        <Field Name="BankAccontName">
+          <DataField>BankAccontName</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+        <Field Name="SWIFTCode">
+          <DataField>SWIFTCode</DataField>
+        </Field>
+        <Field Name="BankAccountCurrency">
+          <DataField>BankAccountCurrency</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_Name">
+          <DataField>Sell_to_Customer_Name</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="No_SalesLine">
+          <DataField>No_SalesLine</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLine">
+          <DataField>Quantity_SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLineFormat">
+          <DataField>Quantity_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="UnitofMeasureCode_SalesLine">
+          <DataField>UnitofMeasureCode_SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_SalesLine">
+          <DataField>UnitPriceLCY_SalesLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_SalesLineFormat">
+          <DataField>UnitPriceLCY_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT">
+          <DataField>AmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="AmountIncludingVATFormat">
+          <DataField>AmountIncludingVATFormat</DataField>
+        </Field>
+        <Field Name="VATAmount">
+          <DataField>VATAmount</DataField>
+        </Field>
+        <Field Name="VATAmountFormat">
+          <DataField>VATAmountFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Currency_Code">
+          <DataField>Currency_Code</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

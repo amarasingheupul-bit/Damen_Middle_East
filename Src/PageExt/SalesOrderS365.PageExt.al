@@ -19,6 +19,7 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                 end;
             }
         }
+
         addafter(General)
         {
             group("New Fields S365")
