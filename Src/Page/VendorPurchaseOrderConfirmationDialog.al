@@ -15,29 +15,31 @@ page 50110 "Vendor Confirmation Dialog"
                 field("Vendor"; VendorCode)
                 {
                     ApplicationArea = All;
+                    Caption = 'Vendor';
+                    ToolTip = 'Specifies the vendor to whom the purchase order is sent.';
                     trigger OnLookup(var Text: Text): Boolean
                     var
                         VendorRec: Record Vendor;
                     begin
                         VendorRec.Reset();
-                        if Page.RunModal(Page::"Vendor Lookup", VendorRec) = Action::LookupOK then begin
+                        if Page.RunModal(Page::"Vendor Lookup", VendorRec) = Action::LookupOK then
                             VendorCode := VendorRec."No.";
-                        end;
                     end;
                 }
                 field("Open Purchase Orders"; OpenPurchaseOrder)
                 {
                     ApplicationArea = All;
+                    Caption = 'Open Purchase Orders';
+                    ToolTip = 'Select a purchase order to link to this job.';
                     trigger OnLookup(var Text: Text): Boolean
                     var
                         PurchaseOrderRec: Record "Purchase Header";
                     begin
                         PurchaseOrderRec.SetRange("Document Type", PurchaseOrderRec."Document Type"::Order);
                         PurchaseOrderRec.SetRange("Buy-from Vendor No.", VendorCode);
-                        PurchaseOrderRec.SetRange("Status", PurchaseOrderRec."Status"::Open);
-                        if Page.RunModal(Page::"Purchase List", PurchaseOrderRec) = Action::LookupOK then begin
+                        PurchaseOrderRec.SetFilter("Status", '%1|%2', PurchaseOrderRec."Status"::Open, PurchaseOrderRec."Status"::Released);
+                        if Page.RunModal(Page::"Purchase List", PurchaseOrderRec) = Action::LookupOK then
                             OpenPurchaseOrder := PurchaseOrderRec."No.";
-                        end;
                     end;
                 }
             }

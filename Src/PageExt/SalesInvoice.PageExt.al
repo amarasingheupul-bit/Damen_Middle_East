@@ -1,4 +1,4 @@
-pageextension 50107 SalesOrderS365 extends "Sales Order"
+pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
 {
     layout
     {
@@ -142,54 +142,6 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
                 }
-            }
-        }
-    }
-    actions
-    {
-        addlast(processing)
-        {
-            action("CreateJob S365")
-            {
-                Caption = 'Create Job';
-                Image = CreateJobSalesInvoice;
-                ToolTip = 'Create Job';
-                ApplicationArea = Suite;
-
-                // Visible = IsActionVisible;
-                trigger OnAction()
-                var
-                    Func: Codeunit "SQmodFunction S365";
-                begin
-                    Func.CreateJobFromTemplate(Rec);
-                end;
-            }
-            action(TaxInvoice)
-            {
-                Caption = 'Tax Invoice';
-                Image = TaxPayment;
-                ToolTip = 'Generates the Tax Invoice for the selected sales order.';
-
-                ApplicationArea = Suite;
-
-                trigger OnAction()
-                var
-                    SalesHeader: Record "Sales Header";
-                begin
-                    SalesHeader.Reset();
-                    SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::Order);
-                    SalesHeader.SetRange("No.", Rec."No.");
-                    Report.Run(Report::"4HC Tax Invoice", true, true, SalesHeader);
-                end;
-            }
-        }
-        addlast(Category_Process)
-        {
-            actionref("CreateJob_Promoted S365"; "createJob S365")
-            {
-            }
-            actionref(TaxInvoice_Promoted; TaxInvoice)
-            {
             }
         }
     }

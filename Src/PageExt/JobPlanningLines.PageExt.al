@@ -114,7 +114,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                     PurchaseHeader.Validate("Job TemplateS365", Project."Job TemplateS365");
                     PurchaseHeader.Validate("Sales Director/ Area Director", Project."Sales Director/ Area Director");
                     PurchaseHeader.Validate("Sales/ Area Director Name", Project."Sales/ Area Director Name");
-                    PurchaseHeader.Validate("Sales Secretary No.", Project."Sales Secretary No.");
+                    PurchaseHeader.Validate("External Approver 2 No.", Project."Sales Secretary No.");
                     PurchaseHeader.Validate("Sales Secretary Name", Project."Sales Secretary Name");
                     PurchaseHeader.Validate("Sales Contract No.", Project."Sales Contract No.");
                     PurchaseHeader.Validate("Sales Contract Desc", Project."Sales Contract Desc");
@@ -148,7 +148,11 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
 
     local procedure UpdateExisitingPurchaseLine(var PurchaseHeader: Record "Purchase Header")
     begin
-        this.CreatePurchaseLine(PurchaseHeader."No.", GetLastLineNo(PurchaseHeader."No."));
+        if PurchaseHeader.Status = PurchaseHeader.Status::Released then begin
+            PurchaseHeader.Status := PurchaseHeader.Status::Open;
+            PurchaseHeader.Modify();
+        end;
+        this.CreatePurchaseLine(PurchaseHeader."No.", this.GetLastLineNo(PurchaseHeader."No."));
     end;
 
     local procedure GetLastLineNo(DocumentNumber: Code[20]): Integer
@@ -200,6 +204,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 PurchaeLine.Validate("Job Line Amount", JobPlanningLine."Line Amount");
                 PurchaeLine.Validate("Job Unit Price", JobPlanningLine."Unit Price");
                 PurchaeLine.Validate("Job Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");
+                PurchaeLine.Validate("Direct Unit Cost", JobPlanningLine."Unit Cost");
                 PurchaeLine.Insert();
             until JobPlanningLine.Next() = 0;
     end;

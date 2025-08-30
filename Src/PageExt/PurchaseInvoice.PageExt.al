@@ -84,11 +84,14 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Cost Center field.';
                 }
-                field("Sales Secretary No."; Rec."Sales Secretary No.")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales Secretary No. field.', Comment = '%';
-                }
+            }
+        }
+        addafter("Purchaser Code")
+        {
+            field("Sales Secretary No."; Rec."External Approver 2 No.")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Sales Secretary No. field.';
             }
         }
         addlast(General)
@@ -98,16 +101,17 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Email Approval Status field.';
                 Editable = false;
+                Style = StrongAccent;
             }
-            field("SalesDirecotor Email"; Rec."SalesDirecotor Email")
+            field("SalesDirecotor Email"; Rec."External Approver 1 Email")
             {
                 ApplicationArea = All;
-                ToolTip = 'Specifies the value of the Sales Director Email field.', Comment = '%';
+                ToolTip = 'Specifies the value of the Sales Director Email field.';
             }
-            field("Sales Secretary Email"; Rec."Sales Secretary Email")
+            field("Sales Secretary Email"; Rec."External Approver 2 Email")
             {
                 ApplicationArea = All;
-                ToolTip = 'Specifies the value of the Sales Secretary Email field.', Comment = '%';
+                ToolTip = 'Specifies the value of the Sales Secretary Email field.';
             }
             field("Approval Rejection Reason"; Rec."Approval Rejection Reason")
             {
@@ -117,7 +121,7 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
         }
         modify("Purchaser Code")
         {
-            Caption = 'Sales Director Code';
+            Caption = 'Email Approver 1 No.';
         }
     }
     actions

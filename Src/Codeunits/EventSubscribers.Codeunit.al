@@ -74,31 +74,31 @@ codeunit 50103 "4HC Event Subscribers"
         end;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnBeforeSetStatusToPendingApproval, '', false, false)]
-    local procedure "Approvals Mgmt._OnBeforeSetStatusToPendingApproval"(var Variant: Variant)
-    var
-        PurchaseHeader: Record "Purchase Header";
-        ApprovalEntry: Record "Approval Entry";
-        RecRef: RecordRef;
-    begin
-        RecRef.GetTable(Variant);
-        case RecRef.Number of
-            database::"Purchase Header":
-                begin
-                    RecRef.SetTable(PurchaseHeader);
-                    if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Invoice then
-                        if PurchaseHeader.Status = PurchaseHeader.Status::Open then begin
-                            ApprovalEntry.SetRange("Record ID to Approve", PurchaseHeader.RecordId);
-                            ApprovalEntry.SetRange(Status, ApprovalEntry.Status::Approved);
-                            ApprovalEntry.SetRange("Sequence No.", 1);
-                            if not ApprovalEntry.IsEmpty() then
-                                PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
-                            RecRef.GetTable(PurchaseHeader);
-                            RecRef.SetTable(Variant);
-                        end;
-                end;
-        end;
-    end;
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnBeforeSetStatusToPendingApproval, '', false, false)]
+    // local procedure "Approvals Mgmt._OnBeforeSetStatusToPendingApproval"(var Variant: Variant)
+    // var
+    //     PurchaseHeader: Record "Purchase Header";
+    //     ApprovalEntry: Record "Approval Entry";
+    //     RecRef: RecordRef;
+    // begin
+    //     RecRef.GetTable(Variant);
+    //     case RecRef.Number of
+    //         database::"Purchase Header":
+    //             begin
+    //                 RecRef.SetTable(PurchaseHeader);
+    //                 if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Invoice then
+    //                     if PurchaseHeader.Status = PurchaseHeader.Status::Open then begin
+    //                         ApprovalEntry.SetRange("Record ID to Approve", PurchaseHeader.RecordId);
+    //                         ApprovalEntry.SetRange(Status, ApprovalEntry.Status::Approved);
+    //                         ApprovalEntry.SetRange("Sequence No.", 1);
+    //                         if not ApprovalEntry.IsEmpty() then
+    //                             PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
+    //                         RecRef.GetTable(PurchaseHeader);
+    //                         RecRef.SetTable(Variant);
+    //                     end;
+    //             end;
+    //     end;
+    // end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Purchase Document", OnReopenOnBeforePurchaseHeaderModify, '', false, false)]
     local procedure "Release Purchase Document_OnReopenOnBeforePurchaseHeaderModify"(var PurchaseHeader: Record "Purchase Header")
@@ -131,6 +131,39 @@ codeunit 50103 "4HC Event Subscribers"
         if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
             Error('You can not post without sales director approval.');
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnAfterCreateSalesLine, '', false, false)]
+    local procedure "Job Create-Invoice_OnAfterCreateSalesLine"(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header"; Job: Record Job; var JobPlanningLine: Record "Job Planning Line")
+    begin
+        SalesHeader.Validate("Change Reason S365", Job."Change Reason S365");
+        SalesHeader.Validate("Original Quote No. S365", Job."Original Quote No. S365");
+        SalesHeader.Validate("ConfirmedS365", Job."ConfirmedS365");
+        SalesHeader.Validate("Quote Status S365", Job."Quote Status S365");
+        SalesHeader.Validate("Job TemplateS365", Job."Job TemplateS365");
+        SalesHeader.Validate("Sales Director/ Area Director", Job."Sales Director/ Area Director");
+        SalesHeader.Validate("Sales/ Area Director Name", Job."Sales/ Area Director Name");
+        SalesHeader.Validate("Sales Secretary No.", Job."Sales Secretary No.");
+        SalesHeader.Validate("Sales Secretary Name", Job."Sales Secretary Name");
+        SalesHeader.Validate("Sales Contract No.", Job."Sales Contract No.");
+        SalesHeader.Validate("Sales Contract Desc", Job."Sales Contract Desc");
+        SalesHeader.Validate("Yard No.", Job."Yard No.");
+        SalesHeader.Validate("Milestones Dates and Amounts", Job."Milestones Dates and Amounts");
+        SalesHeader.Validate("End User/ Main Customer", Job."End User/ Main Customer");
+        SalesHeader.Validate("Supplier to Services", Job."Supplier to Services");
+        SalesHeader.Validate("Sales Area", Job."Sales Area");
+        SalesHeader.Validate("Cost Center", Job."Cost Center");
+        SalesHeader.Validate(Budget, Job.Budget);
+        SalesHeader.Validate("Service Provider No.", Job."Service Provider No.");
+        SalesHeader.Validate("Sales Manager", Job."Sales Manager");
+        SalesHeader.Validate("Bank Details", Job."Bank Details");
+        SalesHeader.Validate("4HC Type", Job."4HC Type");
+        SalesHeader.Validate("OPCO Customer", Job."OPCO Customer");
+        SalesHeader.Validate("COST Reference", Job."COST Reference");
+        SalesHeader.Validate("G/L Account", Job."G/L Account");
+        SalesHeader.Validate("Incoming PO", Job."Incoming PO");
+        SalesHeader.Modify();
+    end;
+
 
     var
         PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';

@@ -99,11 +99,6 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Original Quote No. field.';
                 }
-                field(ConfirmedS365; Rec.ConfirmedS365)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value for confirmed qoutes';
-                }
                 field("Quote Status S365"; Rec."Quote Status S365")
                 {
                     ApplicationArea = All;
@@ -119,7 +114,7 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Supplier to Services field.', Comment = '%';
                 }
-                field("Sales Secretary No."; Rec."Sales Secretary No.")
+                field("Sales Secretary No."; Rec."External Approver 2 No.")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Secretary No. field.', Comment = '%';

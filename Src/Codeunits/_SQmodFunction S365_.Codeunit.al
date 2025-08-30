@@ -185,7 +185,7 @@ codeunit 50101 "SQmodFunction S365"
             end;
     end;
 
-    local procedure CreateDimensionValues(JobNo: Code[20])
+    procedure CreateDimensionValues(JobNo: Code[20])
     var
         DimensionValue: Record "Dimension Value";
         GeneralLedgerSetup: Record "General Ledger Setup";
