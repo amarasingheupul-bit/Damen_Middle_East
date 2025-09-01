@@ -117,6 +117,9 @@ report 50103 "4HC Purchase Order"
             column(QuoteType_PurchaseHeader; "Quote Type")
             {
             }
+            column(G_L_Account; "G/L Account")
+            {
+            }
             column(SwiftCode; BankAccount."SWIFT Code")
             {
             }
@@ -167,9 +170,13 @@ report 50103 "4HC Purchase Order"
                 end;
             }
             trigger OnAfterGetRecord()
+            var
+                Vendor: Record Vendor;
             begin
                 if this.Contact.Get("Buy-from Contact No.") then;
-                this.Address := this.CompanyInformation.Address + ' ' + this.CompanyInformation."Address 2" + ' ' + this.CompanyInformation.City + ' ' + this.CompanyInformation.County;
+
+                Vendor.Get("Buy-from Vendor No.");
+                this.Address := Vendor.Address + ' ' + Vendor."Address 2" + ' ' + Vendor.City + ' ' + Vendor.County;
 
                 if "Gen. Bus. Posting Group" = 'UAE' then
                     this.TRNLeft := "VAT Registration No."
