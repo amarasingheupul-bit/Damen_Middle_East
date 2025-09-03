@@ -142,6 +142,11 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
                 }
+                field("Bank Details"; Rec."Bank Details")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Bank Details field.';
+                }
             }
         }
     }

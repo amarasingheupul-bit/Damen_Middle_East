@@ -129,6 +129,11 @@ pageextension 50126 "4HC Posted Sales Invoice" extends "Posted Sales Invoice"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
                 }
+                field("Bank Details"; Rec."Bank Details")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Bank Details field.';
+                }
             }
         }
     }

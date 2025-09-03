@@ -3,7 +3,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
     Caption = 'Tax Invoice';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    DefaultRenderingLayout = SalesOrderLayout;
+    DefaultRenderingLayout = PostedTaxInvoice;
 
     dataset
     {
@@ -169,11 +169,14 @@ report 50100 "4HC Posted Sales Tax Invoice"
                 end;
             }
             trigger OnAfterGetRecord()
+            var
+                Country: Record "Country/Region";
             begin
                 this.Customer.Get("Sell-to Customer No.");
-                if this.BankAccont.Get("Company Bank Account Code") then;
-
-                this.Address := "Sell-to Address" + ' ' + "Sell-to Address 2" + ' ' + "Sell-to City" + ' ' + "Sell-to County" + ' ' + "Sell-to Post Code" + ' ' + "Sell-to Country/Region Code";
+                if this.BankAccont.Get("Bank Details") then;
+                Country.Reset();
+                if Country.Get("Sell-to Country/Region Code") then;
+                this.Address := "Sell-to Address" + ' ' + "Sell-to Address 2" + ' ' + "Sell-to City" + ' ' + "Sell-to County" + ' ' + "Sell-to Post Code" + ' ' + Country.Name;
             end;
         }
     }
@@ -193,7 +196,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
 
     rendering
     {
-        layout(SalesOrderLayout)
+        layout(PostedTaxInvoice)
         {
             Type = RDLC;
             LayoutFile = 'Src\Report\PostedSalesTaxInvoice.rdl';
