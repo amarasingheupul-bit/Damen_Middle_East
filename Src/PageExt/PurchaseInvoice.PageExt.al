@@ -79,11 +79,6 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Bank Details field.';
                 }
-                field("Cost Center"; Rec."Cost Center")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Cost Center field.';
-                }
             }
         }
         addafter("Purchaser Code")

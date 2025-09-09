@@ -67,7 +67,7 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
                 field("Sales Derector/ Area Director"; Rec."Sales Director/ Area Director")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales Derector/ Area Director field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Sales Derector/ Area Director field.';
                 }
                 field("Sales/ Area Director Name"; Rec."Sales/ Area Director Name")
                 {
@@ -83,11 +83,6 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Bank Details field.';
-                }
-                field("Cost Center"; Rec."Cost Center")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Cost Center field.';
                 }
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {
@@ -107,58 +102,51 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
                 field("End User/ Main Customer"; Rec."End User/ Main Customer")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the End User field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the End User field.';
                 }
                 field("Supplier to Services"; Rec."Supplier to Services")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Supplier to Services field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Supplier to Services field.';
                 }
                 field("Sales Secretary No."; Rec."External Approver 2 No.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales Secretary No. field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Sales Secretary No. field.';
                 }
                 field("Sales Secretary Name"; Rec."Sales Secretary Name")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales Secretary Name field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Sales Secretary Name field.';
                 }
                 field("Sales Area"; Rec."Sales Area")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales Area field.', Comment = '%';
-                }
-                field("4HC Type"; Rec."4HC Type")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Type field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Sales Area field.';
                 }
                 field("G/L Account"; Rec."G/L Account")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the G/L Account field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the G/L Account field.';
                 }
                 field("Incoming PO"; Rec."Incoming PO")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Incoming PO field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Incoming PO field.';
                 }
                 field("OPCO Customer"; Rec."OPCO Customer")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the OPCO Customer field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the OPCO Customer field.';
                 }
                 field("Sales Manager"; Rec."Sales Manager")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Sales Manager field.';
                 }
             }
-
         }
     }
-
 
     actions
     {

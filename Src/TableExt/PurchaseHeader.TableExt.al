@@ -233,5 +233,10 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
         {
             Caption = 'Incoming PO';
         }
+        field(50139; "Sales Order No. 4HC"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Sales Order No.';
+        }
     }
 }

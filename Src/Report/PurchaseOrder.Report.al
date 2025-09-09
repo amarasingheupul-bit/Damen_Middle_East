@@ -102,9 +102,6 @@ report 50103 "4HC Purchase Order"
             column(BankDetailsS365_PurchaseHeader; "Bank Details")
             {
             }
-            column(CostCenter_PurchaseHeader; "Cost Center")
-            {
-            }
             column(SalesManager_PurchaseHeader; "Sales Manager")
             {
             }
@@ -130,6 +127,9 @@ report 50103 "4HC Purchase Order"
             {
             }
             column(IBAN; BankAccount.IBAN)
+            {
+            }
+            column(Sales_Area; "Sales Area")
             {
             }
             dataitem(PurchaseLine; "Purchase Line")

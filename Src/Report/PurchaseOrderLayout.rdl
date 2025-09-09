@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-09-04T12:43:09.0818086Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-09-09T16:34:25.0756160Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -24,6 +24,193 @@
       <rd:DataSourceID>55f630da-85af-49c3-b07e-841bb85957f3</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="No_PurchaseHeader">
+          <DataField>No_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="OrderDate_PurchaseHeader">
+          <DataField>OrderDate_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVendorNo_PurchaseHeader">
+          <DataField>BuyfromVendorNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVendorName_PurchaseHeader">
+          <DataField>BuyfromVendorName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromAddress2_PurchaseHeader">
+          <DataField>BuyfromAddress2_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromAddress_PurchaseHeader">
+          <DataField>BuyfromAddress_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCounty_PurchaseHeader">
+          <DataField>BuyfromCounty_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCity_PurchaseHeader">
+          <DataField>BuyfromCity_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="YourReference_PurchaseHeader">
+          <DataField>YourReference_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="PaymentTermsCode_PurchaseHeader">
+          <DataField>PaymentTermsCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="ReportTitleLbl">
+          <DataField>ReportTitleLbl</DataField>
+        </Field>
+        <Field Name="HeaderLbl">
+          <DataField>HeaderLbl</DataField>
+        </Field>
+        <Field Name="BodyLbl">
+          <DataField>BodyLbl</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyInfReportFooter">
+          <DataField>CompanyInfReportFooter</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyPhoneNo">
+          <DataField>CompanyPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyFaxNo">
+          <DataField>CompanyFaxNo</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyVatRegistration">
+          <DataField>CompanyVatRegistration</DataField>
+        </Field>
+        <Field Name="CurrencyCode_PurchaseHeader">
+          <DataField>CurrencyCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CommissionAmount_PurchaseHeader">
+          <DataField>CommissionAmount_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CommissionAmount_PurchaseHeaderFormat">
+          <DataField>CommissionAmount_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="OPCOComProjectNo_PurchaseHeader">
+          <DataField>OPCOComProjectNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="YardNo_PurchaseHeader">
+          <DataField>YardNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="VesselType_PurchaseHeader">
+          <DataField>VesselType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CostReference_PurchaseHeader">
+          <DataField>CostReference_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="ContactName">
+          <DataField>ContactName</DataField>
+        </Field>
+        <Field Name="TRNLeft">
+          <DataField>TRNLeft</DataField>
+        </Field>
+        <Field Name="Budget_PurchaseHeader">
+          <DataField>Budget_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="Budget_PurchaseHeaderFormat">
+          <DataField>Budget_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="BankDetailsS365_PurchaseHeader">
+          <DataField>BankDetailsS365_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SalesManager_PurchaseHeader">
+          <DataField>SalesManager_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SalesProviderNo_PurchaseHeader">
+          <DataField>SalesProviderNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SalesAreaDirectorName_PurchaseHeader">
+          <DataField>SalesAreaDirectorName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="QuoteType_PurchaseHeader">
+          <DataField>QuoteType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="G_L_Account">
+          <DataField>G_L_Account</DataField>
+        </Field>
+        <Field Name="SwiftCode">
+          <DataField>SwiftCode</DataField>
+        </Field>
+        <Field Name="Currency">
+          <DataField>Currency</DataField>
+        </Field>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+        <Field Name="Sales_Area">
+          <DataField>Sales_Area</DataField>
+        </Field>
+        <Field Name="No_PurchaseLine">
+          <DataField>No_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLine">
+          <DataField>Quantity_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLineFormat">
+          <DataField>Quantity_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="UnitofMeasureCode_PurchaseLine">
+          <DataField>UnitofMeasureCode_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_PurchaseLine">
+          <DataField>UnitPriceLCY_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_PurchaseLineFormat">
+          <DataField>UnitPriceLCY_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT">
+          <DataField>AmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="AmountIncludingVATFormat">
+          <DataField>AmountIncludingVATFormat</DataField>
+        </Field>
+        <Field Name="VATAmount">
+          <DataField>VATAmount</DataField>
+        </Field>
+        <Field Name="VATAmountFormat">
+          <DataField>VATAmountFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Currency_Code">
+          <DataField>Currency_Code</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -786,6 +973,112 @@
                     </TablixCell>
                   </TablixCells>
                 </TablixRow>
+                <TablixRow>
+                  <Height>0.23622in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Sales Area</Value>
+                                  <Style>
+                                    <FontStyle>Normal</FontStyle>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <TextDecoration>None</TextDecoration>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox8">
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Sales_Area">
+                          <rd:DefaultName>Sales_Area</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Sales_Area.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
@@ -804,12 +1097,13 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0.11564in</Top>
             <Left>4.51611in</Left>
-            <Height>1.73622in</Height>
+            <Height>1.97244in</Height>
             <Width>3.11708in</Width>
             <Style>
               <Border>
@@ -3567,7 +3861,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Commission Project Invoice</Value>
+                                  <Value>Sales Order No.</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3601,7 +3895,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CommissionAmount_PurchaseHeader.Value</Value>
+                                  <Value />
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3612,78 +3906,6 @@
                               <Style>
                                 <TextAlign>Left</TextAlign>
                               </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.23622in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox29">
-                          <rd:DefaultName>Textbox29</rd:DefaultName>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Cost Center</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="CostCenter_PurchaseHeader">
-                          <rd:DefaultName>CostCenter_PurchaseHeader</rd:DefaultName>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!CostCenter_PurchaseHeader.Value</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <Style>
@@ -3865,7 +4087,6 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
                 <TablixMember>
                   <Visibility>
                     <Hidden>true</Hidden>
@@ -3876,7 +4097,7 @@
             <DataSetName>DataSet_Result</DataSetName>
             <Top>1.35186in</Top>
             <Left>0.03917in</Left>
-            <Height>2.1811in</Height>
+            <Height>1.94488in</Height>
             <Width>4.22843in</Width>
             <ZIndex>3</ZIndex>
             <Style>
@@ -4219,7 +4440,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>0.29373cm</Top>
             <Left>11.2022cm</Left>
-            <Height>4.40999cm</Height>
+            <Height>5.04499cm</Height>
             <Width>0.02646cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
@@ -4462,6 +4683,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -4499,191 +4726,4 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="No_PurchaseHeader">
-          <DataField>No_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="OrderDate_PurchaseHeader">
-          <DataField>OrderDate_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromVendorNo_PurchaseHeader">
-          <DataField>BuyfromVendorNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromVendorName_PurchaseHeader">
-          <DataField>BuyfromVendorName_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromAddress2_PurchaseHeader">
-          <DataField>BuyfromAddress2_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromAddress_PurchaseHeader">
-          <DataField>BuyfromAddress_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromCounty_PurchaseHeader">
-          <DataField>BuyfromCounty_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromCity_PurchaseHeader">
-          <DataField>BuyfromCity_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="YourReference_PurchaseHeader">
-          <DataField>YourReference_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="PaymentTermsCode_PurchaseHeader">
-          <DataField>PaymentTermsCode_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="ReportTitleLbl">
-          <DataField>ReportTitleLbl</DataField>
-        </Field>
-        <Field Name="HeaderLbl">
-          <DataField>HeaderLbl</DataField>
-        </Field>
-        <Field Name="BodyLbl">
-          <DataField>BodyLbl</DataField>
-        </Field>
-        <Field Name="CompanyPicture">
-          <DataField>CompanyPicture</DataField>
-        </Field>
-        <Field Name="CompanyInfReportFooter">
-          <DataField>CompanyInfReportFooter</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="CompanyPhoneNo">
-          <DataField>CompanyPhoneNo</DataField>
-        </Field>
-        <Field Name="CompanyFaxNo">
-          <DataField>CompanyFaxNo</DataField>
-        </Field>
-        <Field Name="CompanyEmail">
-          <DataField>CompanyEmail</DataField>
-        </Field>
-        <Field Name="CompanyVatRegistration">
-          <DataField>CompanyVatRegistration</DataField>
-        </Field>
-        <Field Name="CurrencyCode_PurchaseHeader">
-          <DataField>CurrencyCode_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CommissionAmount_PurchaseHeader">
-          <DataField>CommissionAmount_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CommissionAmount_PurchaseHeaderFormat">
-          <DataField>CommissionAmount_PurchaseHeaderFormat</DataField>
-        </Field>
-        <Field Name="OPCOComProjectNo_PurchaseHeader">
-          <DataField>OPCOComProjectNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="YardNo_PurchaseHeader">
-          <DataField>YardNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="VesselType_PurchaseHeader">
-          <DataField>VesselType_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CostReference_PurchaseHeader">
-          <DataField>CostReference_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="Address">
-          <DataField>Address</DataField>
-        </Field>
-        <Field Name="ContactName">
-          <DataField>ContactName</DataField>
-        </Field>
-        <Field Name="TRNLeft">
-          <DataField>TRNLeft</DataField>
-        </Field>
-        <Field Name="Budget_PurchaseHeader">
-          <DataField>Budget_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="Budget_PurchaseHeaderFormat">
-          <DataField>Budget_PurchaseHeaderFormat</DataField>
-        </Field>
-        <Field Name="BankDetailsS365_PurchaseHeader">
-          <DataField>BankDetailsS365_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CostCenter_PurchaseHeader">
-          <DataField>CostCenter_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesManager_PurchaseHeader">
-          <DataField>SalesManager_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesProviderNo_PurchaseHeader">
-          <DataField>SalesProviderNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesAreaDirectorName_PurchaseHeader">
-          <DataField>SalesAreaDirectorName_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="QuoteType_PurchaseHeader">
-          <DataField>QuoteType_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="G_L_Account">
-          <DataField>G_L_Account</DataField>
-        </Field>
-        <Field Name="SwiftCode">
-          <DataField>SwiftCode</DataField>
-        </Field>
-        <Field Name="Currency">
-          <DataField>Currency</DataField>
-        </Field>
-        <Field Name="BankName">
-          <DataField>BankName</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-        <Field Name="No_PurchaseLine">
-          <DataField>No_PurchaseLine</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Quantity_PurchaseLine">
-          <DataField>Quantity_PurchaseLine</DataField>
-        </Field>
-        <Field Name="Quantity_PurchaseLineFormat">
-          <DataField>Quantity_PurchaseLineFormat</DataField>
-        </Field>
-        <Field Name="UnitofMeasureCode_PurchaseLine">
-          <DataField>UnitofMeasureCode_PurchaseLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_PurchaseLine">
-          <DataField>UnitPriceLCY_PurchaseLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_PurchaseLineFormat">
-          <DataField>UnitPriceLCY_PurchaseLineFormat</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="AmountIncludingVAT">
-          <DataField>AmountIncludingVAT</DataField>
-        </Field>
-        <Field Name="AmountIncludingVATFormat">
-          <DataField>AmountIncludingVATFormat</DataField>
-        </Field>
-        <Field Name="VATAmount">
-          <DataField>VATAmount</DataField>
-        </Field>
-        <Field Name="VATAmountFormat">
-          <DataField>VATAmountFormat</DataField>
-        </Field>
-        <Field Name="VAT__">
-          <DataField>VAT__</DataField>
-        </Field>
-        <Field Name="VAT__Format">
-          <DataField>VAT__Format</DataField>
-        </Field>
-        <Field Name="Currency_Code">
-          <DataField>Currency_Code</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
