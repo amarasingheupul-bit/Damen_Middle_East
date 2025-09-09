@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-09-09T16:34:25.0756160Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-09-09T16:48:15.5918560Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -145,6 +145,9 @@
         <Field Name="G_L_Account">
           <DataField>G_L_Account</DataField>
         </Field>
+        <Field Name="OPCOCustomer_PurchaseHeader">
+          <DataField>OPCOCustomer_PurchaseHeader</DataField>
+        </Field>
         <Field Name="SwiftCode">
           <DataField>SwiftCode</DataField>
         </Field>
@@ -159,6 +162,9 @@
         </Field>
         <Field Name="Sales_Area">
           <DataField>Sales_Area</DataField>
+        </Field>
+        <Field Name="Sales_Order_No__4HC">
+          <DataField>Sales_Order_No__4HC</DataField>
         </Field>
         <Field Name="No_PurchaseLine">
           <DataField>No_PurchaseLine</DataField>
@@ -1442,34 +1448,34 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.36734cm</Width>
+                  <Width>1.36237cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>4.06828cm</Width>
+                  <Width>4.06331cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.21266cm</Width>
+                  <Width>1.20769cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.77609cm</Width>
+                  <Width>1.77112cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.20387cm</Width>
+                  <Width>1.1989cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.60042cm</Width>
+                  <Width>1.59545cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.09493cm</Width>
+                  <Width>2.08996cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.6436cm</Width>
+                  <Width>1.63863cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.94438cm</Width>
+                  <Width>1.93941cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.47673cm</Width>
+                  <Width>2.47176cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -3467,9 +3473,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>9.50594cm</Top>
+            <Top>9.06144cm</Top>
+            <Left>0.04973cm</Left>
             <Height>2.41791cm</Height>
-            <Width>19.3883cm</Width>
+            <Width>19.33857cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -3679,7 +3686,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!OPCOCustomer_PurchaseHeader.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3887,15 +3894,15 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CommissionAmount_PurchaseHeader">
-                          <rd:DefaultName>CommissionAmount_PurchaseHeader</rd:DefaultName>
+                        <Textbox Name="Sales_Order_No__4HC">
+                          <rd:DefaultName>Sales_Order_No__4HC</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Sales_Order_No__4HC.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4422,7 +4429,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>4.97582in</Top>
+            <Top>4.80082in</Top>
             <Left>0.025in</Left>
             <Height>1in</Height>
             <Width>3.69792in</Width>
@@ -4478,7 +4485,8 @@
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <Top>17.18592cm</Top>
+            <Top>16.13817cm</Top>
+            <Left>0.03175cm</Left>
             <Height>1.5525cm</Height>
             <Width>16.86183cm</Width>
             <ZIndex>6</ZIndex>
@@ -4493,7 +4501,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>18.91481cm</Height>
+        <Height>18.08931cm</Height>
         <Style />
       </Body>
       <Width>19.43802cm</Width>

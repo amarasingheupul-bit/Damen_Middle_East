@@ -135,6 +135,9 @@ report 50103 "4HC Purchase Order"
             column(Sales_Area; "Sales Area")
             {
             }
+            column(Sales_Order_No__4HC; "Sales Order No. 4HC")
+            {
+            }
             dataitem(PurchaseLine; "Purchase Line")
             {
                 DataItemLink = "Document No." = field("No.");
