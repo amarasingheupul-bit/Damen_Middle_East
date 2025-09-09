@@ -19,6 +19,7 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                 end;
             }
         }
+
         addafter(General)
         {
             group("New Fields S365")
@@ -26,29 +27,26 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
 
-                field("Place of Receipt S365"; Rec."Origin S365")
+                field("Quote Type S365"; Rec."Quote Type S365")
                 {
-                    Caption = 'Place of Receipt';
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Place of Receipt field.';
+                    ToolTip = 'Specifies the value of the Quote Type field.';
+                    TableRelation = "Quote Type S365"."Code S365";
                 }
-                field("Place of Delivery S365"; Rec."Destination S365")
+                field("Change Reason S365"; Rec."Change Reason S365")
                 {
-                    Caption = 'Place of Delivery';
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Place of Delivery field.';
+                    ToolTip = 'Specifies the value of the Change Reason field.';
                 }
-                field("ETD S365"; Rec."ETD S365")
+                field("Original Quote No. S365"; Rec."Original Quote No. S365")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the ETD field.';
-                    Visible = false;
+                    ToolTip = 'Specifies the value of the Original Quote No. field.';
                 }
-                field("ETA S365"; Rec."ETA S365")
+                field("Quote Status S365"; Rec."Quote Status S365")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the ETA field.';
-                    Visible = false;
+                    ToolTip = 'Specifies the value of the Quote Status field.';
                 }
                 field("Shipment Method Code S365"; Rec."Shipment Method Code")
                 {
@@ -57,43 +55,26 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                     ToolTip = 'Specifies the value of the Incoterms field.';
                     Visible = false;
                 }
-                field("MAWB No. S365"; Rec."MAWB No. S365")
+                field("End User/ Main Customer"; Rec."End User/ Main Customer")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the MAWB No. field.';
-                    Visible = false;
+                    ToolTip = 'Specifies the value of the End User field.', Comment = '%';
                 }
-                field("MAWB Date S365"; Rec."MAWB Date S365")
+                field("Supplier to Services"; Rec."Supplier to Services")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the MAWB Date field.';
-                    Visible = false;
+                    ToolTip = 'Specifies the value of the Supplier to Services field.', Comment = '%';
                 }
-                field("Cross Trade S365"; Rec."Cross Trade S365")
+
+                field("Sales Derector/ Area Director"; Rec."Sales Director/ Area Director")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Cross Trade field.';
-                    Visible = false;
-                }
-                field("Container No. S365"; Rec."Container No. S365")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Container No. field.';
-                    Visible = false;
-                }
-                field("Remarks S365"; Rec."Remarks S365")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Remarks field.';
-                }
-                field("Sales Derector/ Area Director"; Rec."Sales Derector/ Area Director")
-                {
-                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Derector/ Area Director field.', Comment = '%';
                 }
                 field("Sales/ Area Director Name"; Rec."Sales/ Area Director Name")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Sales/ Area Director Name field.';
+                    ToolTip = 'Specifies the value of the Sales/ Area Director Name field.', Comment = '%';
                     Editable = false;
                 }
                 field("Sales Secretary No."; Rec."Sales Secretary No.")
@@ -106,33 +87,65 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Secretary Name field.', Comment = '%';
                 }
-                field("Sales Contract No."; Rec."Sales Contract No.")
-                {
-                    ApplicationArea = All;
-                }
-                field("Sales Contract Desc"; Rec."Sales Contract Desc")
-                {
-                    ApplicationArea = All;
-                }
                 field("Yard No."; Rec."Yard No.")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Yard No. field.', Comment = '%';
                 }
                 field("Milestones Dates and Amounts"; Rec."Milestones Dates and Amounts")
                 {
                     ApplicationArea = All;
-                }
-                field("End User/ Main Customer"; Rec."End User/ Main Customer")
-                {
-                    ApplicationArea = All;
-                }
-                field("Supplier to Services"; Rec."Supplier to Services")
-                {
-                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Milestones with Dates and Amounts field.', Comment = '%';
                 }
                 field("Sales Area"; Rec."Sales Area")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Area field.', Comment = '%';
+                }
+                field("4HC Type"; Rec."4HC Type")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Type field.', Comment = '%';
+                }
+                field("COST Reference"; Rec."COST Reference")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the COST Reference field.', Comment = '%';
+                }
+                field("Cost Center"; Rec."Cost Center")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Cost Center field.', Comment = '%';
+                }
+                field(Budget; Rec.Budget)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Budget field.', Comment = '%';
+                }
+                field("G/L Account"; Rec."G/L Account")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the G/L Account field.', Comment = '%';
+                }
+                field("Incoming PO"; Rec."Incoming PO")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Incoming PO field.', Comment = '%';
+                }
+                field("OPCO Customer"; Rec."OPCO Customer")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the OPCO Customer field.', Comment = '%';
+                }
+                field("Sales Manager"; Rec."Sales Manager")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
+                }
+                field("Bank Details"; Rec."Bank Details")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Bank Details field.';
                 }
             }
         }
@@ -185,12 +198,4 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
             }
         }
     }
-    trigger OnOpenPage()
-    begin
-        IsActionVisible := false;
-        if Rec."Job TemplateS365" <> '' then IsActionVisible := true;
-    end;
-
-    var
-        IsActionVisible: Boolean;
 }

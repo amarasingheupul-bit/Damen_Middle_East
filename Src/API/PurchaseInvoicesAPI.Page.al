@@ -471,16 +471,6 @@ page 50109 "4HC Purchase Invoices API"
                         RegisterFieldSet(Rec.FieldNo("Email Approval Status"));
                     end;
                 }
-                field(salespersonEmail; Rec."SalesPerson Email")
-                {
-                    Caption = 'SalesPerson Email';
-                    Editable = false;
-
-                    trigger OnValidate()
-                    begin
-                        RegisterFieldSet(Rec.FieldNo("SalesPerson Email"));
-                    end;
-                }
                 field(approvalRejectReason; Rec."Approval Rejection Reason")
                 {
                     Caption = 'Approval Rejection Reason';
@@ -520,6 +510,18 @@ page 50109 "4HC Purchase Invoices API"
                 field(vesselType; Rec."Vessel Type")
                 {
                     Caption = 'Vessel Type';
+                }
+                field(externalApprover2No; Rec."External Approver 2 No.")
+                {
+                    Caption = 'External Approver 2 No.';
+                }
+                field(externalApprover1Email; Rec."External Approver 1 Email")
+                {
+                    Caption = 'External Approver 1 Email';
+                }
+                field(externalApprover2Email; Rec."External Approver 2 Email")
+                {
+                    Caption = 'External Approver 2 Email';
                 }
                 field(lastModifiedDateTime; Rec.SystemModifiedAt)
                 {

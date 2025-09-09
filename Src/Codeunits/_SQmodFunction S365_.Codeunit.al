@@ -28,7 +28,6 @@ codeunit 50101 "SQmodFunction S365"
         ExactCostReversingMandatory := SalesSetup."Exact Cost Reversing Mandatory";
         CopyDocumentMgt.SetProperties(true, false, false, false, false, ExactCostReversingMandatory, false);
         CopyDocumentMgt.CopySalesDoc(Rec."Document Type", Rec."No.", SalesHeader);
-        SalesHeader."Printed or Email S365" := false;
         if Rec."Original Quote No. S365" <> '' then
             SalesHeader."Original Quote No. S365" := Rec."Original Quote No. S365"
         else
@@ -137,7 +136,7 @@ codeunit 50101 "SQmodFunction S365"
         Source: Option "Job Planning Lines","Job Ledger Entries","None";
         PlanningLineType: Option "Budget+Billable",Budget,Billable;
         LedgerEntryType: Option "Usage+Sale",Usage,Sale;
-        JobCreateMsg: Label 'Job has been created';
+        JobCreateMsg: Label 'Job %1 has been created', Comment = '%1=JobNo';
     begin
         Jobs.SetRange("Use as TemplateS365", true);
         if Page.RunModal(Page::ProjectTemplateS365, Jobs) = Action::LookupOK then
@@ -148,19 +147,58 @@ codeunit 50101 "SQmodFunction S365"
                 job.Description := Rec."No." + '-' + Rec."Sell-to Customer Name";
                 job.Validate("Sell-to Customer No.", Rec."Sell-to Customer No.");
                 Job.Validate("Project Manager", CopyfromJob."Project Manager");
+                // ...Copy SO code...
+                Job.Validate("Change Reason S365", Rec."Change Reason S365");
+                Job.Validate("Original Quote No. S365", Rec."Quote No.");
+                Job.Validate("ConfirmedS365", Rec."ConfirmedS365");
+                Job.Validate("Quote Status S365", Rec."Quote Status S365");
+                Job.Validate("Job TemplateS365", Rec."Job TemplateS365");
+                Job.Validate("Sales Director/ Area Director", Rec."Sales Director/ Area Director");
+                Job.Validate("Sales/ Area Director Name", Rec."Sales/ Area Director Name");
+                Job.Validate("Sales Secretary No.", Rec."Sales Secretary No.");
+                Job.Validate("Sales Secretary Name", Rec."Sales Secretary Name");
+                Job.Validate("Sales Contract No.", Rec."Sales Contract No.");
+                Job.Validate("Sales Contract Desc", Rec."Sales Contract Desc");
+                Job.Validate("Yard No.", Rec."Yard No.");
+                Job.Validate("Milestones Dates and Amounts", Rec."Milestones Dates and Amounts");
+                Job.Validate("End User/ Main Customer", Rec."End User/ Main Customer");
+                Job.Validate("Supplier to Services", Rec."Supplier to Services");
+                Job.Validate("Sales Area", Rec."Sales Area");
+                Job.Validate("Cost Center", Rec."Cost Center");
+                Job.Validate(Budget, Rec.Budget);
+                Job.Validate("Service Provider No.", Rec."Service Provider No.");
+                Job.Validate("Sales Manager", Rec."Sales Manager");
+                Job.Validate("Bank Details", Rec."Bank Details");
+                Job.Validate("4HC Type", Rec."4HC Type");
+                Job.Validate("OPCO Customer", Rec."OPCO Customer");
+                Job.Validate("COST Reference", Rec."COST Reference");
+                Job.Validate("G/L Account", Rec."G/L Account");
+                Job.Validate("Incoming PO", Rec."Incoming PO");
+                // ...Copy SO code...
                 Job.Insert(true);
                 CopyJob.SetCopyOptions(false, false, false, Source::"Job Planning Lines", PlanningLineType, LedgerEntryType::"Usage+Sale");
                 CopyJob.CopyJobTasks(CopyfromJob, job);
                 Rec."Job No. S365" := Job."No.";
                 Rec.Modify();
-                Message(JobCreateMsg);
+                CreateDimensionValues(Job."No.");
+                Message(JobCreateMsg, Job."No.");
             end;
     end;
 
-    procedure MyProcedure()
+    procedure CreateDimensionValues(JobNo: Code[20])
     var
-        myInt: Integer;
+        DimensionValue: Record "Dimension Value";
+        GeneralLedgerSetup: Record "General Ledger Setup";
     begin
+        GeneralLedgerSetup.Get();
+        if not DimensionValue.Get(GeneralLedgerSetup."Shortcut Dimension 1 Code", JobNo) then begin
+            DimensionValue.Init();
+            DimensionValue.Validate("Dimension Code", GeneralLedgerSetup."Shortcut Dimension 1 Code");
+            DimensionValue."Global Dimension No." := 1;
+            DimensionValue.Validate(Code, JobNo);
+            DimensionValue.Name := JobNo;
+            DimensionValue.Insert(true);
+        end;
     end;
 
     procedure CreateWarehouseReceipt(JobNo: Code[20])

@@ -1,4 +1,4 @@
-tableextension 50115 "4HC Sales Invoice Header" extends "Sales Invoice Header"
+tableextension 50100 "Sales Header S365" extends "Sales Header"
 {
     fields
     {

@@ -1,19 +1,22 @@
-pageextension 50106 JobCardS365 extends "Job Card"
+pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
 {
     layout
     {
         addlast(General)
         {
-            field("Use as TemplateS365"; Rec."Use as TemplateS365")
+            field("Job No. S365"; Rec."Job No. S365")
             {
                 ApplicationArea = All;
-                ToolTip = 'Specify if the job is use as a template';
-            }
-            field("Quote Type S365"; Rec."Quote Type S365")
-            {
-                ApplicationArea = All;
-                ToolTip = 'Specifies the value of the Quote Type field.';
-                TableRelation = "Quote Type S365"."Code S365";
+                ToolTip = 'Specifies the Job No.';
+
+                trigger OnAssistEdit()
+                var
+                    RecJob: Record Job;
+                    JobCardPageID: Integer;
+                begin
+                    JobCardPageID := PAGE::"Job Card";
+                    if RecJob.Get(Rec."Job No. S365") then PAGE.RUN(JobCardPageID, RecJob);
+                end;
             }
         }
 
@@ -23,8 +26,13 @@ pageextension 50106 JobCardS365 extends "Job Card"
             {
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
-                Editable = false;
 
+                field("Quote Type S365"; Rec."Quote Type S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Quote Type field.';
+                    TableRelation = "Quote Type S365"."Code S365";
+                }
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {
                     ApplicationArea = All;
@@ -35,15 +43,17 @@ pageextension 50106 JobCardS365 extends "Job Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Original Quote No. field.';
                 }
-                field(ConfirmedS365; Rec.ConfirmedS365)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value for confirmed qoutes';
-                }
                 field("Quote Status S365"; Rec."Quote Status S365")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Quote Status field.';
+                }
+                field("Shipment Method Code S365"; Rec."Shipment Method Code")
+                {
+                    Caption = 'Incoterms';
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Incoterms field.';
+                    Visible = false;
                 }
                 field("End User/ Main Customer"; Rec."End User/ Main Customer")
                 {
@@ -136,4 +146,3 @@ pageextension 50106 JobCardS365 extends "Job Card"
         }
     }
 }
-

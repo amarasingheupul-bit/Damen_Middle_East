@@ -26,16 +26,27 @@ tableextension 50114 "4HC PurchInvEntityAggregate" extends "Purch. Inv. Entity A
             DataClassification = ToBeClassified;
             Caption = 'Email Approval Status';
         }
-        field(50110; "SalesPerson Email"; Text[80])
+        field(50110; "External Approver 1 Email"; Text[80])
         {
-            Caption = 'SalesPerson Email';
+            Caption = 'External Approver 1 Email';
             FieldClass = FlowField;
             CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("Purchaser Code")));
+        }
+        field(50112; "External Approver 2 Email"; Text[80])
+        {
+            Caption = 'External Approver 2 Email';
+            FieldClass = FlowField;
+            CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("External Approver 2 No.")));
         }
         field(50111; "Approval Rejection Reason"; Text[250])
         {
             Caption = 'Approval Rejection Reason';
             DataClassification = CustomerContent;
+        }
+        field(50133; "External Approver 2 No."; Code[20])
+        {
+            Caption = 'External Approver 2 No.';
+            TableRelation = "Salesperson/Purchaser".Code;
         }
     }
 }

@@ -1,4 +1,4 @@
-tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
+tableextension 50116 "4HC Purch. Inv. Header" extends "Purch. Inv. Header"
 {
     fields
     {
@@ -100,26 +100,26 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
             DataClassification = ToBeClassified;
             Caption = 'Email Approval Status';
         }
-        field(50110; "External Approver 1 Email"; Text[80])
+        field(50110; "SalesDirecotor Email"; Text[80])
         {
-            Caption = 'External Approver 1 Email';
+            Caption = 'Sales Director Email';
             FieldClass = FlowField;
             CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("Purchaser Code")));
         }
-        field(50112; "External Approver 2 Email"; Text[80])
+        field(50112; "Sales Secretary Email"; Text[80])
         {
-            Caption = 'External Approver 2 Email';
+            Caption = 'Sales Secretary Email';
             FieldClass = FlowField;
-            CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("External Approver 2 No.")));
+            CalcFormula = lookup("Salesperson/Purchaser"."E-Mail" where(Code = field("Sales Secretary No.")));
         }
         field(50111; "Approval Rejection Reason"; Text[250])
         {
             Caption = 'Approval Rejection Reason';
             DataClassification = CustomerContent;
         }
-        field(50133; "External Approver 2 No."; Code[20])
+        field(50133; "Sales Secretary No."; Code[20])
         {
-            Caption = 'External Approver 2 No.';
+            Caption = 'Sales Secretary No.';
             TableRelation = "Salesperson/Purchaser".Code;
         }
         //field from Sales Header Table

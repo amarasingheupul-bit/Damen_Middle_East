@@ -17,4 +17,7 @@ enum 50103 "4HC PAutoApprovalStatus"
     value(4; Wait)
     {
     }
+    value(5; "Approval 2 Pending")
+    {
+    }
 }

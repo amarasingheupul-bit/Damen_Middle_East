@@ -86,22 +86,60 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                 }
             }
         }
+        addafter("Purchaser Code")
+        {
+            field("Sales Secretary No."; Rec."External Approver 2 No.")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Sales Secretary No. field.';
+            }
+        }
         addlast(General)
         {
             field("Email Approval Status"; Rec."Email Approval Status")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Email Approval Status field.';
+                Editable = false;
+                Style = StrongAccent;
             }
-            field("SalesPerson Email"; Rec."SalesPerson Email")
+            field("SalesDirecotor Email"; Rec."External Approver 1 Email")
             {
                 ApplicationArea = All;
-                ToolTip = 'Specifies the value of the SalesPerson Email field.';
+                ToolTip = 'Specifies the value of the Sales Director Email field.';
+            }
+            field("Sales Secretary Email"; Rec."External Approver 2 Email")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Sales Secretary Email field.';
             }
             field("Approval Rejection Reason"; Rec."Approval Rejection Reason")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Approval Rejection Reason field.';
+            }
+        }
+        modify("Purchaser Code")
+        {
+            Caption = 'Email Approver 1 No.';
+        }
+    }
+    actions
+    {
+        addafter(Approval)
+        {
+            action(ReopenEmailApprovalStatus)
+            {
+                ApplicationArea = All;
+                Caption = 'Reopen Email Approval';
+                ToolTip = 'Reopen the email approval process for this purchase invoice.';
+                Image = ReopenCancelled;
+                trigger OnAction()
+                begin
+                    Rec."Email Approval Status" := Rec."Email Approval Status"::Open;
+                    Rec.Modify();
+                    Message('Email approval process has been reopened for this purchase invoice.');
+                end;
             }
         }
     }
