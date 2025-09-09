@@ -11,196 +11,6 @@
       <rd:DataSourceID>55f630da-85af-49c3-b07e-841bb85957f3</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="No_PurchaseHeader">
-          <DataField>No_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="OrderDate_PurchaseHeader">
-          <DataField>OrderDate_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromVendorNo_PurchaseHeader">
-          <DataField>BuyfromVendorNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromVendorName_PurchaseHeader">
-          <DataField>BuyfromVendorName_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromAddress2_PurchaseHeader">
-          <DataField>BuyfromAddress2_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromAddress_PurchaseHeader">
-          <DataField>BuyfromAddress_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromCounty_PurchaseHeader">
-          <DataField>BuyfromCounty_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="BuyfromCity_PurchaseHeader">
-          <DataField>BuyfromCity_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="YourReference_PurchaseHeader">
-          <DataField>YourReference_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="PaymentTermsCode_PurchaseHeader">
-          <DataField>PaymentTermsCode_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="ReportTitleLbl">
-          <DataField>ReportTitleLbl</DataField>
-        </Field>
-        <Field Name="HeaderLbl">
-          <DataField>HeaderLbl</DataField>
-        </Field>
-        <Field Name="BodyLbl">
-          <DataField>BodyLbl</DataField>
-        </Field>
-        <Field Name="CompanyPicture">
-          <DataField>CompanyPicture</DataField>
-        </Field>
-        <Field Name="CompanyInfReportFooter">
-          <DataField>CompanyInfReportFooter</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="CompanyPhoneNo">
-          <DataField>CompanyPhoneNo</DataField>
-        </Field>
-        <Field Name="CompanyFaxNo">
-          <DataField>CompanyFaxNo</DataField>
-        </Field>
-        <Field Name="CompanyEmail">
-          <DataField>CompanyEmail</DataField>
-        </Field>
-        <Field Name="CompanyVatRegistration">
-          <DataField>CompanyVatRegistration</DataField>
-        </Field>
-        <Field Name="CurrencyCode_PurchaseHeader">
-          <DataField>CurrencyCode_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CommissionAmount_PurchaseHeader">
-          <DataField>CommissionAmount_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CommissionAmount_PurchaseHeaderFormat">
-          <DataField>CommissionAmount_PurchaseHeaderFormat</DataField>
-        </Field>
-        <Field Name="OPCOComProjectNo_PurchaseHeader">
-          <DataField>OPCOComProjectNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="YardNo_PurchaseHeader">
-          <DataField>YardNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="VesselType_PurchaseHeader">
-          <DataField>VesselType_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CostReference_PurchaseHeader">
-          <DataField>CostReference_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="Address">
-          <DataField>Address</DataField>
-        </Field>
-        <Field Name="ContactName">
-          <DataField>ContactName</DataField>
-        </Field>
-        <Field Name="TRNLeft">
-          <DataField>TRNLeft</DataField>
-        </Field>
-        <Field Name="Budget_PurchaseHeader">
-          <DataField>Budget_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="Budget_PurchaseHeaderFormat">
-          <DataField>Budget_PurchaseHeaderFormat</DataField>
-        </Field>
-        <Field Name="BankDetailsS365_PurchaseHeader">
-          <DataField>BankDetailsS365_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="CostCenter_PurchaseHeader">
-          <DataField>CostCenter_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesManager_PurchaseHeader">
-          <DataField>SalesManager_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesProviderNo_PurchaseHeader">
-          <DataField>SalesProviderNo_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SalesAreaDirectorName_PurchaseHeader">
-          <DataField>SalesAreaDirectorName_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="QuoteType_PurchaseHeader">
-          <DataField>QuoteType_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="G_L_Account">
-          <DataField>G_L_Account</DataField>
-        </Field>
-        <Field Name="OPCOCustomer_PurchaseHeader">
-          <DataField>OPCOCustomer_PurchaseHeader</DataField>
-        </Field>
-        <Field Name="SwiftCode">
-          <DataField>SwiftCode</DataField>
-        </Field>
-        <Field Name="Currency">
-          <DataField>Currency</DataField>
-        </Field>
-        <Field Name="BankName">
-          <DataField>BankName</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-        <Field Name="No_PurchaseLine">
-          <DataField>No_PurchaseLine</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="Quantity_PurchaseLine">
-          <DataField>Quantity_PurchaseLine</DataField>
-        </Field>
-        <Field Name="Quantity_PurchaseLineFormat">
-          <DataField>Quantity_PurchaseLineFormat</DataField>
-        </Field>
-        <Field Name="UnitofMeasureCode_PurchaseLine">
-          <DataField>UnitofMeasureCode_PurchaseLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_PurchaseLine">
-          <DataField>UnitPriceLCY_PurchaseLine</DataField>
-        </Field>
-        <Field Name="UnitPriceLCY_PurchaseLineFormat">
-          <DataField>UnitPriceLCY_PurchaseLineFormat</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="AmountIncludingVAT">
-          <DataField>AmountIncludingVAT</DataField>
-        </Field>
-        <Field Name="AmountIncludingVATFormat">
-          <DataField>AmountIncludingVATFormat</DataField>
-        </Field>
-        <Field Name="VATAmount">
-          <DataField>VATAmount</DataField>
-        </Field>
-        <Field Name="VATAmountFormat">
-          <DataField>VATAmountFormat</DataField>
-        </Field>
-        <Field Name="VAT__">
-          <DataField>VAT__</DataField>
-        </Field>
-        <Field Name="VAT__Format">
-          <DataField>VAT__Format</DataField>
-        </Field>
-        <Field Name="Currency_Code">
-          <DataField>Currency_Code</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -4639,12 +4449,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -4684,4 +4488,194 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_PurchaseHeader">
+          <DataField>No_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="OrderDate_PurchaseHeader">
+          <DataField>OrderDate_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVendorNo_PurchaseHeader">
+          <DataField>BuyfromVendorNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVendorName_PurchaseHeader">
+          <DataField>BuyfromVendorName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromAddress2_PurchaseHeader">
+          <DataField>BuyfromAddress2_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromAddress_PurchaseHeader">
+          <DataField>BuyfromAddress_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCounty_PurchaseHeader">
+          <DataField>BuyfromCounty_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCity_PurchaseHeader">
+          <DataField>BuyfromCity_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="YourReference_PurchaseHeader">
+          <DataField>YourReference_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="PaymentTermsCode_PurchaseHeader">
+          <DataField>PaymentTermsCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="ReportTitleLbl">
+          <DataField>ReportTitleLbl</DataField>
+        </Field>
+        <Field Name="HeaderLbl">
+          <DataField>HeaderLbl</DataField>
+        </Field>
+        <Field Name="BodyLbl">
+          <DataField>BodyLbl</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyInfReportFooter">
+          <DataField>CompanyInfReportFooter</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyPhoneNo">
+          <DataField>CompanyPhoneNo</DataField>
+        </Field>
+        <Field Name="CompanyFaxNo">
+          <DataField>CompanyFaxNo</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyVatRegistration">
+          <DataField>CompanyVatRegistration</DataField>
+        </Field>
+        <Field Name="CurrencyCode_PurchaseHeader">
+          <DataField>CurrencyCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CommissionAmount_PurchaseHeader">
+          <DataField>CommissionAmount_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CommissionAmount_PurchaseHeaderFormat">
+          <DataField>CommissionAmount_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="OPCOComProjectNo_PurchaseHeader">
+          <DataField>OPCOComProjectNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="YardNo_PurchaseHeader">
+          <DataField>YardNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="VesselType_PurchaseHeader">
+          <DataField>VesselType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CostReference_PurchaseHeader">
+          <DataField>CostReference_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="ContactName">
+          <DataField>ContactName</DataField>
+        </Field>
+        <Field Name="TRNLeft">
+          <DataField>TRNLeft</DataField>
+        </Field>
+        <Field Name="Budget_PurchaseHeader">
+          <DataField>Budget_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="Budget_PurchaseHeaderFormat">
+          <DataField>Budget_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="BankDetailsS365_PurchaseHeader">
+          <DataField>BankDetailsS365_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CostCenter_PurchaseHeader">
+          <DataField>CostCenter_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SalesManager_PurchaseHeader">
+          <DataField>SalesManager_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SalesProviderNo_PurchaseHeader">
+          <DataField>SalesProviderNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SalesAreaDirectorName_PurchaseHeader">
+          <DataField>SalesAreaDirectorName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="QuoteType_PurchaseHeader">
+          <DataField>QuoteType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="G_L_Account">
+          <DataField>G_L_Account</DataField>
+        </Field>
+        <Field Name="OPCOCustomer_PurchaseHeader">
+          <DataField>OPCOCustomer_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="SwiftCode">
+          <DataField>SwiftCode</DataField>
+        </Field>
+        <Field Name="Currency">
+          <DataField>Currency</DataField>
+        </Field>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+        <Field Name="No_PurchaseLine">
+          <DataField>No_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLine">
+          <DataField>Quantity_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLineFormat">
+          <DataField>Quantity_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="UnitofMeasureCode_PurchaseLine">
+          <DataField>UnitofMeasureCode_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_PurchaseLine">
+          <DataField>UnitPriceLCY_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_PurchaseLineFormat">
+          <DataField>UnitPriceLCY_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT">
+          <DataField>AmountIncludingVAT</DataField>
+        </Field>
+        <Field Name="AmountIncludingVATFormat">
+          <DataField>AmountIncludingVATFormat</DataField>
+        </Field>
+        <Field Name="VATAmount">
+          <DataField>VATAmount</DataField>
+        </Field>
+        <Field Name="VATAmountFormat">
+          <DataField>VATAmountFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Currency_Code">
+          <DataField>Currency_Code</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
