@@ -194,6 +194,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                         PurchaeLine.Validate(Type, PurchaeLine.Type::Resource);
                 end;
                 PurchaeLine.Validate("No.", JobPlanningLine."No.");
+                PurchaeLine.Validate(Description, JobPlanningLine.Description);
                 PurchaeLine.Validate(Quantity, JobPlanningLine.Quantity);
                 PurchaeLine.Validate("Unit Cost", JobPlanningLine."Unit Cost");
                 PurchaeLine.Validate("Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");
