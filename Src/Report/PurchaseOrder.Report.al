@@ -120,6 +120,9 @@ report 50103 "4HC Purchase Order"
             column(G_L_Account; "G/L Account")
             {
             }
+            column(OPCOCustomer_PurchaseHeader; "OPCO Customer")
+            {
+            }
             column(SwiftCode; BankAccount."SWIFT Code")
             {
             }
