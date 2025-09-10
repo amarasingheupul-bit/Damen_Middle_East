@@ -175,6 +175,7 @@ codeunit 50101 "SQmodFunction S365"
                 Job.Validate("G/L Account", Rec."G/L Account");
                 Job.Validate("Incoming PO", Rec."Incoming PO");
                 Job.Validate("Sales Order No. 4HC", Rec."No.");
+                Job.Validate("Vessel Type", Rec."Vessel Type");
                 // ...Copy SO code...
                 Job.Insert(true);
                 CopyJob.SetCopyOptions(false, false, false, Source::"Job Planning Lines", PlanningLineType, LedgerEntryType::"Usage+Sale");

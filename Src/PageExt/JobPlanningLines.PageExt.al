@@ -135,6 +135,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                     PurchaseHeader.Validate("Incoming PO", Project."Incoming PO");
                     PurchaseHeader.Validate("Currency Code", Project."Currency Code");
                     PurchaseHeader.Validate("Sales Order No. 4HC", Project."Sales Order No. 4HC");
+                    PurchaseHeader.Validate("Vessel Type", Project."Vessel Type");
                     PurchaseHeader.Modify();
                     // ...Copy SO code...
                 end;

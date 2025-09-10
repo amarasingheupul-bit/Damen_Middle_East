@@ -161,6 +161,7 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Validate("COST Reference", Job."COST Reference");
         SalesHeader.Validate("G/L Account", Job."G/L Account");
         SalesHeader.Validate("Incoming PO", Job."Incoming PO");
+        SalesHeader.Validate("Vessel Type", Job."Vessel Type");
         SalesHeader.Modify();
     end;
 

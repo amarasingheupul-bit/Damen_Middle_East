@@ -79,6 +79,7 @@ codeunit 50100 "EventSubscriber S365"
             Job.Validate("G/L Account", SalesHeader."G/L Account");
             Job.Validate("Incoming PO", SalesHeader."Incoming PO");
             Job.Validate("Sales Order No. 4HC", SalesHeader."No.");
+            Job.Validate("Vessel Type", SalesHeader."Vessel Type");
             Job.Insert(true);
             Func.CreateDimensionValues(Job."No.");
 

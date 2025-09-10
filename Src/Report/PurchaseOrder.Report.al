@@ -138,6 +138,11 @@ report 50103 "4HC Purchase Order"
             column(Sales_Order_No__4HC; "Sales Order No. 4HC")
             {
             }
+
+            column(Incoming_PO; "Incoming PO")
+            {
+            }
+
             dataitem(PurchaseLine; "Purchase Line")
             {
                 DataItemLink = "Document No." = field("No.");

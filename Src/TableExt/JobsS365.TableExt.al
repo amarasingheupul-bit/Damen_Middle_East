@@ -224,5 +224,10 @@ tableextension 50105 JobsS365 extends Job
 
             Caption = 'Sales Order No.';
         }
+        field(50114; "Vessel Type"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Vessel Type';
+        }
     }
 }
