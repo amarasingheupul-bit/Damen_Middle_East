@@ -139,6 +139,7 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Validate("Original Quote No. S365", Job."Original Quote No. S365");
         SalesHeader.Validate("ConfirmedS365", Job."ConfirmedS365");
         SalesHeader.Validate("Quote Status S365", Job."Quote Status S365");
+        SalesHeader.Validate("Quote Type S365", Job."Quote Type S365");
         SalesHeader.Validate("Job TemplateS365", Job."Job TemplateS365");
         SalesHeader.Validate("Sales Director/ Area Director", Job."Sales Director/ Area Director");
         SalesHeader.Validate("Sales/ Area Director Name", Job."Sales/ Area Director Name");
@@ -162,6 +163,7 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Validate("G/L Account", Job."G/L Account");
         SalesHeader.Validate("Incoming PO", Job."Incoming PO");
         SalesHeader.Validate("Vessel Type", Job."Vessel Type");
+        SalesHeader.Validate("Job No. S365", Job."No.");
         SalesHeader.Modify();
     end;
 

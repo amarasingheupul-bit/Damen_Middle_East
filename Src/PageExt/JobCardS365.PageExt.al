@@ -9,12 +9,6 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 ApplicationArea = All;
                 ToolTip = 'Specify if the job is use as a template';
             }
-            field("Quote Type S365"; Rec."Quote Type S365")
-            {
-                ApplicationArea = All;
-                ToolTip = 'Specifies the value of the Quote Type field.';
-                TableRelation = "Quote Type S365"."Code S365";
-            }
         }
 
         addafter(General)
@@ -24,7 +18,12 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 ShowCaption = true;
                 Caption = 'Additional Order Details';
                 Editable = false;
-
+                field("Quote Type S365"; Rec."Quote Type S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Quote Type field.';
+                    TableRelation = "Quote Type S365"."Code S365";
+                }
                 field("Change Reason S365"; Rec."Change Reason S365")
                 {
                     ApplicationArea = All;
@@ -34,11 +33,6 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Original Quote No. field.';
-                }
-                field(ConfirmedS365; Rec.ConfirmedS365)
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value for confirmed qoutes';
                 }
                 field("Quote Status S365"; Rec."Quote Status S365")
                 {
@@ -92,20 +86,15 @@ pageextension 50106 JobCardS365 extends "Job Card"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Area field.', Comment = '%';
                 }
-                field("4HC Type"; Rec."4HC Type")
+                field("Vessel Type"; Rec."Vessel Type")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Type field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Vessel Type field.', Comment = '%';
                 }
                 field("COST Reference"; Rec."COST Reference")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the COST Reference field.', Comment = '%';
-                }
-                field("Cost Center"; Rec."Cost Center")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Cost Center field.', Comment = '%';
                 }
                 field(Budget; Rec.Budget)
                 {
@@ -131,6 +120,12 @@ pageextension 50106 JobCardS365 extends "Job Card"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
+                }
+                field("Sales Order No. 4HC"; Rec."Sales Order No. 4HC")
+                {
+                    Editable = false;
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Order No. field.', Comment = '%';
                 }
             }
         }

@@ -111,6 +111,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                     PurchaseHeader.Validate("Original Quote No. S365", Project."Original Quote No. S365");
                     PurchaseHeader.Validate("ConfirmedS365", Project."ConfirmedS365");
                     PurchaseHeader.Validate("Quote Status S365", Project."Quote Status S365");
+                    PurchaseHeader.Validate("Quote Type", Project."Quote Type S365");
                     PurchaseHeader.Validate("Job TemplateS365", Project."Job TemplateS365");
                     PurchaseHeader.Validate("Sales Director/ Area Director", Project."Sales Director/ Area Director");
                     PurchaseHeader.Validate("Sales/ Area Director Name", Project."Sales/ Area Director Name");

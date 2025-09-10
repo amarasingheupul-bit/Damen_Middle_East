@@ -1618,11 +1618,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Job PlanningLines EXT - Control Currency Code - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 3263937204 - Control 1936800243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
-          <source>Specifies the value of the Quote Type field.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Quote Type S365 - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3693128846 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specify if the job is use as a template</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1633,11 +1628,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control New Fields S365 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 3263937204 - Control 161482641 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
-          <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control 4HC Type - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 4030203231 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Budget field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
@@ -1647,16 +1637,6 @@
           <source>Specifies the value of the Change Reason field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Change Reason S365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3263937204 - Control 1251800644 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
-          <source>Specifies the value for confirmed qoutes</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control ConfirmedS365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3263937204 - Control 864848052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
-          <source>Specifies the value of the Cost Center field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Cost Center - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 3317903716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the COST Reference field.</source>
@@ -1698,6 +1678,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Quote Status S365 - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 1936800243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Quote Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Quote Type S365 - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 517255489 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Area field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
@@ -1712,6 +1697,11 @@
           <source>Specifies the value of the Sales Manager field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Manager - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 3766226058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Sales Order No. field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Sales Order No. 4HC - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 4138736989 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Sales Secretary Name field.</source>
@@ -1733,6 +1723,11 @@
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Supplier to Services - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3263937204 - Control 196544910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
+          <source>Specifies the value of the Vessel Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Vessel Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3263937204 - Control 2984497355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4010542053">
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
@@ -1742,6 +1737,46 @@
           <source>Specifies the post code Type.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PostCodesS365 - Control Type S365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 4030203231 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the Budget Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Budget - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 2963593091 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the Incoming Sales Order Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Incoming PO - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 2977698494 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the Quotation Type Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Quote Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 517255489 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the Sales Area Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Sales Area - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 3766226058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the System Sales Order Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Sales Order No. 4HC - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 4138736989 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies Sales Secretary Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Sales Secretary Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 1481805809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the Director Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Sales/ Area Director Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1575284852 - Control 4026166715 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3195034673">
+          <source>Specifies the Supplier Related to This PO</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension purchase order List - Control Supplier to Services - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 913985011 - Control 1484925585 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1580859378">
           <source>Specify the Transport Manager</source>
@@ -1773,11 +1808,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Quote S365 - Control New Fields S365 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 3085784395 - Control 161482641 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
-          <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Quote S365 - Control 4HC Type - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 3085784395 - Control 4030203231 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
           <source>Specifies the value of the Budget field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
@@ -1792,11 +1822,6 @@
           <source>Specifies the value for confirmed qoutes</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Quote S365 - Control ConfirmedS365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3085784395 - Control 864848052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
-          <source>Specifies the value of the Cost Center field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Quote S365 - Control Cost Center - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3085784395 - Control 3317903716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
           <source>Specifies the value of the COST Reference field.</source>
@@ -1893,6 +1918,11 @@
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Quote S365 - Control Supplier to Services - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3085784395 - Control 196544910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
+          <source>Specifies the value of the Vessel Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Quote S365 - Control Vessel Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3085784395 - Control 2984497355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
@@ -1938,11 +1968,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control New Fields S365 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2303761479 - Control 161482641 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
-          <source>Specifies the value of the Type field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control 4HC Type - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="PageExtension 2303761479 - Control 2438345936 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Specifies the value of the Bank Details field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1957,11 +1982,6 @@
           <source>Specifies the value of the Change Reason field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control Change Reason S365 - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 2303761479 - Control 864848052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
-          <source>Specifies the value of the Cost Center field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control Cost Center - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 2303761479 - Control 3317903716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Specifies the value of the COST Reference field.</source>
@@ -2052,6 +2072,11 @@
           <source>Specifies the value of the Supplier to Services field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control Supplier to Services - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2303761479 - Control 196544910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Specifies the value of the Vessel Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control Vessel Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 2303761479 - Control 2984497355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Specifies the value of the Yard No. field.</source>
@@ -2938,6 +2963,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Use as TemplateS365 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 196544910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>Vessel Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Vessel Type - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 2984497355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Yard No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -3107,6 +3137,11 @@
           <source>Supplier to Services</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Supplier to Services - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 196544910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Vessel Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field Vessel Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 2984497355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Yard No.</source>

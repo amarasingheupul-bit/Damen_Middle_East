@@ -150,6 +150,7 @@ codeunit 50101 "SQmodFunction S365"
                 // ...Copy SO code...
                 Job.Validate("Change Reason S365", Rec."Change Reason S365");
                 Job.Validate("Original Quote No. S365", Rec."Quote No.");
+                Job.Validate("Quote Type S365", Rec."Quote Type S365");
                 Job.Validate("ConfirmedS365", Rec."ConfirmedS365");
                 Job.Validate("Quote Status S365", Rec."Quote Status S365");
                 Job.Validate("Job TemplateS365", Rec."Job TemplateS365");

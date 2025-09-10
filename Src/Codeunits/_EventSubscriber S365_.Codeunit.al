@@ -48,14 +48,15 @@ codeunit 50100 "EventSubscriber S365"
             CopyfromJobTaskLines.SetRange("Job No.", CopyfromJob."No.");
             //create job
             Job.Init();
-            job.Description := SalesHeader2."No." + '-' + SalesHeader2."Sell-to Customer Name";
-            job.Validate("Sell-to Customer No.", SalesHeader."Sell-to Customer No.");
+            Job.Description := SalesHeader2."No." + '-' + SalesHeader2."Sell-to Customer Name";
+            Job.Validate("Sell-to Customer No.", SalesHeader."Sell-to Customer No.");
             Job.Validate("Project Manager", CopyfromJob."Project Manager");
             // ...Copy SO code...
             Job.Validate("Change Reason S365", SalesHeader."Change Reason S365");
             Job.Validate("Original Quote No. S365", SalesHeader."Quote No.");
             Job.Validate("ConfirmedS365", SalesHeader."ConfirmedS365");
             Job.Validate("Quote Status S365", SalesHeader."Quote Status S365");
+            Job.Validate("Quote Type S365", SalesHeader."Quote Type S365");
             Job.Validate("Job TemplateS365", SalesHeader."Job TemplateS365");
             Job.Validate("Sales Director/ Area Director", SalesHeader."Sales Director/ Area Director");
             Job.Validate("Sales/ Area Director Name", SalesHeader."Sales/ Area Director Name");
@@ -78,7 +79,7 @@ codeunit 50100 "EventSubscriber S365"
             Job.Validate("COST Reference", SalesHeader."COST Reference");
             Job.Validate("G/L Account", SalesHeader."G/L Account");
             Job.Validate("Incoming PO", SalesHeader."Incoming PO");
-            Job.Validate("Sales Order No. 4HC", SalesHeader."No.");
+            Job.Validate("Sales Order No. 4HC", SalesHeader2."No.");
             Job.Validate("Vessel Type", SalesHeader."Vessel Type");
             Job.Insert(true);
             Func.CreateDimensionValues(Job."No.");
