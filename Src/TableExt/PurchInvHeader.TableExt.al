@@ -219,6 +219,8 @@ tableextension 50116 "4HC Purch. Inv. Header" extends "Purch. Inv. Header"
         {
             DataClassification = ToBeClassified;
             Caption = 'Type';
+            //ObsoleteState = Pending;
+            //ObsoleteTag = '202509094HC';
         }
         field(50121; "OPCO Customer"; Text[50])
         {
@@ -232,6 +234,11 @@ tableextension 50116 "4HC Purch. Inv. Header" extends "Purch. Inv. Header"
         field(50132; "Incoming PO"; Text[30])
         {
             Caption = 'Incoming PO';
+        }
+        field(50139; "Sales Order No. 4HC"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Sales Order No.';
         }
     }
 }

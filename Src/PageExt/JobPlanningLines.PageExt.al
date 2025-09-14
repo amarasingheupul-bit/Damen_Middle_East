@@ -111,6 +111,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                     PurchaseHeader.Validate("Original Quote No. S365", Project."Original Quote No. S365");
                     PurchaseHeader.Validate("ConfirmedS365", Project."ConfirmedS365");
                     PurchaseHeader.Validate("Quote Status S365", Project."Quote Status S365");
+                    PurchaseHeader.Validate("Quote Type", Project."Quote Type S365");
                     PurchaseHeader.Validate("Job TemplateS365", Project."Job TemplateS365");
                     PurchaseHeader.Validate("Sales Director/ Area Director", Project."Sales Director/ Area Director");
                     PurchaseHeader.Validate("Sales/ Area Director Name", Project."Sales/ Area Director Name");
@@ -134,6 +135,8 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                     PurchaseHeader.Validate("G/L Account", Project."G/L Account");
                     PurchaseHeader.Validate("Incoming PO", Project."Incoming PO");
                     PurchaseHeader.Validate("Currency Code", Project."Currency Code");
+                    PurchaseHeader.Validate("Sales Order No. 4HC", Project."Sales Order No. 4HC");
+                    PurchaseHeader.Validate("Vessel Type", Project."Vessel Type");
                     PurchaseHeader.Modify();
                     // ...Copy SO code...
                 end;
@@ -193,6 +196,7 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                         PurchaeLine.Validate(Type, PurchaeLine.Type::Resource);
                 end;
                 PurchaeLine.Validate("No.", JobPlanningLine."No.");
+                PurchaeLine.Validate(Description, JobPlanningLine.Description);
                 PurchaeLine.Validate(Quantity, JobPlanningLine.Quantity);
                 PurchaeLine.Validate("Unit Cost", JobPlanningLine."Unit Cost");
                 PurchaeLine.Validate("Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");

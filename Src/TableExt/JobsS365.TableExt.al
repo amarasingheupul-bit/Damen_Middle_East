@@ -218,5 +218,16 @@ tableextension 50105 JobsS365 extends Job
         {
             Caption = 'Incoming PO';
         }
+        field(50113; "Sales Order No. 4HC"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+
+            Caption = 'Sales Order No.';
+        }
+        field(50114; "Vessel Type"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Vessel Type';
+        }
     }
 }

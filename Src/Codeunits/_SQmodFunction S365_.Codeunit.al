@@ -150,6 +150,7 @@ codeunit 50101 "SQmodFunction S365"
                 // ...Copy SO code...
                 Job.Validate("Change Reason S365", Rec."Change Reason S365");
                 Job.Validate("Original Quote No. S365", Rec."Quote No.");
+                Job.Validate("Quote Type S365", Rec."Quote Type S365");
                 Job.Validate("ConfirmedS365", Rec."ConfirmedS365");
                 Job.Validate("Quote Status S365", Rec."Quote Status S365");
                 Job.Validate("Job TemplateS365", Rec."Job TemplateS365");
@@ -174,6 +175,8 @@ codeunit 50101 "SQmodFunction S365"
                 Job.Validate("COST Reference", Rec."COST Reference");
                 Job.Validate("G/L Account", Rec."G/L Account");
                 Job.Validate("Incoming PO", Rec."Incoming PO");
+                Job.Validate("Sales Order No. 4HC", Rec."No.");
+                Job.Validate("Vessel Type", Rec."Vessel Type");
                 // ...Copy SO code...
                 Job.Insert(true);
                 CopyJob.SetCopyOptions(false, false, false, Source::"Job Planning Lines", PlanningLineType, LedgerEntryType::"Usage+Sale");

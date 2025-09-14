@@ -200,5 +200,10 @@ tableextension 50100 "Sales Header S365" extends "Sales Header"
         {
             Caption = 'Incoming PO';
         }
+        field(50112; "Vessel Type"; Text[100])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Vessel Type';
+        }
     }
 }

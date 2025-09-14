@@ -89,20 +89,15 @@ pageextension 50102 "Sales Quote S365" extends "Sales Quote"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Sales Area field.', Comment = '%';
                 }
-                field("4HC Type"; Rec."4HC Type")
+                field("Vessel Type"; Rec."Vessel Type")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Type field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Vessel Type field.', Comment = '%';
                 }
                 field("COST Reference"; Rec."COST Reference")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the COST Reference field.', Comment = '%';
-                }
-                field("Cost Center"; Rec."Cost Center")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Cost Center field.', Comment = '%';
                 }
                 field(Budget; Rec.Budget)
                 {
