@@ -10,6 +10,4 @@
     "editor.codeLens": true,
     "CRS.FileNamePattern":"<ObjectName><ObjectTypeShort>.al",
     "CRS.FileNamePatternExtensions": "<ObjectName><ObjectTypeShort>.al"
-
-
 }

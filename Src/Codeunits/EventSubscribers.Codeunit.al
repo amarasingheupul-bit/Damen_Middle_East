@@ -4,7 +4,7 @@ codeunit 50103 "4HC Event Subscribers"
     local procedure "Purch.-Post + Print_OnBeforeGetReport"(var PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
     begin
         if PurchaseHeader.Status <> PurchaseHeader.Status::Released then
-            Error('The purchase order must be released before printing.');
+            Error(POPrintingErr);
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]
@@ -22,34 +22,49 @@ codeunit 50103 "4HC Event Subscribers"
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnBeforeConfirmPost, '', false, false)]
     local procedure "Purch.-Post (Yes/No)_OnBeforeConfirmPost"(var PurchaseHeader: Record "Purchase Header"; var HideDialog: Boolean; var IsHandled: Boolean; var DefaultOption: Integer)
+    var
+        PurchPayableSetup: Record "Purchases & Payables Setup";
     begin
-        if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then begin
-            DefaultOption := 1;
-            PurchaseHeader.Receive := true;
-        end;
+        PurchPayableSetup.Get();
+        if PurchPayableSetup."Block Invoice Posting" then
+            if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then begin
+                DefaultOption := 1;
+                PurchaseHeader.Receive := true;
+            end;
     end;
 
-    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Posting Selection Management", OnBeforeGetPurchaseOrderPostingSelection, '', false, false)]
-    // local procedure "Posting Selection Management_OnBeforeGetPurchaseOrderPostingSelection"(var PurchaseHeader: Record "Purchase Header"; DefaultOption: Integer; var IsHandled: Boolean; var Selection: Integer)
-    // begin
-    //     IsHandled := true;
-    //     Selection := DefaultOption;
-    // end;
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Purchase Document", OnBeforeManualReleasePurchaseDoc, '', false, false)]
+    local procedure "Release Purchase Document_OnBeforeManualReleasePurchaseDoc"(var PurchaseHeader: Record "Purchase Header"; PreviewMode: Boolean)
+    var
+        PurchPayableSetup: Record "Purchases & Payables Setup";
+    begin
+        PurchPayableSetup.Get();
+        if PurchPayableSetup."Enable Email Approval" then
+            if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
+                Error(Text001Err);
+    end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post + Print", OnAfterConfirmPost, '', false, false)]
     local procedure "Purch.-Post + Print_OnAfterConfirmPost"(PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
     begin
-        if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
-            if PurchaseHeader.Invoice then
-                Error(this.PostingOnlyReceiveErr);
+        this.PurchaseInvoicePostingBlock(PurchaseHeader);
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post (Yes/No)", OnAfterConfirmPost, '', false, false)]
     local procedure "Purch.-Post (Yes/No)_OnAfterConfirmPost"(var PurchaseHeader: Record "Purchase Header"; var IsHandled: Boolean)
     begin
-        if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
-            if PurchaseHeader.Invoice then
-                Error(this.PostingOnlyReceiveErr);
+        this.PurchaseInvoicePostingBlock(PurchaseHeader);
+    end;
+
+    local procedure PurchaseInvoicePostingBlock(var PurchaseHeader: Record "Purchase Header")
+    var
+        PurchPayableSetup: Record "Purchases & Payables Setup";
+    begin
+        PurchPayableSetup.Get();
+        if PurchPayableSetup."Block Invoice Posting" then
+            if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Order then
+                if PurchaseHeader.Invoice then
+                    Error(this.PostingOnlyReceiveErr);
     end;
 
     [EventSubscriber(ObjectType::Table, Database::"Job Planning Line", OnBeforeUpdateUnitCost, '', false, false)]
@@ -62,43 +77,19 @@ codeunit 50103 "4HC Event Subscribers"
     local procedure OnReleaseDocument(RecRef: RecordRef; var Handled: Boolean)
     var
         PurchaseHeader: Record "Purchase Header";
+        PurchPayableSetup: Record "Purchases & Payables Setup";
     begin
         case RecRef.Number of
             database::"Purchase Header":
                 begin
                     RecRef.SetTable(PurchaseHeader);
-                    Message(PurchaseHeader."Approval Rejection Reason");
-                    if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
-                        Error('You can not approve without sales person approval.');
+                    PurchPayableSetup.Get();
+                    if PurchPayableSetup."Enable Email Approval" then
+                        if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
+                            Error(Text001Err);
                 end;
         end;
     end;
-
-    // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnBeforeSetStatusToPendingApproval, '', false, false)]
-    // local procedure "Approvals Mgmt._OnBeforeSetStatusToPendingApproval"(var Variant: Variant)
-    // var
-    //     PurchaseHeader: Record "Purchase Header";
-    //     ApprovalEntry: Record "Approval Entry";
-    //     RecRef: RecordRef;
-    // begin
-    //     RecRef.GetTable(Variant);
-    //     case RecRef.Number of
-    //         database::"Purchase Header":
-    //             begin
-    //                 RecRef.SetTable(PurchaseHeader);
-    //                 if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Invoice then
-    //                     if PurchaseHeader.Status = PurchaseHeader.Status::Open then begin
-    //                         ApprovalEntry.SetRange("Record ID to Approve", PurchaseHeader.RecordId);
-    //                         ApprovalEntry.SetRange(Status, ApprovalEntry.Status::Approved);
-    //                         ApprovalEntry.SetRange("Sequence No.", 1);
-    //                         if not ApprovalEntry.IsEmpty() then
-    //                             PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
-    //                         RecRef.GetTable(PurchaseHeader);
-    //                         RecRef.SetTable(Variant);
-    //                     end;
-    //             end;
-    //     end;
-    // end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Release Purchase Document", OnReopenOnBeforePurchaseHeaderModify, '', false, false)]
     local procedure "Release Purchase Document_OnReopenOnBeforePurchaseHeaderModify"(var PurchaseHeader: Record "Purchase Header")
@@ -127,9 +118,13 @@ codeunit 50103 "4HC Event Subscribers"
 
     [EventSubscriber(ObjectType::Page, Page::"Purchase Invoice", OnBeforePostDocument, '', false, false)]
     local procedure "Purchase Invoice_OnBeforePostDocument"(var Sender: Page "Purchase Invoice"; var PurchaseHeader: Record "Purchase Header"; xPurchaseHeader: Record "Purchase Header"; PostingCodeunitID: Integer; var IsHandled: Boolean)
+    var
+        PurchPayableSetup: Record "Purchases & Payables Setup";
     begin
-        if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
-            Error('You can not post without sales director approval.');
+        PurchPayableSetup.Get();
+        if PurchPayableSetup."Enable Email Approval" then
+            if PurchaseHeader."Email Approval Status" <> PurchaseHeader."Email Approval Status"::Approved then
+                Error(POPostingValidationErr);
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", OnAfterCreateSalesLine, '', false, false)]
@@ -167,7 +162,42 @@ codeunit 50103 "4HC Event Subscribers"
         SalesHeader.Modify();
     end;
 
-
     var
         PostingOnlyReceiveErr: Label 'Posting an invoice for a purchase order is not allowed. Please review the document and try again.';
+        Text001Err: Label 'You can not release the document without sales person approval.';
+        POPrintingErr: Label 'The purchase order must be released before printing.';
+        POPostingValidationErr: Label 'You can not post the document without sales director approval.';
 }
+
+// [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnBeforeSetStatusToPendingApproval, '', false, false)]
+// local procedure "Approvals Mgmt._OnBeforeSetStatusToPendingApproval"(var Variant: Variant)
+// var
+//     PurchaseHeader: Record "Purchase Header";
+//     ApprovalEntry: Record "Approval Entry";
+//     RecRef: RecordRef;
+// begin
+//     RecRef.GetTable(Variant);
+//     case RecRef.Number of
+//         database::"Purchase Header":
+//             begin
+//                 RecRef.SetTable(PurchaseHeader);
+//                 if PurchaseHeader."Document Type" = PurchaseHeader."Document Type"::Invoice then
+//                     if PurchaseHeader.Status = PurchaseHeader.Status::Open then begin
+//                         ApprovalEntry.SetRange("Record ID to Approve", PurchaseHeader.RecordId);
+//                         ApprovalEntry.SetRange(Status, ApprovalEntry.Status::Approved);
+//                         ApprovalEntry.SetRange("Sequence No.", 1);
+//                         if not ApprovalEntry.IsEmpty() then
+//                             PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
+//                         RecRef.GetTable(PurchaseHeader);
+//                         RecRef.SetTable(Variant);
+//                     end;
+//             end;
+//     end;
+// end;
+
+// [EventSubscriber(ObjectType::Codeunit, Codeunit::"Posting Selection Management", OnBeforeGetPurchaseOrderPostingSelection, '', false, false)]
+// local procedure "Posting Selection Management_OnBeforeGetPurchaseOrderPostingSelection"(var PurchaseHeader: Record "Purchase Header"; DefaultOption: Integer; var IsHandled: Boolean; var Selection: Integer)
+// begin
+//     IsHandled := true;
+//     Selection := DefaultOption;
+// end;
