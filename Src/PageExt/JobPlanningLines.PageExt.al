@@ -16,6 +16,11 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
             {
                 ApplicationArea = All;
             }
+            field("PO Created"; Rec."PO Created")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the PO Created field.';
+            }
         }
         addafter(Quantity)
         {
@@ -210,6 +215,8 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
                 PurchaeLine.Validate("Job Unit Price (LCY)", JobPlanningLine."Unit Price (LCY)");
                 PurchaeLine.Validate("Direct Unit Cost", JobPlanningLine."Unit Cost");
                 PurchaeLine.Insert();
+                JobPlanningLine."PO Created" := true;
+                JobPlanningLine.Modify();
             until JobPlanningLine.Next() = 0;
     end;
 
