@@ -1423,6 +1423,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Control Yard No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2485237281 - Control 3756452143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3921990236">
+          <source>Enable this setting to apply custom field visibility rules based on company-specific preferences. When activated, selected fields will be hidden to simplify the interface or restrict access.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchases &amp; Payables Setup - Control Apply Field Visibility Rules - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2485237281 - Control 1872864284 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3921990236">
           <source>Specifies the value of the Block Invoice Posting field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2577,6 +2582,11 @@
           <source>Yard No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field Yard No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2485237281 - Field 3756452143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
+          <source>Apply Field Visibility Rules</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchases &amp; Payables Setup - Field Apply Field Visibility Rules - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2485237281 - Field 1872864284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
           <source>Block Invoice Posting</source>

@@ -10,5 +10,9 @@ tableextension 50117 "4HC Purchases & Payables Setup" extends "Purchases & Payab
         {
             Caption = 'Enable Email Approval';
         }
+        field(50102; "Apply Field Visibility Rules"; Boolean)
+        {
+            Caption = 'Apply Field Visibility Rules';
+        }
     }
 }
