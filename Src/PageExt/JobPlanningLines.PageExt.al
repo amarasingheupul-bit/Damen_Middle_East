@@ -149,7 +149,8 @@ pageextension 50109 "Job PlanningLines EXT" extends "Job Planning Lines"
             end
             else
                 this.UpdateExisitingPurchaseLine(PurchaseHeader);
-
+            Project."PO Created" := true;
+            Project.Modify();
             Message(POSucessMsg, PurchaseHeader."No.");
         end;
     end;

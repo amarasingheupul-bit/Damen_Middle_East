@@ -958,6 +958,126 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report 4HC Tax Invoice - NamedType ReportTitleLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2311708108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Posted Gen Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear General Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4238427850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Posted Purch Invoices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Posted Pur Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 873650812 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Posted Value Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Value Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4109488892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Posted VAT Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear VAT Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3659837518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Vendor Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Clear Vendor Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update General Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 1410369290 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control AmountZero - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 1410369290 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control AmountZero - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 2300013961 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero Credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control CreditZero - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 2300013961 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero Credit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control CreditZero - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 1516571584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero Debit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control DebitZero - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 1516571584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero DEbit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control DebitZero - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 980297015 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewAccount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 980297015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewAccount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 4254528340 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 4254528340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 2080978743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New CreditAmount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewCreditAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 2080978743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New CreditAmount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewCreditAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 299915122 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New DEbit Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewDebitAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 299915122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Debit Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewDebitAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 381641981 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New VAT Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewVatAmount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 381641981 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New VAT Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control NewVatAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 679131131 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control VATZero - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3251124644 - Control 679131131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zero VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update GL Entries - Control VATZero - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4074645880 - Control 3303687997 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the footer text for reports generated by this company.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1767,6 +1887,11 @@
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobCardS365 - Control Yard No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1766847106 - Control 356294705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2273701615">
+          <source>Specifies the value of the PO Created field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobListS365 - Control PO Created - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 277553983 - Control 1456408165 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2288457370">
           <source>Specifies the post code Type.</source>
@@ -2947,6 +3072,11 @@
           <source>Original Quote No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field Original Quote No. S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1069779217 - Field 356294705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
+          <source>PO Created</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsS365 - Field PO Created - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1069779217 - Field 2521638095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2818324089">
           <source>Quote Status</source>

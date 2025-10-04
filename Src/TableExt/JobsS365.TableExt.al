@@ -229,5 +229,11 @@ tableextension 50105 JobsS365 extends Job
             DataClassification = ToBeClassified;
             Caption = 'Vessel Type';
         }
+        field(50115; "PO Created"; Boolean)
+        {
+            Caption = 'PO Created';
+            DataClassification = ToBeClassified;
+            Editable = false;
+        }
     }
 }
