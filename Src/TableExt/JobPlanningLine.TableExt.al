@@ -28,5 +28,11 @@ tableextension 50107 "Job Planning Line" extends "Job Planning Line"
                 if JobPlanningLine.IsEmpty then Error('You must complete Seq. No. %1 first.', Rec."Predecessor Seq S365");
             end;
         }
+        field(50103; "PO Created"; Boolean)
+        {
+            Caption = 'PO Created';
+            DataClassification = ToBeClassified;
+            Editable = false;
+        }
     }
 }
