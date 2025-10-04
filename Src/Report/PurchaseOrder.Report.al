@@ -182,12 +182,30 @@ report 50103 "4HC Purchase Order"
             }
             trigger OnAfterGetRecord()
             var
-                Vendor: Record Vendor;
+                Country: Record "Country/Region";
+                Address2: Text[55];
+                City: Text[35];
+                CountryName: Text[55];
             begin
                 if this.Contact.Get("Buy-from Contact No.") then;
 
-                Vendor.Get("Buy-from Vendor No.");
-                this.Address := Vendor.Address + ' ' + Vendor."Address 2" + ' ' + Vendor.City + ' ' + Vendor.County;
+                if "Buy-from Address 2" <> '' then
+                    Address2 := ', ' + "Buy-from Address 2"
+                else
+                    Address2 := '';
+
+                if "Buy-from City" <> '' then
+                    City := ', ' + "Buy-from City"
+                else
+                    City := '';
+
+                if Country.Get("Buy-from Country/Region Code") then
+                    CountryName := ', ' + Country.Name
+                else
+                    CountryName := '.';
+
+                this.Address := "Buy-from Address" + Address2 + City + CountryName;
+
 
                 if "Gen. Bus. Posting Group" = 'UAE' then
                     this.TRNLeft := "VAT Registration No."
