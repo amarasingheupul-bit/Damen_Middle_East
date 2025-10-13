@@ -1083,6 +1083,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Company Information - Control Report Footer - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4074645880 - Control 3046576064 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Report Filed Hide field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Company Information - Control Report Filed Hide - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4139834033 - Control 1407200743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Shows the date when this vendor record was created or imported.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2257,6 +2262,11 @@
           <source>Amend Quote &amp; Archive_v1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SQS365 - Action AmendQuote&amp;Archive S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4074645880 - Field 3046576064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Report Filed Hide</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Company Information - Field Report Filed Hide - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4074645880 - Field 3303687997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
           <source>Report Footer</source>

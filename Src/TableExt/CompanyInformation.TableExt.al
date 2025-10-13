@@ -8,5 +8,10 @@ tableextension 50112 "4HC Company Information" extends "Company Information"
             Caption = 'Report Footer';
             Subtype = Bitmap;
         }
+        field(50101; "Report Filed Hide"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Report Filed Hide';
+        }
     }
 }

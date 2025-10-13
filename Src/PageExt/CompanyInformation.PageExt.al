@@ -14,5 +14,13 @@ pageextension 50118 "4HC Company Information" extends "Company Information"
                 end;
             }
         }
+        addbefore(Picture)
+        {
+            field("Report Filed Hide"; Rec."Report Filed Hide")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Report Filed Hide field.';
+            }
+        }
     }
 }

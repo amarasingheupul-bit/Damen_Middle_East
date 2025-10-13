@@ -57,6 +57,9 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(CompanyVatRegistration; this.CompanyInformation."VAT Registration No.")
             {
             }
+            column(ReportFieldHide; this.CompanyInformation."Report Filed Hide")
+            {
+            }
             column(CurrencyCode_SalesHeader; "Currency Code")
             {
             }
