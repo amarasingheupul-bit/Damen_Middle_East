@@ -1000,11 +1000,31 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
-                <TablixMember />
-                <TablixMember />
-                <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!ApplyFiedlVisibilityRules.Value="True"</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!ApplyFiedlVisibilityRules.Value="True"</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!ApplyFiedlVisibilityRules.Value="True"</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!ApplyFiedlVisibilityRules.Value="True"</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!ApplyFiedlVisibilityRules.Value="True"</Hidden>
+                  </Visibility>
+                </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
@@ -4351,7 +4371,7 @@
             <KeepTogether>true</KeepTogether>
             <Top>0.29373cm</Top>
             <Left>11.2022cm</Left>
-            <Height>5.04499cm</Height>
+            <Height>2.54cm</Height>
             <Width>0.02646cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
