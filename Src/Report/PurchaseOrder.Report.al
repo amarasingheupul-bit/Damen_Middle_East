@@ -69,6 +69,9 @@ report 50103 "4HC Purchase Order"
             column(CompanyVatRegistration; CompanyInformation."VAT Registration No.")
             {
             }
+            column(ApplyFiedlVisibilityRules; PurchPaybleSetup."Apply Field Visibility Rules")
+            {
+            }
             column(CurrencyCode_PurchaseHeader; "Currency Code")
             {
             }
@@ -235,10 +238,12 @@ report 50103 "4HC Purchase Order"
         this.CompanyInformation.Get();
         this.CompanyInformation.CalcFields(Picture);
         this.CompanyInformation.CalcFields("Report Footer");
+        this.PurchPaybleSetup.Get();
     end;
 
     var
         CompanyInformation: Record "Company Information";
+        PurchPaybleSetup: Record "Purchases & Payables Setup";
         Contact: Record Contact;
         BankAccount: Record "Bank Account";
         TRNLeft: Text[20];

@@ -4824,6 +4824,9 @@ End Function
         <Field Name="Budget_SalesHeaderFormat">
           <DataField>Budget_SalesHeaderFormat</DataField>
         </Field>
+        <Field Name="SalesReceivableSetup">
+          <DataField>SalesReceivableSetup</DataField>
+        </Field>
         <Field Name="IncomingPO_SalesHeader">
           <DataField>IncomingPO_SalesHeader</DataField>
         </Field>

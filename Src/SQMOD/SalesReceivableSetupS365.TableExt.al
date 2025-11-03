@@ -7,5 +7,9 @@ tableextension 50104 SalesReceivableSetupS365 extends "Sales & Receivables Setup
             DataClassification = CustomerContent;
             Caption = 'Archive and Delete Quote';
         }
+        field(50102; "Apply Field Visibility Rules"; Boolean)
+        {
+            Caption = 'Apply Field Visibility Rules';
+        }
     }
 }

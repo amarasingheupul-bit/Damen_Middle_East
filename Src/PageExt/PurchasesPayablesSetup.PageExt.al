@@ -18,7 +18,6 @@ pageextension 50131 "4HC Purchases & Payables Setup" extends "Purchases & Payabl
             {
                 ApplicationArea = All;
                 ToolTip = 'Enable this setting to apply custom field visibility rules based on company-specific preferences. When activated, selected fields will be hidden to simplify the interface or restrict access.';
-                ;
             }
         }
     }

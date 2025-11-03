@@ -99,6 +99,9 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(Budget_SalesHeader; Budget)
             {
             }
+            column(SalesReceivableSetup; SalesReceivableSetup."Apply Field Visibility Rules")
+            {
+            }
             column(IncomingPO_SalesHeader; "Incoming PO")
             {
             }
@@ -209,6 +212,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
     trigger OnPreReport()
     begin
         CompanyInformation.Get();
+        SalesReceivableSetup.Get();
         CompanyInformation.CalcFields(Picture);
         CompanyInformation.CalcFields("Report Footer");
     end;
@@ -217,6 +221,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
         CompanyInformation: Record "Company Information";
         Customer: Record Customer;
         BankAccont: Record "Bank Account";
+        SalesReceivableSetup: Record "Sales & Receivables Setup";
         ReportTitleLbl: Label 'Tax Invoice';
         Address: Text;
 }
