@@ -103,7 +103,7 @@ codeunit 50103 "4HC Event Subscribers"
         PurchaseHeader: Record "Purchase Header";
     begin
         if ApprovalEntry."Document Type" = ApprovalEntry."Document Type"::Invoice then
-            if (ApprovalEntry."Sequence No." = 1) and (ApprovalEntry.Status = ApprovalEntry.Status::Approved) then
+            if (ApprovalEntry."Sequence No." = 2) and (ApprovalEntry.Status = ApprovalEntry.Status::Approved) then
                 if PurchaseHeader.Get(ApprovalEntry."Document Type", ApprovalEntry."Document No.") then begin
                     PurchaseHeader."Email Approval Status" := PurchaseHeader."Email Approval Status"::Wait;
                     PurchaseHeader.Modify();
