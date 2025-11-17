@@ -3241,7 +3241,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!Currency_Code.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3275,14 +3275,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Currency_Code2">
+                        <Textbox Name="Textbox12">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Currency_Code.Value</Value>
+                                  <Value />
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -3291,11 +3291,11 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Currency_Code</rd:DefaultName>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -3370,7 +3370,11 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=Fields!ApplyFiedlVisibilityRules.Value="True"</Hidden>
+                  </Visibility>
+                </TablixMember>
                 <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
