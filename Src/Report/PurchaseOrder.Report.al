@@ -39,37 +39,37 @@ report 50103 "4HC Purchase Order"
             column(PaymentTermsCode_PurchaseHeader; "Payment Terms Code")
             {
             }
-            column(ReportTitleLbl; ReportTitleLbl)
+            column(ReportTitleLbl; this.ReportTitleLbl)
             {
             }
-            column(HeaderLbl; HeaderLbl)
+            column(HeaderLbl; this.HeaderLbl)
             {
             }
-            column(BodyLbl; BodyLbl)
+            column(BodyLbl; this.BodyLbl)
             {
             }
-            column(CompanyPicture; CompanyInformation.Picture)
+            column(CompanyPicture; this.CompanyInformation.Picture)
             {
             }
-            column(CompanyInfReportFooter; CompanyInformation."Report Footer")
+            column(CompanyInfReportFooter; this.CompanyInformation."Report Footer")
             {
             }
-            column(CompanyName; CompanyInformation.Name)
+            column(CompanyName; this.CompanyInformation.Name)
             {
             }
-            column(CompanyPhoneNo; CompanyInformation."Phone No.")
+            column(CompanyPhoneNo; this.CompanyInformation."Phone No.")
             {
             }
-            column(CompanyFaxNo; CompanyInformation."Fax No.")
+            column(CompanyFaxNo; this.CompanyInformation."Fax No.")
             {
             }
-            column(CompanyEmail; CompanyInformation."E-Mail")
+            column(CompanyEmail; this.CompanyInformation."E-Mail")
             {
             }
-            column(CompanyVatRegistration; CompanyInformation."VAT Registration No.")
+            column(CompanyVatRegistration; this.CompanyInformation."VAT Registration No.")
             {
             }
-            column(ApplyFiedlVisibilityRules; PurchPaybleSetup."Apply Field Visibility Rules")
+            column(ApplyFiedlVisibilityRules; this.PurchPaybleSetup."Apply Field Visibility Rules")
             {
             }
             column(CurrencyCode_PurchaseHeader; "Currency Code")
@@ -90,13 +90,13 @@ report 50103 "4HC Purchase Order"
             column(CostReference_PurchaseHeader; "Cost Reference")
             {
             }
-            column(Address; Address)
+            column(Address; this.Address)
             {
             }
-            column(ContactName; Contact.Name)
+            column(ContactName; this.Contact.Name)
             {
             }
-            column(TRNLeft; TRNLeft)
+            column(TRNLeft; this.TRNLeft)
             {
             }
             column(Budget_PurchaseHeader; Budget)
@@ -123,16 +123,16 @@ report 50103 "4HC Purchase Order"
             column(OPCOCustomer_PurchaseHeader; "OPCO Customer")
             {
             }
-            column(SwiftCode; BankAccount."SWIFT Code")
+            column(SwiftCode; this.BankAccount."SWIFT Code")
             {
             }
-            column(Currency; BankAccount."Currency Code")
+            column(Currency; this.BankAccount."Currency Code")
             {
             }
-            column(BankName; BankAccount.Name)
+            column(BankName; this.BankAccount.Name)
             {
             }
-            column(IBAN; BankAccount.IBAN)
+            column(IBAN; this.BankAccount.IBAN)
             {
             }
             column(Sales_Area; "Sales Area")
@@ -145,7 +145,12 @@ report 50103 "4HC Purchase Order"
             column(Incoming_PO; "Incoming PO")
             {
             }
-
+            column(CurrencyCode; this.CurrencyCode)
+            {
+            }
+            column(CurrencyFactor; this.CurrencyFactor)
+            {
+            }
             dataitem(PurchaseLine; "Purchase Line")
             {
                 DataItemLink = "Document No." = field("No.");
@@ -161,7 +166,7 @@ report 50103 "4HC Purchase Order"
                 column(UnitofMeasureCode_PurchaseLine; "Unit of Measure Code")
                 {
                 }
-                column(UnitPriceLCY_PurchaseLine; "Unit Price (LCY)")
+                column(UnitPriceLCY_PurchaseLine; "Direct Unit Cost")
                 {
                 }
                 column(Amount; Amount)
@@ -176,7 +181,7 @@ report 50103 "4HC Purchase Order"
                 column(VAT__; "VAT %")
                 {
                 }
-                column(Currency_Code; "Currency Code")
+                column(Type; Type)
                 {
                 }
                 trigger OnAfterGetRecord()
@@ -209,13 +214,22 @@ report 50103 "4HC Purchase Order"
 
                 this.Address := "Buy-from Address" + Address2 + City + CountryName;
 
-
                 if "Gen. Bus. Posting Group" = 'UAE' then
                     this.TRNLeft := "VAT Registration No."
                 else
                     this.TRNLeft := '';
 
                 if this.BankAccount.Get("Bank Details") then;
+
+                if "Currency Code" = '' then
+                    this.CurrencyCode := this.GenLederSetup."LCY Code"
+                else
+                    this.CurrencyCode := "Currency Code";
+
+                if "Currency Factor" <> 0 then
+                    this.CurrencyFactor := "Currency Factor"
+                else
+                    this.CurrencyFactor := 1;
             end;
         }
     }
@@ -239,6 +253,7 @@ report 50103 "4HC Purchase Order"
         this.CompanyInformation.CalcFields(Picture);
         this.CompanyInformation.CalcFields("Report Footer");
         this.PurchPaybleSetup.Get();
+        this.GenLederSetup.Get();
     end;
 
     var
@@ -246,6 +261,9 @@ report 50103 "4HC Purchase Order"
         PurchPaybleSetup: Record "Purchases & Payables Setup";
         Contact: Record Contact;
         BankAccount: Record "Bank Account";
+        GenLederSetup: Record "General Ledger Setup";
+        CurrencyCode: Code[10];
+        CurrencyFactor: Decimal;
         TRNLeft: Text[20];
         ReportTitleLbl: Label 'Purchase Order';
         Address: Text;
