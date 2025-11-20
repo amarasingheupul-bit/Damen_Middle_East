@@ -135,7 +135,12 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(Address; this.Address)
             {
             }
-
+            column(CurrencyCode; this.CurrencyCode)
+            {
+            }
+            column(CurrencyFactor; this.CurrencyFactor)
+            {
+            }
             dataitem(SalesLine; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = field("No.");
@@ -167,7 +172,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
                 column(VAT__; "VAT %")
                 {
                 }
-                column(Currency_Code; GetCurrencyCode())
+                column(Type; Type)
                 {
                 }
                 trigger OnAfterGetRecord()
@@ -183,6 +188,16 @@ report 50100 "4HC Posted Sales Tax Invoice"
                 Country.Reset();
                 if Country.Get("Sell-to Country/Region Code") then;
                 this.Address := "Sell-to Address" + ' ' + "Sell-to Address 2" + ' ' + "Sell-to City" + ' ' + "Sell-to County" + ' ' + "Sell-to Post Code" + ' ' + Country.Name;
+
+                if "Currency Code" = '' then
+                    this.CurrencyCode := this.GenLederSetup."LCY Code"
+                else
+                    this.CurrencyCode := "Currency Code";
+
+                if "Currency Factor" <> 0 then
+                    this.CurrencyFactor := 1 / "Currency Factor"
+                else
+                    this.CurrencyFactor := 1;
             end;
         }
     }
@@ -222,6 +237,9 @@ report 50100 "4HC Posted Sales Tax Invoice"
         Customer: Record Customer;
         BankAccont: Record "Bank Account";
         SalesReceivableSetup: Record "Sales & Receivables Setup";
+        GenLederSetup: Record "General Ledger Setup";
         ReportTitleLbl: Label 'Tax Invoice';
+        CurrencyCode: Code[10];
+        CurrencyFactor: Decimal;
         Address: Text;
 }
