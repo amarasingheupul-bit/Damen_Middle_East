@@ -18,6 +18,11 @@ pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
                     if RecJob.Get(Rec."Job No. S365") then PAGE.RUN(JobCardPageID, RecJob);
                 end;
             }
+            field("Bank Details"; Rec."Bank Details")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Bank Details field.';
+            }
         }
 
         addafter(General)

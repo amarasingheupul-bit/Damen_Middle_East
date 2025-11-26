@@ -1563,6 +1563,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchases &amp; Payables Setup - Control Enable Email Approval - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 2438345936 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the Bank Details field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Bank Details - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3919202842 - Control 450851517 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
           <source>Specifies the Job No.</source>
           <note from="Developer" annotates="general" priority="2"></note>

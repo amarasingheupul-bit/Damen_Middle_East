@@ -141,6 +141,9 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(CurrencyFactor; this.CurrencyFactor)
             {
             }
+            column(LocalCurrecy; this.GenLederSetup."LCY Code")
+            {
+            }
             dataitem(SalesLine; "Sales Invoice Line")
             {
                 DataItemLink = "Document No." = field("No.");

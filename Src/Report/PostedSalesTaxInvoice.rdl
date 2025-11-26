@@ -3115,14 +3115,6 @@
                                     <Format>n3</Format>
                                   </Style>
                                 </TextRun>
-                                <TextRun>
-                                  <Value xml:space="preserve">            </Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
                               </TextRuns>
                               <Style>
                                 <TextAlign>Left</TextAlign>
@@ -4431,7 +4423,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>5.86332in</Top>
+            <Top>5.20082in</Top>
             <Left>0.03917in</Left>
             <Height>1in</Height>
             <Width>3.69792in</Width>
@@ -4442,88 +4434,13 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox25">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Please let us know if you have any queries about this invoice within 4 days in writing.</Value>
-                    <Style>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>13.33887cm</Top>
-            <Left>0.09949cm</Left>
-            <Height>0.52944cm</Height>
-            <Width>11.99854cm</Width>
-            <ZIndex>5</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox28">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Also please make payment of the full amount at the agreed payment term of </Value>
-                    <Style>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>=Fields!PaymentTermsCode_SalesHeader.Value</Value>
-                    <Style>
-                      <FontFamily>Segoe UI</FontFamily>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>13.86831cm</Top>
-            <Left>0.09949cm</Left>
-            <Height>0.6cm</Height>
-            <Width>15.33235cm</Width>
-            <ZIndex>6</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Rectangle Name="Rectangle1">
             <KeepTogether>true</KeepTogether>
             <Top>0.41133cm</Top>
             <Left>11.24199cm</Left>
             <Height>2.38739cm</Height>
             <Width>0.02646cm</Width>
-            <ZIndex>7</ZIndex>
+            <ZIndex>5</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4550,11 +4467,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>20.13161cm</Top>
+            <Top>18.38536cm</Top>
             <Left>0.09949cm</Left>
             <Height>0.52944cm</Height>
             <Width>2.87233cm</Width>
-            <ZIndex>8</ZIndex>
+            <ZIndex>6</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4591,11 +4508,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>20.13161cm</Top>
+            <Top>18.38536cm</Top>
             <Left>14.91051cm</Left>
             <Height>0.52944cm</Height>
             <Width>3.38033cm</Width>
-            <ZIndex>9</ZIndex>
+            <ZIndex>7</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4836,7 +4753,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CurrencyCode.Value</Value>
+                                  <Value>=First(Fields!LocalCurrecy.Value, "DataSet_Result")</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4905,7 +4822,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=Fields!CurrencyCode.Value</Value>
+                                  <Value>=First(Fields!LocalCurrecy.Value, "DataSet_Result")</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5201,7 +5118,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Amount.Value)*Fields!CurrencyFactor.Value</Value>
+                                  <Value>=Sum(Fields!VATAmount.Value)*Fields!CurrencyFactor.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5367,7 +5284,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Amount.Value)*Fields!CurrencyFactor.Value</Value>
+                                  <Value>=Sum(Fields!VATAmount.Value)*Fields!CurrencyFactor.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5535,7 +5452,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Amount.Value)*Fields!CurrencyFactor.Value</Value>
+                                  <Value>=Sum(Fields!VATAmount.Value)*Fields!CurrencyFactor.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5654,6 +5571,9 @@
                   <TablixMembers>
                     <TablixMember />
                   </TablixMembers>
+                  <Visibility>
+                    <Hidden>=Fields!ReportFieldHide.Value="False"</Hidden>
+                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <Group Name="FixedAssest">
@@ -5678,6 +5598,9 @@
                   <TablixMembers>
                     <TablixMember />
                   </TablixMembers>
+                  <Visibility>
+                    <Hidden>=Fields!ReportFieldHide.Value="False"</Hidden>
+                  </Visibility>
                 </TablixMember>
                 <TablixMember />
               </TablixMembers>
@@ -5686,21 +5609,96 @@
             <Left>0.0995cm</Left>
             <Height>4.02334cm</Height>
             <Width>12.4888cm</Width>
-            <ZIndex>10</ZIndex>
+            <ZIndex>8</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox25">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Please let us know if you have any queries about this invoice within 4 days in writing.</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <Top>15.92647cm</Top>
+            <Left>0.0995cm</Left>
+            <Height>0.52944cm</Height>
+            <Width>11.99854cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox28">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Also please make payment of the full amount at the agreed payment term of </Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Fields!PaymentTermsCode_SalesHeader.Value</Value>
+                    <Style>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox25</rd:DefaultName>
+            <Top>16.45591cm</Top>
+            <Left>0.0995cm</Left>
+            <Height>0.6cm</Height>
+            <Width>15.33235cm</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>20.7563cm</Height>
+        <Height>18.9148cm</Height>
         <Style />
       </Body>
       <Width>19.43802cm</Width>
       <Page>
         <PageHeader>
-          <Height>4.50675cm</Height>
+          <Height>3.87175cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -5828,7 +5826,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>1.42014in</Top>
+              <Top>1.17014in</Top>
               <Left>1.81148in</Left>
               <Height>0.35417in</Height>
               <Width>3.47in</Width>
@@ -6063,6 +6061,9 @@ End Function
         </Field>
         <Field Name="CurrencyFactorFormat">
           <DataField>CurrencyFactorFormat</DataField>
+        </Field>
+        <Field Name="LocalCurrecy">
+          <DataField>LocalCurrecy</DataField>
         </Field>
         <Field Name="No_SalesLine">
           <DataField>No_SalesLine</DataField>

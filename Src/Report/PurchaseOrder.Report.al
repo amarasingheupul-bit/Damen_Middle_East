@@ -151,6 +151,9 @@ report 50103 "4HC Purchase Order"
             column(CurrencyFactor; this.CurrencyFactor)
             {
             }
+            column(LocalCurrecy; this.GenLederSetup."LCY Code")
+            {
+            }
             dataitem(PurchaseLine; "Purchase Line")
             {
                 DataItemLink = "Document No." = field("No.");
