@@ -118,6 +118,14 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
         {
             Caption = 'Email Approver 1 No.';
         }
+        addafter("Currency Code")
+        {
+            field("FX Rate"; Rec."FX Rate")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FX Rate field.';
+            }
+        }
     }
     actions
     {

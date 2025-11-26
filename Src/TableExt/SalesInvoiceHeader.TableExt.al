@@ -200,5 +200,11 @@ tableextension 50115 "4HC Sales Invoice Header" extends "Sales Invoice Header"
         {
             Caption = 'Incoming PO';
         }
+        field(50141; "FX Rate"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+            DecimalPlaces = 0 : 5;
+            Caption = 'FX Rate';
+        }
     }
 }

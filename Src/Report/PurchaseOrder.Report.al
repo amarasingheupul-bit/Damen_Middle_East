@@ -229,8 +229,8 @@ report 50103 "4HC Purchase Order"
                 else
                     this.CurrencyCode := "Currency Code";
 
-                if "Currency Factor" <> 0 then
-                    this.CurrencyFactor := 1 / "Currency Factor"
+                if "FX Rate" <> 0 then
+                    this.CurrencyFactor := "FX Rate"
                 else
                     this.CurrencyFactor := 1;
             end;

@@ -238,5 +238,11 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
             DataClassification = ToBeClassified;
             Caption = 'Sales Order No.';
         }
+        field(50141; "FX Rate"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'FX Rate';
+            DecimalPlaces = 0 : 5;
+        }
     }
 }

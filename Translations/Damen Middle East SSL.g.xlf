@@ -1398,6 +1398,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control SalesDirecotor Email - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Control 3333809600 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Specifies the value of the FX Rate field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Control FX Rate - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 711270503 - Change 801304080 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
           <source>Email Approver 1 No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1548,6 +1553,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Control Yard No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 958370998 - Control 3333809600 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Specifies the value of the FX Rate field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Control FX Rate - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2485237281 - Control 3756452143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3921990236">
           <source>Enable this setting to apply custom field visibility rules based on company-specific preferences. When activated, selected fields will be hidden to simplify the interface or restrict access.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1692,6 +1702,11 @@
           <source>Specifies the value of the Yard No. field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control Yard No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3919202842 - Control 3333809600 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the value of the FX Rate field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Sales Invoice - Control FX Rate - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3883510409 - Control 1407200743 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
           <source>Shows the date when this vendor record was created or imported.</source>
@@ -2253,6 +2268,11 @@
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control Yard No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2303761479 - Control 3333809600 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Specifies the value of the FX Rate field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control FX Rate - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 108481621 - Control 3756452143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
           <source>Enable this setting to apply custom field visibility rules based on company-specific preferences. When activated, selected fields will be hidden to simplify the interface or restrict access.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2387,6 +2407,11 @@
           <source>End User</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purch. Inv. Header - Field End User/ Main Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 948923815 - Field 3333809600 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
+          <source>FX Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purch. Inv. Header - Field FX Rate - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 948923815 - Field 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>G/L Account</source>
@@ -2607,6 +2632,11 @@
           <source>External Approver 2 No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field External Approver 2 No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 427401629 - Field 3333809600 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>FX Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Purchase Header - Field FX Rate - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 427401629 - Field 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>G/L Account</source>
@@ -2837,6 +2867,11 @@
           <source>End User</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field End User/ Main Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2831041651 - Field 3333809600 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>FX Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field FX Rate - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2831041651 - Field 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>G/L Account</source>
@@ -3237,6 +3272,11 @@
           <source>End User</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field End User/ Main Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2509859384 - Field 3333809600 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>FX Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Header S365 - Field FX Rate - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2509859384 - Field 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>G/L Account</source>

@@ -149,5 +149,13 @@ pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
                 }
             }
         }
+        addafter("Currency Code")
+        {
+            field("FX Rate"; Rec."FX Rate")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FX Rate field.';
+            }
+        }
     }
 }

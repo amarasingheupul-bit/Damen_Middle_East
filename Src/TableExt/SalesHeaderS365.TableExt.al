@@ -205,5 +205,11 @@ tableextension 50100 "Sales Header S365" extends "Sales Header"
             DataClassification = ToBeClassified;
             Caption = 'Vessel Type';
         }
+        field(50141; "FX Rate"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+            DecimalPlaces = 0 : 5;
+            Caption = 'FX Rate';
+        }
     }
 }

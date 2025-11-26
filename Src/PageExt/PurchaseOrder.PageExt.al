@@ -146,6 +146,14 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
                 }
             }
         }
+        addlast(General)
+        {
+            field("FX Rate"; Rec."FX Rate")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FX Rate field.';
+            }
+        }
     }
 
     actions

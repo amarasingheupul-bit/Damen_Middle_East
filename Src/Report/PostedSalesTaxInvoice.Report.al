@@ -57,7 +57,7 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(CompanyVatRegistration; this.CompanyInformation."VAT Registration No.")
             {
             }
-            column(ReportFieldHide; this.CompanyInformation."Report Filed Hide")
+            column(ReportFieldHide; this.SalesReceivableSetup."Apply Field Visibility Rules")
             {
             }
             column(CurrencyCode_SalesHeader; "Currency Code")
@@ -97,9 +97,6 @@ report 50100 "4HC Posted Sales Tax Invoice"
             {
             }
             column(Budget_SalesHeader; Budget)
-            {
-            }
-            column(SalesReceivableSetup; SalesReceivableSetup."Apply Field Visibility Rules")
             {
             }
             column(IncomingPO_SalesHeader; "Incoming PO")
@@ -197,8 +194,8 @@ report 50100 "4HC Posted Sales Tax Invoice"
                 else
                     this.CurrencyCode := "Currency Code";
 
-                if "Currency Factor" <> 0 then
-                    this.CurrencyFactor := 1 / "Currency Factor"
+                if "FX Rate" <> 0 then
+                    this.CurrencyFactor := "FX Rate"
                 else
                     this.CurrencyFactor := 1;
             end;
@@ -229,10 +226,10 @@ report 50100 "4HC Posted Sales Tax Invoice"
 
     trigger OnPreReport()
     begin
-        CompanyInformation.Get();
-        SalesReceivableSetup.Get();
-        CompanyInformation.CalcFields(Picture);
-        CompanyInformation.CalcFields("Report Footer");
+        this.CompanyInformation.Get();
+        this.SalesReceivableSetup.Get();
+        this.CompanyInformation.CalcFields(Picture);
+        this.CompanyInformation.CalcFields("Report Footer");
     end;
 
     var

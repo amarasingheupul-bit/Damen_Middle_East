@@ -144,6 +144,14 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                 }
             }
         }
+        addafter("Currency Code")
+        {
+            field("FX Rate"; Rec."FX Rate")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FX Rate field.';
+            }
+        }
     }
     actions
     {
