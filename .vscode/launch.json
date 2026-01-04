@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Dev Sandbox",
+            "name": "UAT Sandbox",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "Dev",
+            "environmentName": "UAT",
             "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": "All",
@@ -16,36 +16,6 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "schemaUpdateMode": "ForceSync"
-        },
-        {
-            "name": "UAT Sandbox",
-            "request": "launch",
-            "type": "al",
-            "environmentType": "Sandbox",
-            "environmentName": "UAT",
-            "startupObjectId": 22,
-            "startupObjectType": "Page",
-            "breakOnError": "All",
-            "tenant": "35562ed6-9c4f-452a-a376-c871ff1c2405",
-            "server": "https://businesscentral.dynamics.com/",
-            "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
-        },
-        {
-            "name": "DUNE-TEST",
-            "request": "launch",
-            "type": "al",
-            "environmentType": "Sandbox",
-            "environmentName": "DUNE-TEST",
-            "startupObjectId": 22,
-            "startupObjectType": "Page",
-            "breakOnError": "All",
-            "tenant": "732ba761-d72c-4827-aa83-0879d0f1fdbf",
-            "server": "https://businesscentral.dynamics.com/",
-            "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
         }
     ]
 }
