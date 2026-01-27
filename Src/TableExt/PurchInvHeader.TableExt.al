@@ -84,7 +84,7 @@ tableextension 50116 "4HC Purch. Inv. Header" extends "Purch. Inv. Header"
             Caption = 'Sales Provider No';
             DataClassification = ToBeClassified;
         }
-        field(50138; "Sales Manager"; Code[20])
+        field(50138; "Sales Manager"; Text[30])
         {
             Caption = 'Sales Manager';
             DataClassification = ToBeClassified;

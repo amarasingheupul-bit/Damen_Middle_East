@@ -167,7 +167,7 @@ tableextension 50115 "4HC Sales Invoice Header" extends "Sales Invoice Header"
             Caption = 'Service Provider No';
             DataClassification = ToBeClassified;
         }
-        field(50138; "Sales Manager"; Code[20])
+        field(50138; "Sales Manager"; Text[30])
         {
             Caption = 'Sales Manager';
             DataClassification = ToBeClassified;

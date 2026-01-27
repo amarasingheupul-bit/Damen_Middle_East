@@ -167,7 +167,7 @@ tableextension 50100 "Sales Header S365" extends "Sales Header"
             Caption = 'Service Provider No';
             DataClassification = ToBeClassified;
         }
-        field(50138; "Sales Manager"; Text[20])
+        field(50138; "Sales Manager"; Text[30])
         {
             Caption = 'Sales Manager';
             DataClassification = ToBeClassified;

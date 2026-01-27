@@ -84,7 +84,7 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
             Caption = 'Sales Provider No';
             DataClassification = ToBeClassified;
         }
-        field(50138; "Sales Manager"; Code[20])
+        field(50138; "Sales Manager"; Text[30])
         {
             Caption = 'Sales Manager';
             DataClassification = ToBeClassified;

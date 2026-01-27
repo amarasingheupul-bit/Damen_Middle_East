@@ -3,15 +3,14 @@ report 50112 "Update SalInv Fields Report"
 #pragma warning restore AA0215
 {
     UsageCategory = ReportsAndAnalysis;
-    Caption = 'Update SI Entries';
+    Caption = 'Update Posted SI Entries';
     ApplicationArea = All;
     ProcessingOnly = true;
-    Permissions = tabledata "Sales Header" = RIMD;
+    Permissions = tabledata "Sales Invoice Header" = RIMD;
 
     dataset
     {
-        dataitem("Sales Header"; "Sales Header")
-
+        dataitem("Sales Invoice Header"; "Sales Invoice Header")
         {
             RequestFilterFields = "No.";
             trigger OnAfterGetRecord()
@@ -20,12 +19,16 @@ report 50112 "Update SalInv Fields Report"
                 if GetFilter("No.") <> '' then begin
 
                     if this.NewFieldCode <> '' then "Currency Code" := this.NewFieldCode;
+                    if this.NewFieldDec <> 0 then "Amount" := this.NewFieldDec;
+                    if this.NewFieldText <> '' then "Bank Details" := this.NewFieldText;
+
                     Modify();
                 end;
             end;
 
         }
     }
+
     requestpage
     {
         layout
@@ -38,8 +41,24 @@ report 50112 "Update SalInv Fields Report"
                     {
                         ApplicationArea = All;
                         MultiLine = true;
-                        ToolTip = 'New Value';
-                        Caption = 'New Value';
+                        ToolTip = 'New Currency Code';
+                        Caption = 'New Currency Code';
+                    }
+
+                    field(NewFieldDec; NewFieldDec)
+                    {
+                        ApplicationArea = All;
+                        MultiLine = true;
+                        ToolTip = 'New Amount';
+                        Caption = 'New Amount';
+                    }
+
+                    field(NewFieldText; NewFieldText)
+                    {
+                        ApplicationArea = All;
+                        MultiLine = true;
+                        ToolTip = 'New Text';
+                        Caption = 'New Text';
                     }
 
                 }
@@ -49,7 +68,8 @@ report 50112 "Update SalInv Fields Report"
 
 
     var
-        //    NewFieldDec: Decimal;
-        //   NewFieldText: Text;
+
         NewFieldCode: Code[10];
+        NewFieldDec: Decimal;
+        NewFieldText: Text[20];
 }
