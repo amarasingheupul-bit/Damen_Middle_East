@@ -15,6 +15,9 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(OrderDate_SalesHeader; "Order Date")
             {
             }
+            column(Posting_Date; "Posting Date")
+            {
+            }
             column(YourReference_SalesHeader; "Your Reference")
             {
             }
