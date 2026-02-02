@@ -2,6 +2,8 @@
 table 50106 "Excel Data Import General"
 #pragma warning restore AA0215
 {
+    Permissions =
+    tabledata "Excel Data Import General" = RIMD;
 
     Caption = 'Excel Data Import General';
     DataClassification = ToBeClassified;

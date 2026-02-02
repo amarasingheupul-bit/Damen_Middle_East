@@ -79,6 +79,10 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Bank Details field.';
                 }
+                field("Incoming PO"; "Incoming PO")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
         addafter("Purchaser Code")
