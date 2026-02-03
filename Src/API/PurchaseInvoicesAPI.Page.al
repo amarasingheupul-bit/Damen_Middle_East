@@ -527,6 +527,19 @@ page 50109 "4HC Purchase Invoices API"
                 {
                     Caption = 'Last Modified Date';
                 }
+                field(IncomingPOVar; IncomingPOVar)
+                {
+                    Caption = 'Incoming PO';
+                }
+                field(CostType; CostType)
+                {
+                    Caption = 'Cost Type';
+                }
+                field(PODSOL; PODSOL)
+                {
+                    Caption = 'PO(DSOL)';
+                }
+
             }
         }
     }
@@ -618,11 +631,25 @@ page 50109 "4HC Purchase Invoices API"
         InvoiceDiscountAmount: Decimal;
         HasWritePermission: Boolean;
         PurchaseInvoicePermissionsErr: Label 'You do not have permissions to read Purchase Invoices.';
+        IncomingPOVar: Text[30];
+        CostType: code[10];
+        PODSOL: Code[35];
 
     local procedure SetCalculatedFields()
+    var
+        PurchaseHeader: Record "Purchase Header";
     begin
         Rec.LoadFields("Currency Code");
         CurrencyCodeTxt := GraphMgtGeneralTools.TranslateNAVCurrencyCodeToCurrencyCode(LCYCurrencyCode, Rec."Currency Code");
+
+        // Load IncomingPO and CostType values
+        if not Rec.Posted then begin
+            if PurchaseHeader.Get(PurchaseHeader."Document Type"::Invoice, Rec."No.") then begin
+                IncomingPOVar := PurchaseHeader."Incoming PO";
+                CostType := PurchaseHeader."Quote Type";
+                PODSOL := PurchaseHeader."Vendor Order No.";
+            end;
+        end;
     end;
 
     local procedure UpdateDiscount()

@@ -130,6 +130,11 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                 ToolTip = 'Specifies the value of the FX Rate field.';
             }
         }
+        modify("Vendor Order No.")
+        {
+            Visible = true;
+        }
+        moveafter("Incoming PO"; "Vendor Order No.")
     }
     actions
     {
@@ -146,6 +151,23 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                     Rec."Email Approval Status" := Rec."Email Approval Status"::Open;
                     Rec.Modify();
                     Message('Email approval process has been reopened for this purchase invoice.');
+                end;
+            }
+        }
+        addlast(Processing)
+        {
+            action(ViewApprovalAudit)
+            {
+                Caption = 'Approval Audit Trail';
+                ApplicationArea = All;
+                Image = History;
+
+                trigger OnAction()
+                var
+                    Audit: Record "Purch. Approval Audit";
+                begin
+                    Audit.SetRange("Document No.", Rec."No.");
+                    Page.Run(Page::"Purch Approval Audit List", Audit);
                 end;
             }
         }
