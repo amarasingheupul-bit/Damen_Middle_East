@@ -1,7 +1,7 @@
 page 50118 "Delete PPI Related Data"
 {
     PageType = Card;
-    Caption = 'Delete PPI Related Data';
+    Caption = 'Delete GLE_PPI_VLE_VATE_ILE_VALE Related Data';
     ApplicationArea = All;
     UsageCategory = Administration;
     Permissions = tabledata "G/L Entry" = RMID,
@@ -34,21 +34,18 @@ page 50118 "Delete PPI Related Data"
                             this.GL.Reset();
                             this.GL.SetFilter(this.GL."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.GL.FindFirst() then
-                                Message('GL Document No.: %1', this.GL."Document No.");
+                            if this.GL.FindSet() then
+                                repeat
+                                    this.gl.Delete();
 
-                            repeat
-                                this.gl.Delete();
-                                Message('Deleting Document No.: %1', this.GL."Document No.");
-
-                            until this.GL.Next() = 0;
+                                until this.GL.Next() = 0;
 
                             // 02-Delete VAT Entries
 
                             this.VATE.Reset();
                             this.VATE.SetFilter(this.VATE."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.VATE.FindFirst() then
+                            if this.VATE.FindSet() then
                                 repeat
                                     this.VATE.Delete();
                                 until this.VATE.Next() = 0;
@@ -58,7 +55,7 @@ page 50118 "Delete PPI Related Data"
                             this.VLE.Reset();
                             this.VLE.SetFilter(this.VLE."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.VLE.FindFirst() then
+                            if this.VLE.FindSet() then
                                 repeat
                                     this.VLE.Delete();
                                 until this.VLE.Next() = 0;
@@ -68,7 +65,7 @@ page 50118 "Delete PPI Related Data"
                             this.DVLE.Reset();
                             this.DVLE.SetFilter(this.DVLE."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.DVLE.FindFirst() then
+                            if this.DVLE.FindSet() then
                                 repeat
                                     this.DVLE.Delete();
                                 until this.DVLE.Next() = 0;
@@ -78,7 +75,7 @@ page 50118 "Delete PPI Related Data"
                             this.ILE.Reset();
                             this.ILE.SetFilter(this.ILE."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.ILE.FindFirst() then
+                            if this.ILE.FindSet() then
                                 repeat
                                     this.ILE.Delete();
                                 until this.ILE.Next() = 0;
@@ -88,7 +85,7 @@ page 50118 "Delete PPI Related Data"
                             this.VALE.Reset();
                             this.VALE.SetFilter(this.VALE."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.VALE.FindFirst() then
+                            if this.VALE.FindSet() then
                                 repeat
                                     this.VALE.Delete();
                                 until this.VALE.Next() = 0;
@@ -98,7 +95,7 @@ page 50118 "Delete PPI Related Data"
                             this.PINVLINE.Reset();
                             this.PINVLINE.SetFilter(this.PINVLINE."Document No.", '%1', this.ExcelData."Document No.");
 
-                            if this.PINVLINE.FindFirst() then
+                            if this.PINVLINE.FindSet() then
                                 repeat
                                     this.PINVLINE.Delete();
                                 until this.PINVLINE.Next() = 0;
@@ -108,7 +105,7 @@ page 50118 "Delete PPI Related Data"
                             this.PINVHDR.Reset();
                             this.PINVHDR.SetFilter(this.PINVHDR."No.", '%1', this.ExcelData."Document No.");
 
-                            if this.PINVHDR.FindFirst() then
+                            if this.PINVHDR.FindSet() then
                                 repeat
                                     this.PINVHDR.Delete();
                                 until this.PINVHDR.Next() = 0;
