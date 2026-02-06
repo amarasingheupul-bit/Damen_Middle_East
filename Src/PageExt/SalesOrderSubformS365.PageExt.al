@@ -26,5 +26,24 @@ pageextension 50110 "EXT Sales Order Subform" extends "Sales Order Subform"
         {
             Visible = true;
         }
+        addafter(ShortcutDimCode3)
+        {
+            field("Job No."; "Job No.")
+            {
+                ApplicationArea = All;
+                Editable = true;
+            }
+            field("Job Task No."; "Job Task No.")
+            {
+                ApplicationArea = All;
+                Editable = true;
+            }
+            field("Job Contract Entry No."; "Job Contract Entry No.")
+            {
+                ApplicationArea = All;
+                Editable = true;
+            }
+        }
+
     }
 }

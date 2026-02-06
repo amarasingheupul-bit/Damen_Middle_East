@@ -8,6 +8,7 @@ pageextension 50128 "4HC Sales Invoice" extends "Sales Invoice"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the Job No.';
+                Editable = true;
 
                 trigger OnAssistEdit()
                 var
