@@ -167,6 +167,36 @@ codeunit 50103 "4HC Event Subscribers"
         Text001Err: Label 'You can not release the document without sales person approval.';
         POPrintingErr: Label 'The purchase order must be released before printing.';
         POPostingValidationErr: Label 'You can not post the document without sales director approval.';
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnPostJobContractLineBeforeTestFields', '', false, false)]
+    local procedure OnPostJobContractLineBeforeTestFields(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; var IsHandled: Boolean)
+    var
+        SalesSetup: Record "Sales & Receivables Setup";
+    begin
+        // Check if setup allows skipping validation
+        if SalesSetup.Get() then
+            if SalesSetup."Skip Job Validation on Sales" then
+                IsHandled := true;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Post-Line", 'OnBeforeCheckCurrency', '', false, false)]
+    local procedure OnBeforeCheckCurrency(Job: Record Job; SalesHeader: Record "Sales Header"; JobPlanningLine: Record "Job Planning Line"; var IsHandled: Boolean)
+    begin
+        // Skip currency validation for all projects
+        IsHandled := true;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Job Create-Invoice", 'OnBeforeCreateSalesLine', '', false, false)]
+    local procedure OnBeforeCreateSalesLine(var SalesHeader: Record "Sales Header"; var JobPlanningLine: Record "Job Planning Line")
+    begin
+
+        // Ensure Qty. Transferred to Invoice has a value
+        JobPlanningLine."Qty. Transferred to Invoice" := 1;
+        // if JobPlanningLine."Qty. Transferred to Invoice" =1 then begin
+        //     JobPlanningLine."Qty. Transferred to Invoice" := JobPlanningLine.Quantity;
+        //     JobPlanningLine.Modify();
+        // end;
+    end;
 }
 
 // [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnBeforeSetStatusToPendingApproval, '', false, false)]
