@@ -25,6 +25,7 @@ codeunit 50100 "EventSubscriber S365"
         Jobs.SetRange("Quote Type S365", SalesHeader."Quote Type S365");
         if Page.RunModal(Page::ProjectTemplateS365, Jobs) = Action::LookupOK then begin
             SalesHeader."Job TemplateS365" := Jobs."No.";
+            SalesHeader."Currency Code" := 'USD';
             SalesHeader.Modify();
         end;
     end;
@@ -81,7 +82,9 @@ codeunit 50100 "EventSubscriber S365"
             Job.Validate("Incoming PO", SalesHeader."Incoming PO");
             Job.Validate("Sales Order No. 4HC", SalesHeader2."No.");
             Job.Validate("Vessel Type", SalesHeader."Vessel Type");
+            //Job.Validate("Currency Code", SalesHeader."Currency Code");
             Job.Insert(true);
+            Job.Validate("Currency Code", SalesHeader."Currency Code");
             Func.CreateDimensionValues(Job."No.");
 
             CopyJob.SetCopyOptions(false, false, false, Source::"Job Planning Lines", PlanningLineType, LedgerEntryType::"Usage+Sale");
