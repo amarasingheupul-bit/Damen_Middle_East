@@ -244,5 +244,15 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
             Caption = 'FX Rate';
             DecimalPlaces = 0 : 5;
         }
+        field(50142; "Related PO"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Related PO';
+        }
+        field(50143; "Supplier Invoice NO."; Code[20])
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Supplier Invoice NO.';
+        }
     }
 }

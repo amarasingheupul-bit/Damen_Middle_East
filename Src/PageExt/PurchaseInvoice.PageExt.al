@@ -135,6 +135,17 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
             Visible = true;
         }
         moveafter("Incoming PO"; "Vendor Order No.")
+        addafter("Vendor Order No.")
+        {
+            field("Related PO"; "Related PO")
+            {
+                ApplicationArea = All;
+            }
+            field("Supplier Invoice NO."; "Supplier Invoice NO.")
+            {
+                ApplicationArea = All;
+            }
+        }
     }
     actions
     {
