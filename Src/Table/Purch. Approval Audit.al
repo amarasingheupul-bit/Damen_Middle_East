@@ -33,6 +33,9 @@ table 50107 "Purch. Approval Audit"
         field(17; "Email Approval Status"; Enum "4HC PAutoApprovalStatus") { }
         field(18; "Status Updated At"; DateTime) { }
         field(19; "Invoice Status"; Enum "Purchase Document Status") { }
+        field(20; "Approver 1 Sent DateTime"; DateTime) { Caption = 'Approver 1 Sent DateTime'; }
+        field(21; "Approver 2 Sent DateTime"; DateTime) { Caption = 'Approver 2 Sent DateTime'; }
+        field(22; "Approver1 to Approver2 Duration"; Duration) { Caption = 'Approver 1 to 2 Duration'; }
 
     }
 
