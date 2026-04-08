@@ -16,22 +16,6 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             //"schemaUpdateMode": "ForceSync"
-        },
-        {
-            "name": "UAT2",
-            "request": "launch",
-            "type": "al",
-            "environmentType": "Sandbox",
-            "environmentName": "UAT2",
-            "startupObjectId": 89,
-            "startupObjectType": "Page",
-            "breakOnError": "All",
-            "tenant": "35562ed6-9c4f-452a-a376-c871ff1c2405",
-            "server": "https://businesscentral.dynamics.com/",
-            "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
-            //"schemaUpdateMode": "ForceSync"
         }
     ]
 }

@@ -1373,6 +1373,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Clear Vendor Ledger Entries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3245329743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Delete Entries GL/VL/DVL/BL - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 840936519 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Posted Purchase Invoice Report</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2872,6 +2877,11 @@
           <source>Specifies the value of the FX Rate field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Control FX Rate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2303761479 - Change 2282416948 - Method 1542331226 - NamedType 1952689767" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 2303761479">
+          <source>Sales Order currency (%1) is different from Customer currency (%2).\Do you want to continue posting?</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Order Currency Code, %2 = Customer Currency Code</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderS365 - Change Post - Method OnBeforeAction - NamedType CurrencyMismatchQst</note>
         </trans-unit>
         <trans-unit id="PageExtension 108481621 - Control 3756452143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
           <source>Enable this setting to apply custom field visibility rules based on company-specific preferences. When activated, selected fields will be hidden to simplify the interface or restrict access.</source>

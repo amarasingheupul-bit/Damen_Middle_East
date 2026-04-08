@@ -190,6 +190,34 @@ pageextension 50107 SalesOrderS365 extends "Sales Order"
                     Report.Run(Report::"4HC Tax Invoice", true, true, SalesHeader);
                 end;
             }
+
+        }
+
+        modify(Post)
+        {
+            trigger OnBeforeAction()
+            var
+                Customer: Record Customer;
+                CurrencyMismatchQst: Label 'Sales Order currency (%1) is different from Customer currency (%2).\Do you want to continue posting?',
+                    Comment = '%1 = Order Currency Code, %2 = Customer Currency Code';
+                OrderCurrCode: Code[10];
+                CustomerCurrCode: Code[10];
+            begin
+                if not Customer.Get(Rec."Sell-to Customer No.") then
+                    exit;
+
+                OrderCurrCode := Rec."Currency Code";
+                CustomerCurrCode := Customer."Currency Code";
+
+                // if OrderCurrCode = '' then
+                //     OrderCurrCode := 'LCY';
+                // if CustomerCurrCode = '' then
+                //     CustomerCurrCode := 'LCY';
+
+                if OrderCurrCode <> CustomerCurrCode then
+                    if not Confirm(CurrencyMismatchQst, false, OrderCurrCode, CustomerCurrCode) then
+                        Error('');
+            end;
         }
         addlast(Category_Process)
         {

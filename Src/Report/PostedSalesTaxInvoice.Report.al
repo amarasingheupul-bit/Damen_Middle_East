@@ -60,6 +60,9 @@ report 50100 "4HC Posted Sales Tax Invoice"
             column(CompanyVatRegistration; this.CompanyInformation."VAT Registration No.")
             {
             }
+            column(ShowVATRegistration; this.ShowVATRegistration)
+            {
+            }
             column(ReportFieldHide; this.SalesReceivableSetup."Apply Field Visibility Rules")
             {
             }
@@ -201,6 +204,8 @@ report 50100 "4HC Posted Sales Tax Invoice"
                     this.CurrencyFactor := "FX Rate"
                 else
                     this.CurrencyFactor := 1;
+
+                this.ShowVATRegistration := "Posting Date" >= 20251101D;
             end;
         }
     }
@@ -245,4 +250,5 @@ report 50100 "4HC Posted Sales Tax Invoice"
         CurrencyCode: Code[10];
         CurrencyFactor: Decimal;
         Address: Text;
+        ShowVATRegistration: Boolean;
 }

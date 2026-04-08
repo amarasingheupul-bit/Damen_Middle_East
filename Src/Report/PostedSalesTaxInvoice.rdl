@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-01-30T11:27:53.2987610Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-02-26T05:23:05.0994856Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -218,7 +218,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <rd:Selected>true</rd:Selected>
                         <Textbox Name="Posting_Date">
                           <rd:DefaultName>Posting_Date</rd:DefaultName>
                           <CanGrow>true</CanGrow>
@@ -535,6 +534,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <rd:Selected>true</rd:Selected>
                         <Textbox Name="CompanyVatRegistration">
                           <rd:DefaultName>CompanyVatRegistration</rd:DefaultName>
                           <CanGrow>true</CanGrow>
@@ -555,6 +555,9 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
+                          <Visibility>
+                            <Hidden>=IIF(Fields!ShowVATRegistration.Value = True, False, True)</Hidden>
+                          </Visibility>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -5946,6 +5949,9 @@ End Function
         </Field>
         <Field Name="CompanyVatRegistration">
           <DataField>CompanyVatRegistration</DataField>
+        </Field>
+        <Field Name="ShowVATRegistration">
+          <DataField>ShowVATRegistration</DataField>
         </Field>
         <Field Name="ReportFieldHide">
           <DataField>ReportFieldHide</DataField>

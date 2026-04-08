@@ -94,4 +94,12 @@ codeunit 50100 "EventSubscriber S365"
         end;
         //Func.SendNotificationEmail(SalesHeader, Job);
     end;
+
+    //Remove Rounding check
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Gen. Jnl.-Post Line", 'OnInsertGLEntryOnBeforeCheckAmountRounding', '', false, false)]
+    local procedure SkipAmountRoundingCheck(var GLEntry: Record "G/L Entry"; var IsHandled: Boolean; GenJnlLine: Record "Gen. Journal Line")
+    begin
+        IsHandled := true;
+    end;
+
 }
