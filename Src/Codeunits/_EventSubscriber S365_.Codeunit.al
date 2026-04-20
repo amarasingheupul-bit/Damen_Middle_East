@@ -103,14 +103,14 @@ codeunit 50100 "EventSubscriber S365"
     end;
 
 
-    // Copy the source document No. into Vendor Order No. on the new header    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Copy Document Mgt.", 'OnAfterCopyPurchaseHeader', '', false, false)]
+    // Copy the source document No. into Vendor Order No. on the new header  
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Copy Document Mgt.", 'OnAfterCopyPurchaseHeader', '', false, false)]
     local procedure OnAfterCopyPurchaseHeader(
-        var ToPurchaseHeader: Record "Purchase Header"; FromPurchHeader: Record "Purchase Header")
+      var ToPurchaseHeader: Record "Purchase Header"; FromPurchHeader: Record "Purchase Header")
     begin
         // Copy the source document No. into Vendor Order No. on the new header
         ToPurchaseHeader."Vendor Order No." := FromPurchHeader."No.";
         ToPurchaseHeader.Modify();
-        Message('HIII');
     end;
 
 }

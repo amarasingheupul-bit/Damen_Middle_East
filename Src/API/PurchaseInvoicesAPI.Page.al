@@ -539,6 +539,10 @@ page 50109 "4HC Purchase Invoices API"
                 {
                     Caption = 'PO(DSOL)';
                 }
+                field(Description; Description)
+                {
+                    Caption = 'Description';
+                }
 
             }
         }
@@ -632,6 +636,7 @@ page 50109 "4HC Purchase Invoices API"
         HasWritePermission: Boolean;
         PurchaseInvoicePermissionsErr: Label 'You do not have permissions to read Purchase Invoices.';
         IncomingPOVar: Text[30];
+        Description: Text[100];
         CostType: code[10];
         PODSOL: Code[35];
 
@@ -646,6 +651,7 @@ page 50109 "4HC Purchase Invoices API"
         if not Rec.Posted then begin
             if PurchaseHeader.Get(PurchaseHeader."Document Type"::Invoice, Rec."No.") then begin
                 IncomingPOVar := PurchaseHeader."Incoming PO";
+                Description := PurchaseHeader.Description;
                 CostType := PurchaseHeader."Quote Type";
                 PODSOL := PurchaseHeader."Vendor Order No.";
             end;

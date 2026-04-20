@@ -146,6 +146,13 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                 ApplicationArea = All;
             }
         }
+        addafter("Approval Rejection Reason")
+        {
+            field(Description; Description)
+            {
+                ApplicationArea = All;
+            }
+        }
     }
     actions
     {

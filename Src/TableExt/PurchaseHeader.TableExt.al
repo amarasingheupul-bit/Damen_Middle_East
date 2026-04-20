@@ -254,5 +254,9 @@ tableextension 50110 "4HC Purchase Header" extends "Purchase Header"
             DataClassification = ToBeClassified;
             Caption = 'Supplier Invoice NO.';
         }
+        field(50144; "Description"; Text[100])
+        {
+            Caption = 'Description';
+        }
     }
 }
