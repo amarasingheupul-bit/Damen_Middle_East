@@ -110,7 +110,70 @@ codeunit 50100 "EventSubscriber S365"
     begin
         // Copy the source document No. into Vendor Order No. on the new header
         ToPurchaseHeader."Vendor Order No." := FromPurchHeader."No.";
+        ToPurchaseHeader."Shortcut Dimension 1 Code" := FromPurchHeader."Shortcut Dimension 1 Code";
         ToPurchaseHeader.Modify();
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Copy Document Mgt.", 'OnAfterCopyPurchaseLinesToDoc', '', false, false)]
+    local procedure OnAfterCopyPurchaseLinesToDoc(
+       var ToPurchaseHeader: Record "Purchase Header";
+       var FromPurchRcptLine: Record "Purch. Rcpt. Line";
+       var FromPurchInvLine: Record "Purch. Inv. Line";
+       var FromReturnShipmentLine: Record "Return Shipment Line";
+       var FromPurchCrMemoLine: Record "Purch. Cr. Memo Line";
+       var LinesNotCopied: Integer;
+       var MissingExCostRevLink: Boolean;
+       var RecalculateLines: Boolean;
+       var IncludeHeader: Boolean)
+    var
+        ToPurchLine: Record "Purchase Line";
+        FromPurchLine: Record "Purchase Line";
+        FromInvLine: Record "Purch. Inv. Line";
+        IsFromOrder: Boolean;
+    begin
+        if SourceDocNo = '' then
+            exit;
+
+        // Determine source type — Order or Posted Invoice
+        FromPurchLine.SetRange("Document Type", FromPurchLine."Document Type"::Order);
+        FromPurchLine.SetRange("Document No.", SourceDocNo);
+        IsFromOrder := FromPurchLine.FindFirst();
+
+        // Update destination lines
+        ToPurchLine.SetRange("Document Type", ToPurchaseHeader."Document Type");
+        ToPurchLine.SetRange("Document No.", ToPurchaseHeader."No.");
+
+        if ToPurchLine.FindSet(true, false) then
+            repeat
+                if IsFromOrder then begin
+                    // Source is Purchase Order — match by Line No.
+                    FromPurchLine.Reset();
+                    FromPurchLine.SetRange("Document Type", FromPurchLine."Document Type"::Order);
+                    FromPurchLine.SetRange("Document No.", SourceDocNo);
+                    FromPurchLine.SetRange("Line No.", ToPurchLine."Line No.");
+                    if FromPurchLine.FindFirst() then begin
+                        ToPurchLine."Job Planning Line No." := FromPurchLine."Job Planning Line No.";
+                        ToPurchLine."Job Task No." := FromPurchLine."Job Task No.";
+                        ToPurchLine.Modify(false);
+                    end;
+                end else begin
+                    // Source is Posted Invoice — match by Line No.
+                    FromInvLine.SetRange("Document No.", SourceDocNo);
+                    FromInvLine.SetRange("Line No.", ToPurchLine."Line No.");
+                    if FromInvLine.FindFirst() then begin
+                        ToPurchLine."Job Planning Line No." := FromInvLine."Job Planning Line No.";
+                        ToPurchLine."Job Task No." := FromInvLine."Job Task No.";
+                        ToPurchLine."Shortcut Dimension 1 Code" := FromInvLine."Shortcut Dimension 1 Code";
+                        ToPurchLine.Modify(false);
+                    end;
+                end;
+            until ToPurchLine.Next() = 0;
+
+        // Reset for next use
+        SourceDocNo := '';
+    end;
+
+    var
+        SourceDocNo: Code[20];
 
 }
