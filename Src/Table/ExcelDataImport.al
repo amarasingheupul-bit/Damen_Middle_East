@@ -56,7 +56,7 @@ Table 50104 "Excel Data Import"
             DecimalPlaces = 0 : 2;
         }
 
-        field(9; "Legend"; Text[13])
+        field(9; "Legend"; Text[14])
         {
             DataClassification = CustomerContent;
             Caption = 'Legend';

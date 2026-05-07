@@ -18,7 +18,9 @@ page 50125 " Update Entries From Excel"
                     tabledata "Detailed Vendor Ledg. Entry" = RIMD,
                     tabledata "Purch. Inv. Header" = RIMD,
                     tabledata "Purch. Inv. Line" = RIMD,
+                    tabledata "FA Ledger Entry" = RIMD,
                     tabledata "Excel Data Import" = RIMD;
+
 
     // Legend;                              
     // G/L Entry  Update                    position  1  1   or 0    
@@ -34,6 +36,7 @@ page 50125 " Update Entries From Excel"
     // Purch. Inv. Line Update             position  11  1   or 0
     // Vendor Ledger Entry Update          position  12  1   or 0
     // Detailed Vendor Ledg. Entry Update  position  13  1   or 0    
+    // FA Ledger Entry Update              position  14  1   or 0    
 
 
 
@@ -759,10 +762,11 @@ page 50125 " Update Entries From Excel"
                                 if this.PINVLINE.FindSet() then
                                     repeat
 
-                                        if this.ExcelData.UpdateField = 'PostDate' then
+                                        if this.ExcelData.UpdateField = 'PostDate' then begin
                                             evaluate(this.PINVLINE."Posting Date", this.ExcelData."Value 3");
 
-                                        this.PINVLINE.Modify();
+                                            this.PINVLINE.Modify();
+                                        end;
 
                                         if this.ExcelData.UpdateField = 'Amount' then begin
                                             this.PINVLINE.Amount := this.ExcelData."Value 2";
@@ -772,7 +776,7 @@ page 50125 " Update Entries From Excel"
                                             this.PINVLINE.Modify();
                                         end;
 
-                                        this.TempPINVLINE.Reset();
+                                        //this.TempPINVLINE.Reset();
                                         if this.ExcelData.UpdateField = 'DocumentNo' then begin
 
                                             // Create temporary copy of the record
@@ -782,6 +786,10 @@ page 50125 " Update Entries From Excel"
                                             this.PINVLINE."Document No." := this.ExcelData."Value 3";
                                             this.PINVLINE.Insert();
                                         end;
+
+                                        if this.ExcelData.UpdateField = 'Delete' then
+                                            this.PINVLINE.Delete();
+
 
                                     until this.PINVLINE.Next() = 0;
                             end;
@@ -829,9 +837,41 @@ page 50125 " Update Entries From Excel"
 
                                     end;
 
+                                    if this.ExcelData.UpdateField = 'Delete' then
+                                        this.PINVHDR.Delete();
+
                                 end;
 
 
+                            end;
+
+                            // Update FA Ledger Entry (if Legend Position 14 = '1')
+
+                            Position := 14;
+                            TargetChar := 0;
+                            evaluate(TargetChar, CopyStr(this.ExcelData."Legend", Position, 1));
+                            if TargetChar = 1 then begin
+                                Message('Updating FA Ledger Entry');
+
+
+
+                                this.FALE.Reset();
+                                this.FALE.SetFilter(this.FALE."Document No.", '%1', this.ExcelData."Document No.");
+
+                                if this.FALE.FindSet() then
+                                    repeat
+                                        if this.ExcelData.UpdateField = 'PostDate' then
+                                            evaluate(this.FALE."Posting Date", this.ExcelData."Value 3");
+
+                                        if this.ExcelData.UpdateField = 'DocumentNo' then
+                                            evaluate(this.FALE."Document No.", this.ExcelData."Value 3");
+
+                                        this.FALE.Modify();
+
+                                        if this.ExcelData.UpdateField = 'Delete' then
+                                            this.FALE.Delete();
+
+                                    until this.FALE.Next() = 0;
                             end;
 
 
@@ -869,6 +909,8 @@ page 50125 " Update Entries From Excel"
 
         VLE: Record "Vendor Ledger Entry";
         DVLE: Record "Detailed Vendor Ledg. Entry";
+
+        FALE: Record "FA Ledger Entry";
 
         PINVHDR: Record "Purch. Inv. Header";
         PINVLINE: Record "Purch. Inv. Line";
