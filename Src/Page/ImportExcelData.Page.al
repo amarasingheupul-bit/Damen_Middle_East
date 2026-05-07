@@ -1,8 +1,7 @@
-page 50111 "Excel Data Import List"
+page 50124 "Import Excel Data"
 {
-
     ApplicationArea = All;
-    Caption = 'Excel Data Import List';
+    Caption = 'Excel Data Import';
     PageType = List;
     UsageCategory = Lists;
     SourceTable = "Excel Data Import";
@@ -23,16 +22,48 @@ page 50111 "Excel Data Import List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the document number';
                 }
-                // field("Value 1"; Rec."Value 1")
-                // {
-                //     ApplicationArea = All;
-                //     ToolTip = 'Specifies the exchange rate';
-                // }
+                field("Entry##"; Rec."Entry##")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the entry number';
+                }
                 field("Value 2"; Rec."Value 2")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the LCY value';
                 }
+
+                field("Value 3"; Rec."Value 3")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the text value';
+                }
+                field(UpdateField; Rec.UpdateField)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the update field';
+                }
+
+                field("Value 4"; Rec."Value 4")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the code value';
+                }
+
+                field("Value 5"; Rec."Value 5")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value additional';
+                }
+
+                field("Legend"; Rec."Legend")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the legend';
+                }
+
+
+
             }
         }
     }
@@ -49,13 +80,14 @@ page 50111 "Excel Data Import List"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
-                ToolTip = 'Import exchange rate data from Excel file';
+                ToolTip = 'Import General data from Excel file';
 
                 trigger OnAction()
                 var
                     ImportMgt: Codeunit "Excel Import Management";
                 begin
                     ImportMgt.ImportFromExcel();
+
                 end;
             }
             action(DeleteAll)

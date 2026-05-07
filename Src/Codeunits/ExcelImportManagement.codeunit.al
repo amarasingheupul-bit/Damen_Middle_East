@@ -1,10 +1,10 @@
 codeunit 50104 "Excel Import Management"
-{
 
+{
     procedure ImportFromExcel()
     var
-        ExchRateImport: Record "Excel Data Import";
-        TempExcelBuffer: Record "Excel Buffer" temporary;
+        ExcelDataImport: Record "Excel Data Import";
+        TempExcelBuffer: Record "Excel Buffer";
         InStream: InStream;
         FromFile: Text;
         SheetName: Text;
@@ -31,15 +31,33 @@ codeunit 50104 "Excel Import Management"
             Error('No data found in Excel file');
 
         for RowNo := 2 to TotalRows + 1 do begin
-            ExchRateImport.Init();
-            ExchRateImport."Entry No." += 1;
+            ExcelDataImport.Init();
+            ExcelDataImport."Entry No." += 1;
             if this.GetValueAtCell(TempExcelBuffer, RowNo, 1) <> '' then
-                ExchRateImport."Document No." := CopyStr(this.GetValueAtCell(TempExcelBuffer, RowNo, 1), 1, MaxStrLen(ExchRateImport."Document No."));
+                ExcelDataImport."Document No." := CopyStr(this.GetValueAtCell(TempExcelBuffer, RowNo, 1), 1, MaxStrLen(ExcelDataImport."Document No."));
+
             if this.GetValueAtCell(TempExcelBuffer, RowNo, 2) <> '' then
-                Evaluate(ExchRateImport."Value 1", this.GetValueAtCell(TempExcelBuffer, RowNo, 2));
+                Evaluate(ExcelDataImport."Entry##", this.GetValueAtCell(TempExcelBuffer, RowNo, 2));
+
             if this.GetValueAtCell(TempExcelBuffer, RowNo, 3) <> '' then
-                Evaluate(ExchRateImport."Value 2", this.GetValueAtCell(TempExcelBuffer, RowNo, 3));
-            if ExchRateImport.Insert(true) then
+                Evaluate(ExcelDataImport."Value 2", this.GetValueAtCell(TempExcelBuffer, RowNo, 3));
+
+            if this.GetValueAtCell(TempExcelBuffer, RowNo, 4) <> '' then
+                Evaluate(ExcelDataImport."Value 3", this.GetValueAtCell(TempExcelBuffer, RowNo, 4));
+
+            if this.GetValueAtCell(TempExcelBuffer, RowNo, 5) <> '' then
+                Evaluate(ExcelDataImport.UpdateField, this.GetValueAtCell(TempExcelBuffer, RowNo, 5));
+
+            if this.GetValueAtCell(TempExcelBuffer, RowNo, 6) <> '' then
+                Evaluate(ExcelDataImport."Value 4", this.GetValueAtCell(TempExcelBuffer, RowNo, 6));
+
+            if this.GetValueAtCell(TempExcelBuffer, RowNo, 7) <> '' then
+                Evaluate(ExcelDataImport."Value 5", this.GetValueAtCell(TempExcelBuffer, RowNo, 7));
+
+            if this.GetValueAtCell(TempExcelBuffer, RowNo, 8) <> '' then
+                Evaluate(ExcelDataImport."Legend", this.GetValueAtCell(TempExcelBuffer, RowNo, 8));
+
+            if ExcelDataImport.Insert(true) then
                 i += 1;
         end;
         if I = 1 then
@@ -56,5 +74,4 @@ codeunit 50104 "Excel Import Management"
             exit(TempExcelBuffer."Cell Value as Text");
         exit('');
     end;
-
 }
