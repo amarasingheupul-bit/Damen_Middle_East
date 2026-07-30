@@ -13,5 +13,10 @@ tableextension 50112 "4HC Company Information" extends "Company Information"
             DataClassification = ToBeClassified;
             Caption = 'Report Filed Hide';
         }
+         field(50102; "Department Mandatory"; Boolean)
+        {
+            Caption = 'Department Mandatory on Journals';
+            DataClassification = CustomerContent;
+        }
     }
 }

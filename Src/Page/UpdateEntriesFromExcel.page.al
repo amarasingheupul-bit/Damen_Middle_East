@@ -808,6 +808,7 @@ page 50125 " Update Entries From Excel"
 
                                     if this.ExcelData.UpdateField = 'PostDate' then begin
                                         evaluate(this.PINVHDR."Posting Date", this.ExcelData."Value 3");
+                                        evaluate(this.PINVHDR."VAT Reporting Date", this.ExcelData."Value 3");
 
                                         this.PINVHDR.Modify();
 

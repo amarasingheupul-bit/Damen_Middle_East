@@ -3,6 +3,41 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Damen Middle East SSL">
     <body>
       <group id="body">
+        <trans-unit id="Table 1865135493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Match Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1865135493 - Field 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Field Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1865135493 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1865135493 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1865135493 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1865135493 - Field 3423616278 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Matched</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Field Matched - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1865135493 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Bank Match Line - Field Posting Date - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3874537540 - Field 2746725036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Charge Item No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -102,6 +137,101 @@
           <source>Code Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Excel Data Import General - Field Value 4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GL Bank Match Buffer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 1239231846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Ledger Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Bank Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 3102773586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Bank Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 364105116 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Ledger Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Bank Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 365542049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Difference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Difference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 4058024513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field GL Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 3358420341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field GL Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 1827683140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field GL Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 877955712 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Matched By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Match Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1748088930 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Bank Match Buffer - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GL Match Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Field 636392376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Field Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Field 3423616278 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Matched</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Field Matched - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2041033826 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GL Match Line - Field Posting Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1560189491 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code</source>
@@ -753,6 +883,71 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Delete PPI Related Data - Action UpdateData - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2364298420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GL vs Bank Mismatch Results</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 877955712 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Matched By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control Match Method - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 2166945456 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control Summary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 2087596296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Ledger No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control BankAccountNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 2580726178 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Distinct Document No. Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control BankDocNoCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 621729485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Ledger Entry Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control BankEntryCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 824865315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control GLAccountNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 480946629 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Distinct Document No. Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control GLDocNoCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 3547435786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Entry Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control GLEntryCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 2090735765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Matched</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control MatchedCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 565307408 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mismatched</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control MismatchedCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 3787540168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Missing in Bank</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control MissingInBankCountField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2364298420 - Control 2035142563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Missing in GL</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GL Bank Mismatch Result - Control MissingInGLCountField - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 4145478934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Excel Data Import</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1323,10 +1518,155 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Clear Vendor Ledger Entries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3738020510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Ledger Amount (LCY) Change - Processed Only</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Cust Ledger LCY Change Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1312472520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Document Entries (by Document No.)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Delete Document Entries - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 3245329743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Delete Ledger Entries</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Delete Entries GL/VL/DVL/BL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2075176101 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Realized Gain/Loss Entries - Processed Only</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Delete Realized Gain-Loss Entr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2075176101 - Control 3846257240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Delete Realized Gain-Loss Entr - Control EntrySelection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2075176101 - Control 3959600671 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paste one Entry No. per line to delete several at once. If left blank, the "Entry No." filter above is used instead.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Delete Realized Gain-Loss Entr - Control EntryNoListField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2075176101 - Control 3959600671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No. List (optional)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Delete Realized Gain-Loss Entr - Control EntryNoListField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2739944644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Force Reset FA Acquired Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FixFAAcquiredStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 132018840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Force Approve Open Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Force Approve Open Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 132018840 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Force Approve Open Entries - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 132018840 - Control 1731618904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the Sales Order or Document No. to approve.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Force Approve Open Entries - Control DocumentNoField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 132018840 - Control 1731618904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Force Approve Open Entries - Control DocumentNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GL vs Bank Ledger Mismatch Check</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 964398403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No. Count Preview</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control DocCountPreview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 3846624460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Ledger Doc No. Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control BankDocNoCountPreviewReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 3317597942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Difference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control DocCountDifferenceReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 2453407807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Doc No. Count</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control GLDocNoCountPreviewReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 4105281732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mismatch Check Parameters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control GroupName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 1413301356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the Bank Account whose ledger entries should be compared.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control BankAccountNoReq - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 1413301356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Ledger No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control BankAccountNoReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 241836277 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Used only as a fallback when Document No. does not match between G/L and Bank. Entries with the same Amount posted within this many days of each other are treated as matched. 0 = same day only.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control DateToleranceReq - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 241836277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Tolerance (Days)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control DateToleranceReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 4027189807 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Optional. Leave blank to include all entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control EndDateReq - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 4027189807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control EndDateReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 2527640175 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specify the G/L Account to compare against the bank account.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control GLAccountNoReq - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 2527640175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control GLAccountNoReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 4009634181 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If enabled, entries that matched fine are also shown in the detail list. Summary counts always include them regardless of this setting.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control ShowMatchedTooReq - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 4009634181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Matched Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control ShowMatchedTooReq - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 536568014 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Optional. Leave blank to include all entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control StartDateReq - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 678619857 - Control 536568014 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report GL Bank Mismatch Check - Control StartDateReq - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 840936519 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Posted Purchase Invoice Report</source>
@@ -1412,6 +1752,81 @@
           <source>New Rate</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Range UPdate FX Rates Report - Control NewAccount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Related Entries Lookup (Read-Only)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lookup Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 3605434870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DANGER: If enabled, this will attempt to permanently delete all matched entries across every related table. Only use on test/sandbox data. Many of these tables have protection triggers that will block deletion - the report will tell you which ones succeeded and which were blocked.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control DeleteOpt - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 3605434870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DELETE related entries (irreversible)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control DeleteOpt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 1412272545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If enabled, each related table opens as a filtered list page you can review. If disabled, you just get the summary dialog with counts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control OpenPagesOpt - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 1412272545 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open list pages for each related table</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control OpenPagesOpt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 2445944578 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Entry No. from the Vendor Ledger Entries list (e.g. 3789).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control VendLedgEntryNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 419725449 - Control 2445944578 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Ledger Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Related Entries Lookup - Control VendLedgEntryNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3452400146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove Restriction And Approve</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Remove Restriction And Approve - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3452400146 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Remove Restriction And Approve - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3452400146 - Control 2859892813 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter Purchase Invoice No., e.g. PI-0449</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Remove Restriction And Approve - Control DocNoField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3452400146 - Control 2859892813 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Remove Restriction And Approve - Control DocNoField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3842461396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Bank Ledger Entry Amount (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Entry LCY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3842461396 - Control 3991337648 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Amount (LCY)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Entry LCY - Control NewAmountLCYField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3842461396 - Control 1916147551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NewsourceAmountLCY</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Bank Ledger Entry LCY - Control NewsourceLCYField - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3251124644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Update General Ledger Entries</source>
@@ -1638,6 +2053,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Company Information - Control Report Footer - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4074645880 - Control 3751541021 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>When enabled, Department dimension is required on all journal lines in this company.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Company Information - Control Department Mandatory - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4074645880 - Control 3046576064 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the value of the Report Filed Hide field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1863,6 +2283,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Action ReopenEmailApprovalStatus - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Action 3155749809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>In</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Action in - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Action 3155749809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>In</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Action in - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Action 2100781642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Out</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Action out - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 711270503 - Action 2100781642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
+          <source>Out</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoice - Action out - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 711270503 - Action 2976280689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
           <source>Approval Audit Trail</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1982,6 +2422,11 @@
           <source>Specifies the value of the Email Approval Status field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoices - Control Email Approval Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3606907154 - Change 801304080 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4037192291">
+          <source>Email Approver 1 No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoices - Change Purchaser Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 958370998 - Control 2630264501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
           <source>Additional Order Details</source>
@@ -2307,6 +2752,11 @@
           <source>Resource Allocation</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension BusinessManagerRoleCenter - Action ResourceAllocation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1467278014 - Action 3999267895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
+          <source>Fix LCY Amount (Temp)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Ledger Entries Ext - Action FixLCYAmount - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1273574399 - Action 3069758476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1887905131">
           <source>View the incoming document attached to this entry.</source>
@@ -2887,6 +3337,11 @@
           <source>Amend Quote &amp; Archive_v1</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension SQS365 - Action AmendQuote&amp;Archive S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4074645880 - Field 3751541021 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Department Mandatory on Journals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Company Information - Field Department Mandatory - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4074645880 - Field 3046576064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
           <source>Report Filed Hide</source>

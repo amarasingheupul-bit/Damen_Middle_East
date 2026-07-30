@@ -21,6 +21,11 @@ pageextension 50118 "4HC Company Information" extends "Company Information"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the value of the Report Filed Hide field.';
             }
+            field("Department Mandatory"; Rec."Department Mandatory")
+            {
+                ApplicationArea = All;
+                ToolTip = 'When enabled, Department dimension is required on all journal lines in this company.';
+            }
         }
     }
 }

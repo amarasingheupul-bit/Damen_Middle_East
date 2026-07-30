@@ -188,6 +188,49 @@ pageextension 50125 "4HC Purchase Invoice" extends "Purchase Invoice"
                     Page.Run(Page::"Purch Approval Audit List", Audit);
                 end;
             }
+            group(CustomApproval)
+            {
+                action(in)
+                {
+                    ApplicationArea = All;
+                    Caption = 'In';
+                    Image = Info;
+                    ToolTip = 'In';
+                    trigger OnAction()
+                    // begin
+                    //     Rec.Status := Rec.Status::Open;
+                    //     Rec.Status := Rec.Status::Open;
+                    //     Rec."Email Approval Status" := Rec."Email Approval Status"::Open;
+                    //     Rec.Modify();
+                    // end;
+                    var
+                        ApprovalMgt: Codeunit PurchaseApprovalMgt;
+                    begin
+                        ApprovalMgt.SetStatusIn(Rec);
+                    end;
+                }
+                action(out)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Out';
+                    Image = Info;
+                    ToolTip = 'Out';
+                    trigger OnAction()
+                    // begin
+                    //     Rec.Status := Rec.Status::Released;
+                    //     Rec.Status := Rec.Status::Released;
+                    //     Rec."Email Approval Status" := Rec."Email Approval Status"::Approved;
+                    //     Rec.Modify();
+                    // end;
+                    var
+                        ApprovalMgt: Codeunit PurchaseApprovalMgt;
+                    begin
+                        ApprovalMgt.SetStatusOut(Rec);
+                    end;
+                }
+            }
         }
+
+
     }
 }
