@@ -448,6 +448,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit 4HC Event Subscribers - NamedType Text001Err</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1834156156 - NamedType 3661216842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Department dimension is mandatory for journal lines in this company. Please contact your administrator if this is unexpected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Dept. Mandatory Enforcement - NamedType DepartmentMandatoryErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1834156156 - NamedType 3753944183" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Department dimension is mandatory for  this company. Please contact your administrator if this is unexpected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Dept. Mandatory Enforcement - NamedType DepartmentMandatorySaleErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1834156156 - NamedType 539840556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employee dimension is mandatory for journal lines in this company. Please contact your administrator if this is unexpected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Dept. Mandatory Enforcement - NamedType EmployeeMandatoryErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1834156156 - NamedType 3836562397" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employee dimension is mandatory for this company. Please contact your administrator if this is unexpected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Dept. Mandatory Enforcement - NamedType EmployeeMandatorySaleErr</note>
+        </trans-unit>
         <trans-unit id="Codeunit 933017583 - Method 361191515 - NamedType 2613519981" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item %1 is incompatible with item %2.</source>
           <note from="Developer" annotates="general" priority="2">%1=Service Item 1,%2=Service Item 2</note>
@@ -2058,6 +2078,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Company Information - Control Department Mandatory - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4074645880 - Control 2926795351 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>When enabled, Employee dimension is required on all journal lines in this company.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Company Information - Control Employee Mandatory - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4074645880 - Control 3046576064 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the value of the Report Filed Hide field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2427,6 +2452,26 @@
           <source>Email Approver 1 No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Invoices - Change Purchaser Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 958370998 - Action 3155749809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>In</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Action in - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 958370998 - Action 3155749809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>In</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Action in - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 958370998 - Action 2100781642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Out</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Action out - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 958370998 - Action 2100781642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Out</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 4HC Purchase Order - Action out - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 958370998 - Control 2630264501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
           <source>Additional Order Details</source>
@@ -3343,6 +3388,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Company Information - Field Department Mandatory - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4074645880 - Field 2926795351 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Employee Mandatory on Journals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Company Information - Field Employee Mandatory - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 4074645880 - Field 3046576064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
           <source>Report Filed Hide</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4058,6 +4108,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Invoice Header - Field Yard No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 597501979 - Field 1498446062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Employee</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Sales Line - Field Employee - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3318482693 - Field 1407200743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
           <source>Creation Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -4077,6 +4132,11 @@
           <source>REF SAP ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension 4HC Vendor - Field REF SAP ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 713314872 - Field 1498446062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1806786327">
+          <source>Employee</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Gen. Journal LineExt - Field Employee - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2691779624 - Field 4220038903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 151375497">
           <source>Charge Amount</source>
@@ -4297,6 +4357,11 @@
           <source>Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension PostCodeS365 - Field Type S365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 869923536 - Field 1498446062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>Employee</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase LineExt - Field Employee - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 913985011 - Field 2010587653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
           <source>Transport Manager</source>

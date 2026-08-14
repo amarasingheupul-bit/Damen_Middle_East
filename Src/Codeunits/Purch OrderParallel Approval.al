@@ -1,4 +1,4 @@
-codeunit 50110 "Purch Inv Parallel Approval"
+codeunit 50119 "Purch Order Parallel Approval"
 {
     Subtype = Normal;
     Access = Internal;
@@ -16,10 +16,12 @@ codeunit 50110 "Purch Inv Parallel Approval"
         if ApprovalEntry."Table ID" <> Database::"Purchase Header" then
             exit;
 
-        if ApprovalEntry."Document Type" <> ApprovalEntry."Document Type"::Invoice then
+        if ApprovalEntry."Document Type" <> ApprovalEntry."Document Type"::Order then
             exit;
 
-        if (ApprovalEntry."Sequence No." <> 1) and (ApprovalEntry."Sequence No." <> 2) then
+        if (ApprovalEntry."Sequence No." <> 1)
+         //and (ApprovalEntry."Sequence No." <> 2)
+         then
             exit;
 
         if ApprovalEntry.Status <> ApprovalEntry.Status::Approved then
@@ -28,7 +30,7 @@ codeunit 50110 "Purch Inv Parallel Approval"
         // Cancel other parallel approver at the same Sequence No.
         OtherApprovalEntry.Reset();
         OtherApprovalEntry.SetRange("Table ID", Database::"Purchase Header");
-        OtherApprovalEntry.SetRange("Document Type", ApprovalEntry."Document Type"::Invoice);
+        OtherApprovalEntry.SetRange("Document Type", ApprovalEntry."Document Type"::Order);
         OtherApprovalEntry.SetRange("Document No.", ApprovalEntry."Document No.");
         OtherApprovalEntry.SetRange("Sequence No.", ApprovalEntry."Sequence No.");
         OtherApprovalEntry.SetRange(Status, OtherApprovalEntry.Status::Open);
@@ -44,7 +46,7 @@ codeunit 50110 "Purch Inv Parallel Approval"
             exit;
 
         // Release Purchase Invoice
-        if not PurchaseHeader.Get(ApprovalEntry."Document Type"::Invoice, ApprovalEntry."Document No.") then
+        if not PurchaseHeader.Get(ApprovalEntry."Document Type"::Order, ApprovalEntry."Document No.") then
             exit;
 
         PurchaseHeader.Status := PurchaseHeader.Status::Released;

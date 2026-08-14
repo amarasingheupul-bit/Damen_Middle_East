@@ -2,6 +2,14 @@ pageextension 50119 "4HC Payment Journal" extends "Payment Journal"
 {
     layout
     {
+        addafter("Shortcut Dimension 2 Code")
+        {
+            field(Employee; Rec.Employee)
+            {
+                ApplicationArea = All;
+                //ShowMandatory = true;
+            }
+        }
     }
     actions
     {

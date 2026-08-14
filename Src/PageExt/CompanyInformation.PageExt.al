@@ -26,6 +26,11 @@ pageextension 50118 "4HC Company Information" extends "Company Information"
                 ApplicationArea = All;
                 ToolTip = 'When enabled, Department dimension is required on all journal lines in this company.';
             }
+            field("Employee Mandatory"; Rec."Employee Mandatory")
+            {
+                ApplicationArea = All;
+                ToolTip = 'When enabled, Employee dimension is required on all journal lines in this company.';
+            }
         }
     }
 }

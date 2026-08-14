@@ -23,5 +23,12 @@ pageextension 50121 "4HC Sales Invoice Subform" extends "Sales Invoice Subform"
             Editable = true;
             Visible = true;
         }
+        addafter("Shortcut Dimension 2 Code")
+        {
+            field(Employee; rec.Employee)
+            {
+                ApplicationArea = ALL;
+            }
+        }
     }
 }

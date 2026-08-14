@@ -174,6 +174,36 @@ pageextension 50115 "4HC Purchase Order" extends "Purchase Order"
         {
             Enabled = PrintActionEnable;
         }
+        addlast("Request Approval")
+        {
+            group(other)
+            {
+                action(in)
+                {
+                    ApplicationArea = All;
+                    Caption = 'In';
+                    Image = Info;
+                    ToolTip = 'In';
+                    trigger OnAction()
+                    begin
+                        Rec.Status := Rec.Status::Open;
+                        Rec.Modify();
+                    end;
+                }
+                action(out)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Out';
+                    Image = Info;
+                    ToolTip = 'Out';
+                    trigger OnAction()
+                    begin
+                        Rec.Status := Rec.Status::Released;
+                        Rec.Modify();
+                    end;
+                }
+            }
+        }
     }
 
     trigger OnAfterGetCurrRecord()
