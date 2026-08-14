@@ -1,0 +1,16 @@
+{
+    "al.browser": "Chrome",
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${PerTenantExtensionCop}",
+        "${UICop}",
+    ],
+    "al.compilationOptions": {
+        "outFolder": "ZApps"
+    },
+    "al.enableCodeActions": true,
+    "editor.codeLens": true,
+    "CRS.FileNamePattern": "<ObjectName><ObjectTypeShort>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectName><ObjectTypeShort>.al"
+}

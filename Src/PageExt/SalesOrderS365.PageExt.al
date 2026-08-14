@@ -1,0 +1,232 @@
+pageextension 50107 SalesOrderS365 extends "Sales Order"
+{
+    layout
+    {
+        addlast(General)
+        {
+            field("Job No. S365"; Rec."Job No. S365")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Job No.';
+
+                trigger OnAssistEdit()
+                var
+                    RecJob: Record Job;
+                    JobCardPageID: Integer;
+                begin
+                    JobCardPageID := PAGE::"Job Card";
+                    if RecJob.Get(Rec."Job No. S365") then PAGE.RUN(JobCardPageID, RecJob);
+                end;
+            }
+        }
+
+        addafter(General)
+        {
+            group("New Fields S365")
+            {
+                ShowCaption = true;
+                Caption = 'Additional Order Details';
+
+                field("Quote Type S365"; Rec."Quote Type S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Quote Type field.';
+                    TableRelation = "Quote Type S365"."Code S365";
+                }
+                field("Change Reason S365"; Rec."Change Reason S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Change Reason field.';
+                }
+                field("Original Quote No. S365"; Rec."Original Quote No. S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Original Quote No. field.';
+                }
+                field("Quote Status S365"; Rec."Quote Status S365")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Quote Status field.';
+                }
+                field("Shipment Method Code S365"; Rec."Shipment Method Code")
+                {
+                    Caption = 'Incoterms';
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Incoterms field.';
+                    Visible = false;
+                }
+                field("End User/ Main Customer"; Rec."End User/ Main Customer")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the End User field.', Comment = '%';
+                }
+                field("Supplier to Services"; Rec."Supplier to Services")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Supplier to Services field.', Comment = '%';
+                }
+
+                field("Sales Derector/ Area Director"; Rec."Sales Director/ Area Director")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Derector/ Area Director field.', Comment = '%';
+                }
+                field("Sales/ Area Director Name"; Rec."Sales/ Area Director Name")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales/ Area Director Name field.', Comment = '%';
+                    Editable = false;
+                }
+                field("Sales Secretary No."; Rec."Sales Secretary No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Secretary No. field.', Comment = '%';
+                }
+                field("Sales Secretary Name"; Rec."Sales Secretary Name")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Secretary Name field.', Comment = '%';
+                }
+                field("Yard No."; Rec."Yard No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Yard No. field.', Comment = '%';
+                }
+                field("Milestones Dates and Amounts"; Rec."Milestones Dates and Amounts")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Milestones with Dates and Amounts field.', Comment = '%';
+                }
+                field("Sales Area"; Rec."Sales Area")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Area field.', Comment = '%';
+                }
+                field("Vessel Type"; Rec."Vessel Type")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Vessel Type field.', Comment = '%';
+                }
+                field("COST Reference"; Rec."COST Reference")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the COST Reference field.', Comment = '%';
+                }
+                field(Budget; Rec.Budget)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Budget field.', Comment = '%';
+                }
+                field("G/L Account"; Rec."G/L Account")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the G/L Account field.', Comment = '%';
+                }
+                field("Incoming PO"; Rec."Incoming PO")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Incoming PO field.', Comment = '%';
+                }
+                field("OPCO Customer"; Rec."OPCO Customer")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the OPCO Customer field.', Comment = '%';
+                }
+                field("Sales Manager"; Rec."Sales Manager")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Sales Manager field.', Comment = '%';
+                }
+                field("Bank Details"; Rec."Bank Details")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Bank Details field.';
+                }
+            }
+        }
+        addafter("Currency Code")
+        {
+            field("FX Rate"; Rec."FX Rate")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the FX Rate field.';
+            }
+        }
+    }
+    actions
+    {
+        addlast(processing)
+        {
+            action("CreateJob S365")
+            {
+                Caption = 'Create Job';
+                Image = CreateJobSalesInvoice;
+                ToolTip = 'Create Job';
+                ApplicationArea = Suite;
+
+                // Visible = IsActionVisible;
+                trigger OnAction()
+                var
+                    Func: Codeunit "SQmodFunction S365";
+                begin
+                    Func.CreateJobFromTemplate(Rec);
+                end;
+            }
+            action(TaxInvoice)
+            {
+                Caption = 'Tax Invoice';
+                Image = TaxPayment;
+                ToolTip = 'Generates the Tax Invoice for the selected sales order.';
+
+                ApplicationArea = Suite;
+
+                trigger OnAction()
+                var
+                    SalesHeader: Record "Sales Header";
+                begin
+                    SalesHeader.Reset();
+                    SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::Order);
+                    SalesHeader.SetRange("No.", Rec."No.");
+                    Report.Run(Report::"4HC Tax Invoice", true, true, SalesHeader);
+                end;
+            }
+
+        }
+
+        modify(Post)
+        {
+            trigger OnBeforeAction()
+            var
+                Customer: Record Customer;
+                CurrencyMismatchQst: Label 'Sales Order currency (%1) is different from Customer currency (%2).\Do you want to continue posting?',
+                    Comment = '%1 = Order Currency Code, %2 = Customer Currency Code';
+                OrderCurrCode: Code[10];
+                CustomerCurrCode: Code[10];
+            begin
+                if not Customer.Get(Rec."Sell-to Customer No.") then
+                    exit;
+
+                OrderCurrCode := Rec."Currency Code";
+                CustomerCurrCode := Customer."Currency Code";
+
+                // if OrderCurrCode = '' then
+                //     OrderCurrCode := 'LCY';
+                // if CustomerCurrCode = '' then
+                //     CustomerCurrCode := 'LCY';
+
+                if OrderCurrCode <> CustomerCurrCode then
+                    if not Confirm(CurrencyMismatchQst, false, OrderCurrCode, CustomerCurrCode) then
+                        Error('');
+            end;
+        }
+        addlast(Category_Process)
+        {
+            actionref("CreateJob_Promoted S365"; "createJob S365")
+            {
+            }
+            actionref(TaxInvoice_Promoted; TaxInvoice)
+            {
+            }
+        }
+    }
+}
